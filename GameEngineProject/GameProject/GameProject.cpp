@@ -6,6 +6,6 @@ int main()
 {
     GameEngineProject engine;
 
-    engine.start();
+    engine.start(650,480);
 }
 
