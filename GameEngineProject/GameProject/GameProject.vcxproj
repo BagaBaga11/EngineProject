@@ -132,6 +132,79 @@
   <ItemGroup>
     <ClCompile Include="GameProject.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="graphics\bblogo.bmp" />
+    <Image Include="graphics\Blocks.bmp" />
+    <Image Include="graphics\bosseyes2.bmp" />
+    <Image Include="graphics\Burner1.bmp" />
+    <Image Include="graphics\Burner2.bmp" />
+    <Image Include="graphics\Burner3.bmp" />
+    <Image Include="graphics\Burner4.bmp" />
+    <Image Include="graphics\Burner5.bmp" />
+    <Image Include="graphics\Burner6.bmp" />
+    <Image Include="graphics\clone.bmp" />
+    <Image Include="graphics\clonejet.bmp" />
+    <Image Include="graphics\destroyable.bmp" />
+    <Image Include="graphics\drone.bmp" />
+    <Image Include="graphics\EnWeap6.bmp" />
+    <Image Include="graphics\explode16.bmp" />
+    <Image Include="graphics\explode32.bmp" />
+    <Image Include="graphics\explode64.bmp" />
+    <Image Include="graphics\font16x16.bmp" />
+    <Image Include="graphics\Font8x8.bmp" />
+    <Image Include="graphics\galaxy2.bmp" />
+    <Image Include="graphics\GAster32.bmp" />
+    <Image Include="graphics\GAster64.bmp" />
+    <Image Include="graphics\GAster96.bmp" />
+    <Image Include="graphics\GDust.bmp" />
+    <Image Include="graphics\GShoot.bmp" />
+    <Image Include="graphics\hmissile.bmp" />
+    <Image Include="graphics\Homing.bmp" />
+    <Image Include="graphics\HomProjc.bmp" />
+    <Image Include="graphics\logo.bmp" />
+    <Image Include="graphics\LonerA.bmp" />
+    <Image Include="graphics\LonerB.bmp" />
+    <Image Include="graphics\LonerC.bmp" />
+    <Image Include="graphics\MAster32.bmp" />
+    <Image Include="graphics\MAster64.bmp" />
+    <Image Include="graphics\MAster96.bmp" />
+    <Image Include="graphics\MDust.bmp" />
+    <Image Include="graphics\missile.bmp" />
+    <Image Include="graphics\pcflogo.bmp" />
+    <Image Include="graphics\PCFlogo1.bmp" />
+    <Image Include="graphics\PCFlogo2.bmp" />
+    <Image Include="graphics\playerjet.bmp" />
+    <Image Include="graphics\pod.bmp" />
+    <Image Include="graphics\PUDive.bmp" />
+    <Image Include="graphics\PUInvuln.bmp" />
+    <Image Include="graphics\PULaser.bmp" />
+    <Image Include="graphics\PULife.bmp" />
+    <Image Include="graphics\PUMissil.bmp" />
+    <Image Include="graphics\PUScore.bmp" />
+    <Image Include="graphics\PUShield.bmp" />
+    <Image Include="graphics\PUSpeed.bmp" />
+    <Image Include="graphics\PUWeapon.bmp" />
+    <Image Include="graphics\retros.bmp" />
+    <Image Include="graphics\rusher.bmp" />
+    <Image Include="graphics\SAster32.bmp" />
+    <Image Include="graphics\SAster64.bmp" />
+    <Image Include="graphics\SAster96.bmp" />
+    <Image Include="graphics\SDust.bmp" />
+    <Image Include="graphics\Ship1.bmp" />
+    <Image Include="graphics\Ship2.bmp" />
+    <Image Include="graphics\smoke.bmp" />
+    <Image Include="graphics\spinners.bmp" />
+    <Image Include="graphics\SporesA.bmp" />
+    <Image Include="graphics\SporesB.bmp" />
+    <Image Include="graphics\SporesC.bmp" />
+    <Image Include="graphics\SporesD.bmp" />
+    <Image Include="graphics\wallhugger.bmp" />
+    <Image Include="graphics\Wingtip.bmp" />
+    <Image Include="graphics\Xlogo.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="graphics\Thumbs.db" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

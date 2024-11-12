@@ -7,20 +7,20 @@
 
 void GameEngineProject::start(int sizeX, int sizeY)
 {
+    bool isRunning = true;
+    Level mylevel;
+
     b2WorldDef worldDef = b2DefaultWorldDef();
+
     b2Vec2 gravity = { 0.0f, -10.0f };
     worldDef.gravity = gravity;
+
     b2WorldId worldId = b2CreateWorld(&worldDef);
 
     SDL_Window* window = SDL_CreateWindow("SDL2", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, sizeY, sizeX, 0);
-<<<<<<< Updated upstream
-    SDL_Delay(5000);
-    SDL_DestroyWindow(window);
-}
-=======
     SDL_Surface* windowSurface = SDL_GetWindowSurface(window);
     SDL_Renderer* render = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
-   SDL_Texture* backgroundTexture = LoadTexture(mylevel.GetBackground(), render);
+    SDL_Texture* backgroundTexture = LoadTexture(mylevel.GetBackground(), render);
 
     while (isRunning)
     {
@@ -53,4 +53,3 @@ SDL_Texture* LoadTexture(std::string filePath, SDL_Renderer* renderTarget)
 
     return texture;
 }
->>>>>>> Stashed changes

@@ -19,4 +19,213 @@
       <Filter>Arquivos de Origem</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="graphics\bblogo.bmp">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="graphics\Blocks.bmp">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="graphics\bosseyes2.bmp">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="graphics\Burner1.bmp">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="graphics\Burner2.bmp">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="graphics\Burner3.bmp">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="graphics\Burner4.bmp">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="graphics\Burner5.bmp">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="graphics\Burner6.bmp">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="graphics\clone.bmp">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="graphics\clonejet.bmp">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="graphics\destroyable.bmp">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="graphics\drone.bmp">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="graphics\EnWeap6.bmp">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="graphics\explode16.bmp">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="graphics\explode32.bmp">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="graphics\explode64.bmp">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="graphics\Font8x8.bmp">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="graphics\font16x16.bmp">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="graphics\galaxy2.bmp">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="graphics\GAster32.bmp">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="graphics\GAster64.bmp">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="graphics\GAster96.bmp">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="graphics\GDust.bmp">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="graphics\GShoot.bmp">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="graphics\hmissile.bmp">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="graphics\Homing.bmp">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="graphics\HomProjc.bmp">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="graphics\logo.bmp">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="graphics\LonerA.bmp">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="graphics\LonerB.bmp">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="graphics\LonerC.bmp">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="graphics\MAster32.bmp">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="graphics\MAster64.bmp">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="graphics\MAster96.bmp">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="graphics\MDust.bmp">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="graphics\missile.bmp">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="graphics\pcflogo.bmp">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="graphics\PCFlogo1.bmp">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="graphics\PCFlogo2.bmp">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="graphics\playerjet.bmp">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="graphics\pod.bmp">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="graphics\PUDive.bmp">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="graphics\PUInvuln.bmp">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="graphics\PULaser.bmp">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="graphics\PULife.bmp">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="graphics\PUMissil.bmp">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="graphics\PUScore.bmp">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="graphics\PUShield.bmp">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="graphics\PUSpeed.bmp">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="graphics\PUWeapon.bmp">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="graphics\retros.bmp">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="graphics\rusher.bmp">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="graphics\SAster32.bmp">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="graphics\SAster64.bmp">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="graphics\SAster96.bmp">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="graphics\SDust.bmp">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="graphics\Ship1.bmp">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="graphics\Ship2.bmp">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="graphics\smoke.bmp">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="graphics\spinners.bmp">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="graphics\SporesA.bmp">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="graphics\SporesB.bmp">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="graphics\SporesC.bmp">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="graphics\SporesD.bmp">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="graphics\wallhugger.bmp">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="graphics\Wingtip.bmp">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="graphics\Xlogo.bmp">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="graphics\Thumbs.db" />
+  </ItemGroup>
 </Project>
