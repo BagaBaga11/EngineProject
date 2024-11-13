@@ -1,2 +1,3 @@
 ﻿  GameEngineProject.cpp
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\GameEngineProject.h(18,2): warning C4091: 'static ': ignored on left of 'Level' when no variable is declared
   GameEngineProject.vcxproj -> C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\x64\Debug\GameEngineProject.lib
