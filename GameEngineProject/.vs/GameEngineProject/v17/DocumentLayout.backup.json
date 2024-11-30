@@ -1,18 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\2221917\\Downloads\\GameEngineProject\\GameEngineProject\\",
+  "WorkspaceRootPath": "C:\\Users\\2221917\\Downloads\\EngineProject-Changes\\EngineProject-Changes\\GameEngineProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6D1E78C5-17A9-41C1-983C-975D76735E7D}|GameEngineProject\\GameEngineProject.vcxproj|C:\\Users\\2221917\\Downloads\\GameEngineProject\\GameEngineProject\\GameEngineProject\\GameEngineProject.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{6D1E78C5-17A9-41C1-983C-975D76735E7D}|GameEngineProject\\GameEngineProject.vcxproj|solutionrelative:GameEngineProject\\GameEngineProject.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{6D1E78C5-17A9-41C1-983C-975D76735E7D}|GameEngineProject\\GameEngineProject.vcxproj|C:\\Users\\2221917\\Downloads\\EngineProject-Changes\\EngineProject-Changes\\GameEngineProject\\GameEngineProject\\GameEngineProject.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6D1E78C5-17A9-41C1-983C-975D76735E7D}|GameEngineProject\\GameEngineProject.vcxproj|solutionrelative:GameEngineProject\\GameEngineProject.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|C:\\Users\\2221917\\Downloads\\GameEngineProject\\GameEngineProject\\GameProject\\GameProject.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|C:\\Users\\2221917\\Downloads\\EngineProject-Changes\\EngineProject-Changes\\GameEngineProject\\GameProject\\GameProject.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|solutionrelative:GameProject\\GameProject.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6D1E78C5-17A9-41C1-983C-975D76735E7D}|GameEngineProject\\GameEngineProject.vcxproj|C:\\Users\\2221917\\Downloads\\GameEngineProject\\GameEngineProject\\GameEngineProject\\GameEngineProject.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{6D1E78C5-17A9-41C1-983C-975D76735E7D}|GameEngineProject\\GameEngineProject.vcxproj|solutionrelative:GameEngineProject\\GameEngineProject.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{6D1E78C5-17A9-41C1-983C-975D76735E7D}|GameEngineProject\\GameEngineProject.vcxproj|C:\\Users\\2221917\\Downloads\\EngineProject-Changes\\EngineProject-Changes\\GameEngineProject\\GameEngineProject\\GameEngineProject.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6D1E78C5-17A9-41C1-983C-975D76735E7D}|GameEngineProject\\GameEngineProject.vcxproj|solutionrelative:GameEngineProject\\GameEngineProject.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,17 +22,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "GameProject.cpp",
-              "DocumentMoniker": "C:\\Users\\2221917\\Downloads\\GameEngineProject\\GameEngineProject\\GameProject\\GameProject.cpp",
+              "DocumentMoniker": "C:\\Users\\2221917\\Downloads\\EngineProject-Changes\\EngineProject-Changes\\GameEngineProject\\GameProject\\GameProject.cpp",
               "RelativeDocumentMoniker": "GameProject\\GameProject.cpp",
-              "ToolTip": "C:\\Users\\2221917\\Downloads\\GameEngineProject\\GameEngineProject\\GameProject\\GameProject.cpp",
+              "ToolTip": "C:\\Users\\2221917\\Downloads\\EngineProject-Changes\\EngineProject-Changes\\GameEngineProject\\GameProject\\GameProject.cpp",
               "RelativeToolTip": "GameProject\\GameProject.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAwCEAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-11T17:30:01.41Z",
               "IsPinned": true,
@@ -40,28 +40,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "GameEngineProject.h",
-              "DocumentMoniker": "C:\\Users\\2221917\\Downloads\\GameEngineProject\\GameEngineProject\\GameEngineProject\\GameEngineProject.h",
+              "DocumentMoniker": "C:\\Users\\2221917\\Downloads\\EngineProject-Changes\\EngineProject-Changes\\GameEngineProject\\GameEngineProject\\GameEngineProject.h",
               "RelativeDocumentMoniker": "GameEngineProject\\GameEngineProject.h",
-              "ToolTip": "C:\\Users\\2221917\\Downloads\\GameEngineProject\\GameEngineProject\\GameEngineProject\\GameEngineProject.h",
+              "ToolTip": "C:\\Users\\2221917\\Downloads\\EngineProject-Changes\\EngineProject-Changes\\GameEngineProject\\GameEngineProject\\GameEngineProject.h",
               "RelativeToolTip": "GameEngineProject\\GameEngineProject.h",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAMAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAADcAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-11-11T17:29:54.755Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "GameEngineProject.cpp",
-              "DocumentMoniker": "C:\\Users\\2221917\\Downloads\\GameEngineProject\\GameEngineProject\\GameEngineProject\\GameEngineProject.cpp",
+              "DocumentMoniker": "C:\\Users\\2221917\\Downloads\\EngineProject-Changes\\EngineProject-Changes\\GameEngineProject\\GameEngineProject\\GameEngineProject.cpp",
               "RelativeDocumentMoniker": "GameEngineProject\\GameEngineProject.cpp",
-              "ToolTip": "C:\\Users\\2221917\\Downloads\\GameEngineProject\\GameEngineProject\\GameEngineProject\\GameEngineProject.cpp",
+              "ToolTip": "C:\\Users\\2221917\\Downloads\\EngineProject-Changes\\EngineProject-Changes\\GameEngineProject\\GameEngineProject\\GameEngineProject.cpp",
               "RelativeToolTip": "GameEngineProject\\GameEngineProject.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAFIAAAAAAAAAAADwv3IAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-11T17:29:50.766Z"
+              "WhenOpened": "2024-11-11T17:29:50.766Z",
+              "EditorCaption": ""
             }
           ]
         }
