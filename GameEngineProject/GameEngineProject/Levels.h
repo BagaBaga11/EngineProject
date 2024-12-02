@@ -2,10 +2,10 @@
 #pragma once
 #include <iostream>
 #include <vector>
-#include "GameEngineProject.h"
 #include "GameObjects.h"
+#include "SDL.h"
 
-
+class SDL_Texture;
 struct SDL_Renderer;
 struct b2WorldId;
 class GameObject;

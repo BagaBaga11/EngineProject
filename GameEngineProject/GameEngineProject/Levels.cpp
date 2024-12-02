@@ -25,26 +25,45 @@ const std::string Level::GetBackground()
 
 void Level::Update(float deltaTime)
 {
+    float timeStep = 1.0f / 60.0f;
+    int subStepCount = 4;
+
+    b2World_Step(*GetWorld(), timeStep, subStepCount);
+
+    b2ContactEvents sensorEvents = b2World_GetContactEvents(*GetWorld());
+    for (int i = 0; i < sensorEvents.beginCount; ++i)
+    {
+        b2ContactBeginTouchEvent* beginTouch = sensorEvents.beginEvents + i;
+        for (size_t t = 0; t < objectArray.size(); t++)
+        {
+           if (objectArray[t]->GetShape()->index1 == beginTouch->shapeIdA.index1)
+           {
+               objectArray[t]->Hit();
+           }
+           if (objectArray[t]->GetShape()->index1 == beginTouch->shapeIdB.index1)
+           {
+               objectArray[t]->Hit();
+           }
+        }
+
+
+    }
+
     for (size_t i = 0; i < objectArray.size(); ++i)
     {
         if (objectArray[i]->GetGravScale() != 0.0f)
         {
-            float timeStep = 1.0f / 60.0f;
-            int subStepCount = 4;
-            for (int t = 0; t < 10; ++t)
-            {
-
-                b2World_Step(*GetWorld(), timeStep, subStepCount);
-                b2BodyId bod = *objectArray[i]->Getbody();
-                b2Vec2 position = b2Body_GetPosition(bod);
-                objectArray[i]->newposX = position.x;
-                objectArray[i]->newposY = position.y;
-            }
+            b2BodyId bod = *objectArray[i]->Getbody();
+            b2Vec2 position = b2Body_GetPosition(bod);
+            objectArray[i]->newposX = position.x;
+            objectArray[i]->newposY = position.y;
         }
-        objectArray[i]->UpdateObject(deltaTime);
-    }
 
+        objectArray[i]->UpdateObject(deltaTime);
+
+    }
 }
+
 
 SDL_Renderer* Level::GiveRender()
 {

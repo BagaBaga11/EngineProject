@@ -2,6 +2,7 @@
 #include <unordered_map>
 #include <vector>
 #include <string>
+#include <iostream>
 
 void Animation::AddAnimation(const std::string& name, const std::vector<int>& frames, float frameTime)
 {
@@ -24,9 +25,13 @@ void Animation::Update(float deltaTime)
         return;
 
     elapsedTime += deltaTime;
-    if (elapsedTime >= currentAnimation->frameDuration)
+    if (elapsedTime >= currentAnimation->frameDuration) 
     {
         elapsedTime = 0.0f;
+
+        if (stopFrame >= 0 && currentFrameIndex == stopFrame) {
+            return;
+        }
         currentFrameIndex = (currentFrameIndex + 1) % currentAnimation->frames.size();
     }
 }
@@ -43,7 +48,25 @@ int Animation::GetCurrentFrame() const
     }
 }
 
-AnimationData Animation::GetAnimation()
+void Animation::SetStopFrame(int frame)
 {
-    return currentAnimation;
+    stopFrame = frame;
+}
+
+std::vector<int> Animation::GetAnimation(const std::string& anim)
+{
+    if (!anim.empty())
+    {
+        auto it = animations.find(anim);
+        if (it != animations.end())
+        {
+            return it->second.frames;
+        }
+    }
+    
+    if (currentAnimation)
+    {
+        return currentAnimation->frames;
+    }
+    return {};
 }

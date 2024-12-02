@@ -3,14 +3,16 @@
 #include <iostream>
 #include <vector>
 #include "Levels.h"
-#include "GameEngineProject.h"
 #include "Animation.h"
+
 
 
 struct SDL_Texture;
 struct SDL_Rect;
 typedef struct b2BodyId;
+typedef struct b2ShapeId;
 class Level;
+enum Cat;
 
 
 class GameObject
@@ -38,6 +40,15 @@ public:
 	void SetGravScale(float scale);
 	float GetGravScale();
 
+	void SetSensor(bool bullet);
+
+	virtual void Hit();
+
+	b2ShapeId* GetShape();
+
+	//Cat Select(int Choice);
+	//void SetFilter(int choice);
+
 	Animation animationManager;
 protected:
 	b2BodyId* bodyID;
@@ -53,5 +64,9 @@ protected:
 	int widthSection, heightSection = 0;
 	float frameTime = 0;
 	int objSize = 0;
+	bool missil;
+
+	b2ShapeId* SID;
+	int myfilter = 0;
 };
 

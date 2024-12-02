@@ -6,7 +6,7 @@
 #include "box2d.h"
 #include <vector>
 #include "Levels.h"
-#include "GameObjects.h"
+#include "Pawns.h"
 
 
 void GameEngine::Start(int sizeX, int sizeY)
@@ -18,10 +18,11 @@ void GameEngine::Start(int sizeX, int sizeY)
     myLevel->SetWorld(worl);
 
     b2BodyDef groundBodyDef = b2DefaultBodyDef();
-    groundBodyDef.position = b2Vec2{ 300.0f, 500.0f };
+    groundBodyDef.position = b2Vec2{ 240.0f, 680.0f };
     b2BodyId groundId = b2CreateBody(*myLevel->GetWorld(), &groundBodyDef);
-    b2Polygon groundBox = b2MakeBox(900.0f, 1.0f);
+    b2Polygon groundBox = b2MakeBox(1500.0f, 1.0f);
     b2ShapeDef groundShapeDef = b2DefaultShapeDef();
+   // groundShapeDef.filter.categoryBits = Cat::Walls;
     b2CreatePolygonShape(groundId, &groundShapeDef, &groundBox);
 
     window = SDL_CreateWindow("SDL2", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, sizeY, sizeX, 0);
@@ -37,13 +38,13 @@ void GameEngine::Start(int sizeX, int sizeY)
     } 
 }
 bool GameEngine::Update(float deltaTime)
-{  
-        while (SDL_PollEvent(ev) != 0)
+{          
+
+        while (SDL_PollEvent(ev))
         {
             if (ev->type == SDL_QUIT)
             return false;
         }
-        myLevel->Update(deltaTime);
         SDL_RenderClear(render);
         SDL_RenderCopy(render, backgroundTexture, NULL, NULL);
         for (size_t i = 0; i < myLevel->bmpArray.size(); ++i)
@@ -51,6 +52,7 @@ bool GameEngine::Update(float deltaTime)
             SDL_RenderCopy(render, myLevel->bmpArray[i], myLevel->objectArray[i]->objRect , myLevel->objectArray[i]->objPosition);
         }
         SDL_RenderPresent(render);
+        myLevel->Update(deltaTime);
         return true;
 }
 
@@ -72,6 +74,7 @@ int GameEngine::Tick()
 {
     return SDL_GetTicks();
 }
+
 
 SDL_Texture* LoadTexture(std::string filePath, SDL_Renderer* renderTarget)
 {

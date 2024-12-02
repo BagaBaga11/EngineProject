@@ -4,7 +4,6 @@
 #include "GameEngineProject.h"
 #include <vector>
 #include "Levels.h"
-#include "GameObjects.h"
 
 class Pawn :public GameObject
 {
@@ -17,10 +16,18 @@ public:
 	virtual void Left();
 	virtual void Up();
 	virtual void Down();
+	virtual void RemRight();
+	virtual void RemLeft();
+	virtual void RemUp();
+	virtual void RemDown();
+	virtual void Fire();
 
 	virtual void UpdateObject(float deltaTime) override;
-
 private:
 	const uint8_t* keyState;
+	bool pessLeft = false;
+	bool pessRight = false;
+	bool pessUp = false;
+	bool pessDown = false;
 };
 

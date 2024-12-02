@@ -131,6 +131,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="GameProject.cpp" />
+    <ClCompile Include="Missile.cpp" />
     <ClCompile Include="Player.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -207,6 +208,7 @@
     <None Include="graphics\Thumbs.db" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Missile.h" />
     <ClInclude Include="Player.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

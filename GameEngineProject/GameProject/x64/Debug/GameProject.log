@@ -1,8 +1,6 @@
 ﻿  GameProject.cpp
-C:\Users\Utilizador\Downloads\GravityYesYesYes\GameEngineProject\GameEngineProject\GameObjects.h(12,24): warning C4091: 'typedef ': ignored on left of 'b2BodyId' when no variable is declared
-  Player.cpp
-C:\Users\Utilizador\Downloads\GravityYesYesYes\GameEngineProject\GameEngineProject\GameObjects.h(12,24): warning C4091: 'typedef ': ignored on left of 'b2BodyId' when no variable is declared
-C:\Users\Utilizador\Downloads\GravityYesYesYes\GameEngineProject\GameProject\Player.cpp(19,35): error C2678: binary '!=': no operator found which takes a left-hand operand of type 'Animation::AnimationData' (or there is no acceptable conversion)
-C:\Users\Utilizador\Downloads\GravityYesYesYes\GameEngineProject\GameProject\Player.cpp(19,35): message : could be 'built-in C++ operator!=(const char [6], const char [6])'
-C:\Users\Utilizador\Downloads\GravityYesYesYes\GameEngineProject\GameProject\Player.cpp(19,35): message : while trying to match the argument list '(Animation::AnimationData, const char [6])'
-  Generating Code...
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Levels.h(8,18): warning C4099: 'SDL_Texture': type name first seen using 'struct' now seen using 'class'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\include\SDL_render.h(147,8): message : see declaration of 'SDL_Texture'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\GameObjects.h(12,24): warning C4091: 'typedef ': ignored on left of 'b2BodyId' when no variable is declared
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\GameObjects.h(13,25): warning C4091: 'typedef ': ignored on left of 'b2ShapeId' when no variable is declared
+  GameProject.vcxproj -> C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\x64\Debug\GameProject.exe

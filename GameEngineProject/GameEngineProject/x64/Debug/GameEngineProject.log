@@ -1,20 +1,12 @@
-﻿  Animation.cpp
-C:\Users\Utilizador\Downloads\GravityYesYesYes\GameEngineProject\GameEngineProject\Animation.cpp(38,16): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
-C:\Users\Utilizador\Downloads\GravityYesYesYes\GameEngineProject\GameEngineProject\Animation.cpp(46,26): error C2143: syntax error: missing ';' before 'Animation::GetAnimation'
-C:\Users\Utilizador\Downloads\GravityYesYesYes\GameEngineProject\GameEngineProject\Animation.cpp(46,38): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-C:\Users\Utilizador\Downloads\GravityYesYesYes\GameEngineProject\GameEngineProject\Animation.cpp(47,1): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-C:\Users\Utilizador\Downloads\GravityYesYesYes\GameEngineProject\GameEngineProject\Animation.cpp(47,1): error C2556: 'int Animation::GetAnimation(void)': overloaded function differs only by return type from 'Animation::AnimationData Animation::GetAnimation(void)'
-C:\Users\Utilizador\Downloads\GravityYesYesYes\GameEngineProject\GameEngineProject\Animation.h(32,19): message : see declaration of 'Animation::GetAnimation'
-C:\Users\Utilizador\Downloads\GravityYesYesYes\GameEngineProject\GameEngineProject\Animation.cpp(46,26): error C2371: 'Animation::GetAnimation': redefinition; different basic types
-C:\Users\Utilizador\Downloads\GravityYesYesYes\GameEngineProject\GameEngineProject\Animation.h(32,19): message : see declaration of 'Animation::GetAnimation'
-  GameEngineProject.cpp
-C:\Users\Utilizador\Downloads\GravityYesYesYes\GameEngineProject\GameEngineProject\GameObjects.h(12,24): warning C4091: 'typedef ': ignored on left of 'b2BodyId' when no variable is declared
-  GameObjects.cpp
-C:\Users\Utilizador\Downloads\GravityYesYesYes\GameEngineProject\GameEngineProject\GameObjects.h(12,24): warning C4091: 'typedef ': ignored on left of 'b2BodyId' when no variable is declared
-C:\Users\Utilizador\Downloads\GravityYesYesYes\GameEngineProject\GameEngineProject\GameObjects.cpp(48,36): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\Utilizador\Downloads\GravityYesYesYes\GameEngineProject\GameEngineProject\GameObjects.cpp(48,27): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+﻿  GameEngineProject.cpp
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\GameObjects.h(12,24): warning C4091: 'typedef ': ignored on left of 'b2BodyId' when no variable is declared
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\GameObjects.h(13,25): warning C4091: 'typedef ': ignored on left of 'b2ShapeId' when no variable is declared
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Levels.h(8,18): warning C4099: 'SDL_Texture': type name first seen using 'struct' now seen using 'class'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\include\SDL_render.h(147,8): message : see declaration of 'SDL_Texture'
   Levels.cpp
-C:\Users\Utilizador\Downloads\GravityYesYesYes\GameEngineProject\GameEngineProject\GameObjects.h(12,24): warning C4091: 'typedef ': ignored on left of 'b2BodyId' when no variable is declared
-  Pawns.cpp
-C:\Users\Utilizador\Downloads\GravityYesYesYes\GameEngineProject\GameEngineProject\GameObjects.h(12,24): warning C4091: 'typedef ': ignored on left of 'b2BodyId' when no variable is declared
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\GameObjects.h(12,24): warning C4091: 'typedef ': ignored on left of 'b2BodyId' when no variable is declared
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\GameObjects.h(13,25): warning C4091: 'typedef ': ignored on left of 'b2ShapeId' when no variable is declared
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Levels.h(8,18): warning C4099: 'SDL_Texture': type name first seen using 'struct' now seen using 'class'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\include\SDL_render.h(147,8): message : see declaration of 'SDL_Texture'
   Generating Code...
+  GameEngineProject.vcxproj -> C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\x64\Debug\GameEngineProject.lib

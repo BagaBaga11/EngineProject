@@ -3,6 +3,12 @@
 #include <vector>
 #include <string>
 
+    struct AnimationData
+    {
+        std::vector<int> frames;
+        float frameDuration;
+    };
+
 class Animation
 {
 public:
@@ -12,15 +18,11 @@ public:
     void Update(float deltaTime);
 
     int GetCurrentFrame() const;
-
+    void SetStopFrame(int frame);
 
 
 private:
-    struct AnimationData
-    {
-        std::vector<int> frames;
-        float frameDuration;
-    };
+
 
     std::unordered_map<std::string, AnimationData> animations;
     AnimationData* currentAnimation = nullptr;
@@ -28,7 +30,9 @@ private:
     size_t currentFrameIndex = 0; 
     float elapsedTime = 0.0f;     
 
+    int stopFrame = -1;
+
 public: 
-    AnimationData GetAnimation();
+    std::vector<int> GetAnimation(const std::string& anim);
 };
 

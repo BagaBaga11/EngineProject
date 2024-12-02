@@ -2,7 +2,7 @@
 #include <iostream>
 #include <vector>
 #include "Levels.h"
-#include "GameObjects.h"
+#include "Pawns.h"
 
 
 struct SDL_Texture;
@@ -11,7 +11,16 @@ struct SDL_Rect;
 struct SDL_Window;
 union SDL_Event;
 class Level;
+class GameObject;
+class Pawn;
 
+/*enum Cat
+{
+	Players = 0x0002,
+	Missiles = 0x0004,
+	Enemys = 0x0008,
+	Walls = 0x0010,
+};*/
 class GameEngine
 {
 	public:
