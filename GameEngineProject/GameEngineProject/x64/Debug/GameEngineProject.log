@@ -1,12 +1,1 @@
-﻿  GameEngineProject.cpp
-C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\GameObjects.h(12,24): warning C4091: 'typedef ': ignored on left of 'b2BodyId' when no variable is declared
-C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\GameObjects.h(13,25): warning C4091: 'typedef ': ignored on left of 'b2ShapeId' when no variable is declared
-C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Levels.h(8,18): warning C4099: 'SDL_Texture': type name first seen using 'struct' now seen using 'class'
-C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\include\SDL_render.h(147,8): message : see declaration of 'SDL_Texture'
-  Levels.cpp
-C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\GameObjects.h(12,24): warning C4091: 'typedef ': ignored on left of 'b2BodyId' when no variable is declared
-C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\GameObjects.h(13,25): warning C4091: 'typedef ': ignored on left of 'b2ShapeId' when no variable is declared
-C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Levels.h(8,18): warning C4099: 'SDL_Texture': type name first seen using 'struct' now seen using 'class'
-C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\include\SDL_render.h(147,8): message : see declaration of 'SDL_Texture'
-  Generating Code...
-  GameEngineProject.vcxproj -> C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\x64\Debug\GameEngineProject.lib
+﻿  GameEngineProject.vcxproj -> C:\Users\Rui\Documents\GitHub\EngineProject\GameEngineProject\x64\Debug\GameEngineProject.lib

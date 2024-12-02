@@ -18,7 +18,7 @@ public:
 	 void Fire() override;
 
 	 void SetSpeed(float speed);
-	 void Hit();
+	 void Hit() override;
 	 bool GetAlive();
 protected:
 	float delta = 0.0f;
