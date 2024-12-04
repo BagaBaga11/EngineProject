@@ -1,27 +1,42 @@
 #pragma once
+#include <string>
 #include "Animation.h"
 
+class Level;
+class SDL_Rect;
 class SDL_Texture;
+class Animation;
 class Sprite
 {
 public:
-	Animation animationMan;
+    Sprite(Level* mylevel);
+    virtual ~Sprite();
 
-	Sprite();
-	~Sprite();
+    void SetBMP(const std::string& image, int wSec, int hSec, int objsize);
+    virtual void Update(float deltaTime);
+    virtual void StartObject();
 
-	void SetBMP(std::string image, int wSec, int hSec, int objsize);
-	void Update(float deltaTime);
+    SDL_Rect* GetRect() const;
+    SDL_Rect* GetPosition() const { return objPosition; }
+    SDL_Texture* GetTexture() const { return texture; }
+
+    Animation animationManager;
 protected:
-	SDL_Texture* texture = nullptr;
+    SDL_Texture* texture = nullptr;
+    SDL_Rect* objRect = nullptr;
+    SDL_Rect* objPosition = nullptr;
 
-	int textureWidth, textureHeight = 0;
-	int frameWidth, frameHeight = 0;
-	int widthSection, heightSection = 0;
-	float frameTime = 0;
-	int objSize = 0;
-	std::string myBMP = "0";
-	SDL_Rect* objRect;
-	SDL_Rect* objPosition;
+    Level* mylevel;
+
+    int textureWidth = 0;
+    int textureHeight = 0;
+    int frameWidth = 0;
+    int frameHeight = 0;
+    int widthSection = 0;
+    int heightSection = 0;
+    int objSize = 0;
+    float newposX = 0.0f;
+    float newposY = 0.0f;
+    std::string myBMP;
 };
 

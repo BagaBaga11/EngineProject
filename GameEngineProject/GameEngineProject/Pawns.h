@@ -22,7 +22,7 @@ public:
 	virtual void RemDown();
 	virtual void Fire();
 
-	virtual void UpdateObject(float deltaTime) override;
+	virtual void Update(float deltaTime) override;
 private:
 	const uint8_t* keyState;
 	bool pessLeft = false;

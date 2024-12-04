@@ -65,11 +65,11 @@ void Player::Down()
 	}
 }
 
-void Player::UpdateObject(float deltaTime)
+void Player::Update(float deltaTime)
 {
 	delta = deltaTime;
 	timedelta += deltaTime;
-	Pawn::UpdateObject(deltaTime);
+	Pawn::Update(deltaTime);
 }
 
 void Player::RemDown()

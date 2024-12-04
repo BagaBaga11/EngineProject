@@ -9,6 +9,7 @@ class SDL_Texture;
 struct SDL_Renderer;
 struct b2WorldId;
 class GameObject;
+class Sprite;
 
 class Level
 {
@@ -21,6 +22,7 @@ public:
 	void Update(float deltaTime);
 
 	std::vector<GameObject*> objectArray;
+	std::vector<Sprite*> everyArray;
 	std::vector<SDL_Texture*> bmpArray;
 
 	SDL_Renderer* GiveRender();

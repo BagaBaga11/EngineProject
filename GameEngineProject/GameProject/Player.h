@@ -10,7 +10,7 @@ public:
 	 void Left() override;
 	 void Right() override;
 	 void Down() override;
-	 virtual void UpdateObject(float deltaTime) override;
+	 virtual void Update(float deltaTime) override;
 	 void RemDown() override;
 	 void RemUp() override;
 	 void RemRight() override;

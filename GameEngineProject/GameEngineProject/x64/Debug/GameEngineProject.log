@@ -1,1 +1,14 @@
-﻿  GameEngineProject.vcxproj -> C:\Users\Rui\Documents\GitHub\EngineProject\GameEngineProject\x64\Debug\GameEngineProject.lib
+﻿  Sprite.cpp
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\include\SDL_rect.h(79,1): warning C4099: 'SDL_Rect': type name first seen using 'class' now seen using 'struct'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\include\SDL_rect.h(78,16): message : see declaration of 'SDL_Rect'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\include\SDL_render.h(147,19): warning C4099: 'SDL_Texture': type name first seen using 'class' now seen using 'struct'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.h(7,7): message : see declaration of 'SDL_Texture'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\include\SDL_render.h(148,39): warning C4099: 'SDL_Texture': type name first seen using 'class' now seen using 'struct'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\include\SDL_render.h(147,8): message : see declaration of 'SDL_Texture'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\GameEngineProject.h(8,19): warning C4099: 'SDL_Texture': type name first seen using 'class' now seen using 'struct'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Levels.h(8,7): message : see declaration of 'SDL_Texture'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\GameEngineProject.h(35,19): warning C4099: 'SDL_Texture': type name first seen using 'class' now seen using 'struct'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\GameEngineProject.h(8,8): message : see declaration of 'SDL_Texture'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(33,22): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(34,22): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+  GameEngineProject.vcxproj -> C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\x64\Debug\GameEngineProject.lib

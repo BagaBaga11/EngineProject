@@ -14,13 +14,6 @@ class Level;
 class GameObject;
 class Pawn;
 
-/*enum Cat
-{
-	Players = 0x0002,
-	Missiles = 0x0004,
-	Enemys = 0x0008,
-	Walls = 0x0010,
-};*/
 class GameEngine
 {
 	public:

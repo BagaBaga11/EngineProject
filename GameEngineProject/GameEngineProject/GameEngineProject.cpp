@@ -34,7 +34,6 @@ void GameEngine::Start(int sizeX, int sizeY)
     for (size_t i = 0; i < myLevel->objectArray.size(); i++)
     {
         myLevel->objectArray[i]->StartObject();
-
     } 
 }
 bool GameEngine::Update(float deltaTime)
@@ -45,14 +44,20 @@ bool GameEngine::Update(float deltaTime)
             if (ev->type == SDL_QUIT)
             return false;
         }
+        myLevel->Update(deltaTime);
         SDL_RenderClear(render);
         SDL_RenderCopy(render, backgroundTexture, NULL, NULL);
         for (size_t i = 0; i < myLevel->bmpArray.size(); ++i)
         { 
-            SDL_RenderCopy(render, myLevel->bmpArray[i], myLevel->objectArray[i]->objRect , myLevel->objectArray[i]->objPosition);
+            int n = myLevel->everyArray[i]->GetRect()->x;
+            int r = myLevel->everyArray[i]->GetRect()->y;
+            int t = myLevel->everyArray[i]->GetRect()->w;
+            int y = myLevel->everyArray[i]->GetRect()->h;
+            SDL_RenderCopy(render, myLevel->bmpArray[i], myLevel->everyArray[i]->GetRect(), myLevel->everyArray[i]->GetPosition());
+            std::cout << n << "/" << r << "/" << t << "/" << y << std::endl;
         }
         SDL_RenderPresent(render);
-        myLevel->Update(deltaTime);
+
         return true;
 }
 

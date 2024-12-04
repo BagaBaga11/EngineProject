@@ -1,72 +1,33 @@
 #pragma once
-#pragma once
-#include <iostream>
-#include <vector>
-#include "Levels.h"
-#include "Animation.h"
+#include <string>
+#include "Sprite.h"
 
-
-
-struct SDL_Texture;
-struct SDL_Rect;
-typedef struct b2BodyId;
-typedef struct b2ShapeId;
 class Level;
-enum Cat;
+class b2BodyId;
+class b2ShapeId;
 
-
-class GameObject
+class GameObject : public Sprite
 {
 public:
-	explicit GameObject(Level* mylevel);
-	~GameObject();
-	void StartObject();
-	virtual void UpdateObject(float deltaTime);
-	void SetBMP(std::string image, int wSec, int hSec, int objsize);
-	std::string GetBMP();
+    explicit GameObject(Level* mylevel);
+    ~GameObject();
 
-	SDL_Rect* SetRect(int x, int y, int w, int h);
-	SDL_Texture* GetTexture();
+    void StartObject() override;
+    virtual void Update(float deltaTime) override;
+    void SetStartPos(float x, float y);
+    void SetGravScale(float scale);
+    float GetGravScale() const;
+    void SetSensor(bool bullet);
+    virtual void Hit();
 
+    b2BodyId* GetBody() const;
+    b2ShapeId* GetShape() const;
 
-	SDL_Rect* objRect;
-	SDL_Rect* objPosition;
-
-	b2BodyId* Getbody();
-	void SetStartPos(float x, float y);
-	float newposX;
-	float newposY;
-
-	void SetGravScale(float scale);
-	float GetGravScale();
-
-	void SetSensor(bool bullet);
-
-	virtual void Hit();
-
-	b2ShapeId* GetShape();
-
-	//Cat Select(int Choice);
-	//void SetFilter(int choice);
-
-	Animation animationManager;
 protected:
-	b2BodyId* bodyID;
-	SDL_Texture* texture = nullptr;
-	std::string myBMP = "0";
-	Level* mylevel;
-	float starposX;
-	float starposY;
-	float scaleGrav = 1.0f;
+    Level* mylevel;
+    b2BodyId* bodyID = nullptr;
+    b2ShapeId* shapeID = nullptr;
 
-	int textureWidth, textureHeight = 0;
-	int frameWidth, frameHeight = 0;
-	int widthSection, heightSection = 0;
-	float frameTime = 0;
-	int objSize = 0;
-	bool missil;
-
-	b2ShapeId* SID;
-	int myfilter = 0;
+    float scaleGrav = 1.0f;
+    bool missile = false;
 };
-

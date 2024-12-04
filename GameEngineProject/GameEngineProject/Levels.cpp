@@ -51,16 +51,7 @@ void Level::Update(float deltaTime)
 
     for (size_t i = 0; i < objectArray.size(); ++i)
     {
-        if (objectArray[i]->GetGravScale() != 0.0f)
-        {
-            b2BodyId bod = *objectArray[i]->Getbody();
-            b2Vec2 position = b2Body_GetPosition(bod);
-            objectArray[i]->newposX = position.x;
-            objectArray[i]->newposY = position.y;
-        }
-
-        objectArray[i]->UpdateObject(deltaTime);
-
+        objectArray[i]->Update(deltaTime);
     }
 }
 
