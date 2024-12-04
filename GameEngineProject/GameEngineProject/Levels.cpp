@@ -27,8 +27,15 @@ void Level::Update(float deltaTime)
 {
     float timeStep = 1.0f / 60.0f;
     int subStepCount = 4;
+    for (auto i = 0; i < 2; ++i)
+    {
+        b2World_Step(*GetWorld(), timeStep, subStepCount);
+    }
 
-    b2World_Step(*GetWorld(), timeStep, subStepCount);
+    for (size_t i = 0; i < objectArray.size(); ++i)
+    {
+        objectArray[i]->Update(deltaTime);
+    }
 
     b2ContactEvents sensorEvents = b2World_GetContactEvents(*GetWorld());
     for (int i = 0; i < sensorEvents.beginCount; ++i)
@@ -49,10 +56,7 @@ void Level::Update(float deltaTime)
 
     }
 
-    for (size_t i = 0; i < objectArray.size(); ++i)
-    {
-        objectArray[i]->Update(deltaTime);
-    }
+
 }
 
 

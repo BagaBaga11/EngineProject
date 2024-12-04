@@ -15,6 +15,21 @@ Sprite::~Sprite() {
     }
     delete objRect;
     delete objPosition;
+    if (mylevel != nullptr && !mylevel->everyArray.empty())
+    {
+        auto itObject = std::find(mylevel->everyArray.begin(), mylevel->everyArray.end(), this);
+
+        if (itObject != mylevel->everyArray.end())
+        {
+            size_t index = std::distance(mylevel->everyArray.begin(), itObject);
+            mylevel->everyArray.erase(itObject);
+
+            if (index < mylevel->bmpArray.size())
+            {
+                mylevel->bmpArray.erase(mylevel->bmpArray.begin() + index);
+            }
+        }
+    }
 }
 
 void Sprite::SetBMP(const std::string& image, int wSec, int hSec, int objsize)
@@ -30,6 +45,10 @@ void Sprite::SetBMP(const std::string& image, int wSec, int hSec, int objsize)
 
 void Sprite::Update(float deltaTime)
 {
+    if (isSprite)
+    {
+        newposX++;
+    }
     objPosition->x = newposX;
     objPosition->y = newposY;
     objPosition->h = objSize;

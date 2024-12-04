@@ -52,7 +52,7 @@ int main(int argc, char* argv[])
 
     GameObject* Loner = new GameObject(mylevel);
     Loner->SetBMP("graphics/LonerC.bmp", 4,4 ,32);
-    Loner->SetStartPos(400.0f, 0.0f);
+    Loner->SetStartPos(400.0f, -100.0f);
     Loner->SetGravScale(30.0f);
     Loner->SetSensor(false);
     Loner->animationManager.AddAnimation("Loner", { 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15 }, 0.1f);
@@ -68,6 +68,8 @@ int main(int argc, char* argv[])
     Loner2->animationManager.AddAnimation("Loner", {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15 }, 0.1f);
     Loner2->animationManager.SetCurrentAnimation("Loner");
     Enemies.push_back(Loner2);
+
+
     
 
     engine.Start(640,480);

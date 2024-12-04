@@ -18,11 +18,21 @@ GameObject::~GameObject()
 {
     delete bodyID;
     delete shapeID;
+    if (mylevel != nullptr && !mylevel->objectArray.empty())
+    {
+        auto itObject = std::find(mylevel->objectArray.begin(), mylevel->objectArray.end(), this);
+
+        if (itObject != mylevel->objectArray.end())
+        {
+            size_t index = std::distance(mylevel->objectArray.begin(), itObject);
+            mylevel->objectArray.erase(itObject);
+        }
+    }
 }
 
 void GameObject::StartObject()
 {
-    Sprite::StartObject();
+
     b2BodyDef bodyDef = b2DefaultBodyDef();
     bodyDef.type = b2_dynamicBody;
     bodyDef.gravityScale = GetGravScale();
@@ -35,6 +45,8 @@ void GameObject::StartObject()
     shapeDef.density = 1.0f;
     shapeDef.friction = 0.3f;
     shapeDef.enableContactEvents = true;
+    shapeID = new b2ShapeId(b2CreatePolygonShape(*bodyID, &shapeDef, &dynamicBox));
+    Sprite::StartObject();
 }
 
 void GameObject::Update(float deltaTime)

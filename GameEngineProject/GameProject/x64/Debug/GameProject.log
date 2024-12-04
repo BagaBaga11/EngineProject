@@ -1,1 +1,35 @@
-﻿  GameProject.vcxproj -> C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\x64\Debug\GameProject.exe
+﻿GameEngineProject.lib(geometry.obj) : warning LNK4099: PDB '' was not found with 'GameEngineProject.lib(geometry.obj)' or at ''; linking object as if no debug info
+GameEngineProject.lib(types.obj) : warning LNK4099: PDB '' was not found with 'GameEngineProject.lib(types.obj)' or at ''; linking object as if no debug info
+GameEngineProject.lib(body.obj) : warning LNK4099: PDB '' was not found with 'GameEngineProject.lib(body.obj)' or at ''; linking object as if no debug info
+GameEngineProject.lib(shape.obj) : warning LNK4099: PDB '' was not found with 'GameEngineProject.lib(shape.obj)' or at ''; linking object as if no debug info
+GameEngineProject.lib(world.obj) : warning LNK4099: PDB '' was not found with 'GameEngineProject.lib(world.obj)' or at ''; linking object as if no debug info
+GameEngineProject.lib(math_functions.obj) : warning LNK4099: PDB '' was not found with 'GameEngineProject.lib(math_functions.obj)' or at ''; linking object as if no debug info
+GameEngineProject.lib(hull.obj) : warning LNK4099: PDB '' was not found with 'GameEngineProject.lib(hull.obj)' or at ''; linking object as if no debug info
+GameEngineProject.lib(distance.obj) : warning LNK4099: PDB '' was not found with 'GameEngineProject.lib(distance.obj)' or at ''; linking object as if no debug info
+GameEngineProject.lib(core.obj) : warning LNK4099: PDB '' was not found with 'GameEngineProject.lib(core.obj)' or at ''; linking object as if no debug info
+GameEngineProject.lib(solver_set.obj) : warning LNK4099: PDB '' was not found with 'GameEngineProject.lib(solver_set.obj)' or at ''; linking object as if no debug info
+GameEngineProject.lib(contact.obj) : warning LNK4099: PDB '' was not found with 'GameEngineProject.lib(contact.obj)' or at ''; linking object as if no debug info
+GameEngineProject.lib(id_pool.obj) : warning LNK4099: PDB '' was not found with 'GameEngineProject.lib(id_pool.obj)' or at ''; linking object as if no debug info
+GameEngineProject.lib(island.obj) : warning LNK4099: PDB '' was not found with 'GameEngineProject.lib(island.obj)' or at ''; linking object as if no debug info
+GameEngineProject.lib(joint.obj) : warning LNK4099: PDB '' was not found with 'GameEngineProject.lib(joint.obj)' or at ''; linking object as if no debug info
+GameEngineProject.lib(broad_phase.obj) : warning LNK4099: PDB '' was not found with 'GameEngineProject.lib(broad_phase.obj)' or at ''; linking object as if no debug info
+GameEngineProject.lib(timer.obj) : warning LNK4099: PDB '' was not found with 'GameEngineProject.lib(timer.obj)' or at ''; linking object as if no debug info
+GameEngineProject.lib(bitset.obj) : warning LNK4099: PDB '' was not found with 'GameEngineProject.lib(bitset.obj)' or at ''; linking object as if no debug info
+GameEngineProject.lib(table.obj) : warning LNK4099: PDB '' was not found with 'GameEngineProject.lib(table.obj)' or at ''; linking object as if no debug info
+GameEngineProject.lib(aabb.obj) : warning LNK4099: PDB '' was not found with 'GameEngineProject.lib(aabb.obj)' or at ''; linking object as if no debug info
+GameEngineProject.lib(dynamic_tree.obj) : warning LNK4099: PDB '' was not found with 'GameEngineProject.lib(dynamic_tree.obj)' or at ''; linking object as if no debug info
+GameEngineProject.lib(constraint_graph.obj) : warning LNK4099: PDB '' was not found with 'GameEngineProject.lib(constraint_graph.obj)' or at ''; linking object as if no debug info
+GameEngineProject.lib(stack_allocator.obj) : warning LNK4099: PDB '' was not found with 'GameEngineProject.lib(stack_allocator.obj)' or at ''; linking object as if no debug info
+GameEngineProject.lib(solver.obj) : warning LNK4099: PDB '' was not found with 'GameEngineProject.lib(solver.obj)' or at ''; linking object as if no debug info
+GameEngineProject.lib(manifold.obj) : warning LNK4099: PDB '' was not found with 'GameEngineProject.lib(manifold.obj)' or at ''; linking object as if no debug info
+GameEngineProject.lib(array.obj) : warning LNK4099: PDB '' was not found with 'GameEngineProject.lib(array.obj)' or at ''; linking object as if no debug info
+GameEngineProject.lib(distance_joint.obj) : warning LNK4099: PDB '' was not found with 'GameEngineProject.lib(distance_joint.obj)' or at ''; linking object as if no debug info
+GameEngineProject.lib(motor_joint.obj) : warning LNK4099: PDB '' was not found with 'GameEngineProject.lib(motor_joint.obj)' or at ''; linking object as if no debug info
+GameEngineProject.lib(mouse_joint.obj) : warning LNK4099: PDB '' was not found with 'GameEngineProject.lib(mouse_joint.obj)' or at ''; linking object as if no debug info
+GameEngineProject.lib(prismatic_joint.obj) : warning LNK4099: PDB '' was not found with 'GameEngineProject.lib(prismatic_joint.obj)' or at ''; linking object as if no debug info
+GameEngineProject.lib(revolute_joint.obj) : warning LNK4099: PDB '' was not found with 'GameEngineProject.lib(revolute_joint.obj)' or at ''; linking object as if no debug info
+GameEngineProject.lib(weld_joint.obj) : warning LNK4099: PDB '' was not found with 'GameEngineProject.lib(weld_joint.obj)' or at ''; linking object as if no debug info
+GameEngineProject.lib(wheel_joint.obj) : warning LNK4099: PDB '' was not found with 'GameEngineProject.lib(wheel_joint.obj)' or at ''; linking object as if no debug info
+GameEngineProject.lib(contact_solver.obj) : warning LNK4099: PDB '' was not found with 'GameEngineProject.lib(contact_solver.obj)' or at ''; linking object as if no debug info
+LINK : warning LNK4098: defaultlib 'LIBCMTD' conflicts with use of other libs; use /NODEFAULTLIB:library
+  GameProject.vcxproj -> C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\x64\Debug\GameProject.exe

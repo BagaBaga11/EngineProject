@@ -49,12 +49,7 @@ bool GameEngine::Update(float deltaTime)
         SDL_RenderCopy(render, backgroundTexture, NULL, NULL);
         for (size_t i = 0; i < myLevel->bmpArray.size(); ++i)
         { 
-            int n = myLevel->everyArray[i]->GetRect()->x;
-            int r = myLevel->everyArray[i]->GetRect()->y;
-            int t = myLevel->everyArray[i]->GetRect()->w;
-            int y = myLevel->everyArray[i]->GetRect()->h;
             SDL_RenderCopy(render, myLevel->bmpArray[i], myLevel->everyArray[i]->GetRect(), myLevel->everyArray[i]->GetPosition());
-            std::cout << n << "/" << r << "/" << t << "/" << y << std::endl;
         }
         SDL_RenderPresent(render);
 

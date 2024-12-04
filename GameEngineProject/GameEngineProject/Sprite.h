@@ -38,5 +38,6 @@ protected:
     float newposX = 0.0f;
     float newposY = 0.0f;
     std::string myBMP;
+    bool isSprite = false;
 };
 
