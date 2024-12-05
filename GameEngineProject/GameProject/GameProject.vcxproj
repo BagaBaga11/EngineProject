@@ -130,6 +130,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="explo.cpp" />
     <ClCompile Include="GameProject.cpp" />
     <ClCompile Include="Loner.cpp" />
     <ClCompile Include="Missile.cpp" />
@@ -210,6 +211,7 @@
     <None Include="graphics\Thumbs.db" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="explo.h" />
     <ClInclude Include="Loner.h" />
     <ClInclude Include="Missile.h" />
     <ClInclude Include="Player.h" />

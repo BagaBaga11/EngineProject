@@ -13,10 +13,12 @@ Sprite::~Sprite() {
     if (texture) {
         SDL_DestroyTexture(texture);
     }
-    delete objRect;
-    delete objPosition;
-    if (mylevel != nullptr && !mylevel->everyArray.empty())
-    {
+
+
+    objRect = nullptr;
+
+    objPosition = nullptr;
+
         auto itObject = std::find(mylevel->everyArray.begin(), mylevel->everyArray.end(), this);
 
         if (itObject != mylevel->everyArray.end())
@@ -28,8 +30,7 @@ Sprite::~Sprite() {
             {
                 mylevel->bmpArray.erase(mylevel->bmpArray.begin() + index);
             }
-        }
-    }
+        } 
 }
 
 void Sprite::SetBMP(const std::string& image, int wSec, int hSec, int objsize)
@@ -45,10 +46,6 @@ void Sprite::SetBMP(const std::string& image, int wSec, int hSec, int objsize)
 
 void Sprite::Update(float deltaTime)
 {
-    if (isSprite)
-    {
-        newposX++;
-    }
     objPosition->x = newposX;
     objPosition->y = newposY;
     objPosition->h = objSize;
@@ -82,4 +79,24 @@ void Sprite::SetStartPos(float x, float y)
 {
     newposX = x;
     newposY = y;
+}
+
+void Sprite::SetRotation(double angle,SDL_Point pivot)
+{
+    rotationAngle = angle;
+    rotationPivot = new SDL_Point(pivot);
+}
+
+SDL_Point* Sprite::GetPivot()
+{
+    if (rotationPivot)
+    {
+         return rotationPivot;
+    }
+    return 0;
+}
+
+double Sprite::GetAngle()
+{
+    return rotationAngle;
 }

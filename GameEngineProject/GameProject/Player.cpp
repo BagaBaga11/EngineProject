@@ -11,7 +11,8 @@ Player::Player(Level* mylevel):Pawn(mylevel)
 	SetSpeed(200.0f);
 	SetSensor(true);
 
-	animationManager.AddAnimation("idle", { 3,17 }, 1.0f);
+	animationManager.AddAnimation("idle", { 3 }, 1.0f);
+	animationManager.AddAnimation("Damage", { 3,17 }, 1.0f);
 	animationManager.AddAnimation("tleft", { 2,1,0 }, 0.1f);
 	animationManager.AddAnimation("tright", { 4,5,6 }, 0.1f);
 	animationManager.SetCurrentAnimation("idle");
@@ -78,6 +79,7 @@ void Player::Down()
 
 void Player::Update(float deltaTime)
 {
+	timeinv += delta;
 	delta = deltaTime;
 	timedelta += deltaTime;
 	Pawn::Update(deltaTime);
@@ -108,14 +110,18 @@ void Player::SetSpeed(float speed)
 
 void Player::Hit()
 {
-	if (healt <= 0)
-	{
-		alive = false;
-	}
-	else
-	{
-		healt = healt--;
-	}		
+		if (healt <= 0)
+		{
+			alive = false;
+		}
+			if (timeinv > 2)
+			{
+				healt = healt--;
+				timeinv = 0;
+				std::cout << healt;
+			}
+		
+	animationManager.SetCurrentAnimation("Damage");
 }
 
 bool Player::GetAlive()
@@ -125,11 +131,11 @@ bool Player::GetAlive()
 
 void Player::Fire()
 {
-	if (timedelta > 2)
+	if (timedelta > 1)
 	{
 		Missile* missile = new Missile(mylevel);
 		missile->SetBMP("graphics/hmissile.bmp", 4, 4, 32);
-		missile->SetStartPos(newposX + 17.0f, newposY - 40.0f);
+		missile->SetStartPos(newposX + 17.0f, newposY - 50.0f);
 		missile->SetGravScale(-100.0f);
 		missile->SetSensor(true);
 		missile->StartObject();

@@ -12,6 +12,9 @@
 class Animation
 {
 public:
+    Animation();
+    ~Animation();
+
     void AddAnimation(const std::string& name, const std::vector<int>& frames, float frameTime);
     void SetCurrentAnimation(const std::string& name);
 

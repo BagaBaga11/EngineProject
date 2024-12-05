@@ -1,9 +1,9 @@
 #include "GameObjects.h"
 #include "Levels.h"
-#include "GameEngineProject.h"
 #include "SDL.h"
 #include "box2d.h"
 #include <vector>
+#include "GameEngineProject.h"
 #include "Animation.h"
 
 
@@ -37,22 +37,21 @@ void GameObject::StartObject()
     bodyDef.gravityScale = GetGravScale();
     bodyDef.position = b2Vec2{ newposX,newposY };
     bodyDef.isBullet = false;
+    bodyDef.fixedRotation = true;
     b2BodyId* body = new b2BodyId(b2CreateBody(*mylevel->GetWorld(), &bodyDef));
     bodyID = body;
-    b2Polygon dynamicBox = b2MakeBox(objSize / 4, objSize / 4);
+    b2Polygon dynamicBox = b2MakeBox(objSize/2, objSize/2);
     b2ShapeDef shapeDef = b2DefaultShapeDef();
     shapeDef.density = 1.0f;
     shapeDef.friction = 0.3f;
     shapeDef.enableContactEvents = true;
+    
     shapeID = new b2ShapeId(b2CreatePolygonShape(*bodyID, &shapeDef, &dynamicBox));
     Sprite::StartObject();
 }
 
 void GameObject::Update(float deltaTime)
 {
-    b2Vec2 position = b2Body_GetPosition(*bodyID);
-    newposX = position.x;
-    newposY = position.y;
     Sprite::Update(deltaTime);
 }
 
@@ -73,6 +72,7 @@ void GameObject::SetSensor(bool bullet)
 
 void GameObject::Hit()
 {
+    b2DestroyBody(*GetBody());
     delete this;
 }
 
@@ -85,3 +85,11 @@ b2ShapeId* GameObject::GetShape() const
 {
     return shapeID;
 }
+
+void GameObject::GetPosition()
+{
+    b2Vec2 position = b2Body_GetPosition(*bodyID);
+    Firstpos = position.x;
+    Secondpos = position.y;
+}
+

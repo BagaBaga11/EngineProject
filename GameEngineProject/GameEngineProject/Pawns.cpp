@@ -81,7 +81,7 @@ void Pawn::RemDown()
 
 void Pawn::Update(float deltaTime)
 {
-    GameObject::Update(deltaTime);
+    Sprite::Update(deltaTime);
     CheckKeyboard();
     b2Body_SetTransform(*GetBody(), b2Vec2{ newposX,newposY }, b2Body_GetRotation(*GetBody()));
 }

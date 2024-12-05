@@ -22,7 +22,6 @@ void GameEngine::Start(int sizeX, int sizeY)
     b2BodyId groundId = b2CreateBody(*worl, &groundBodyDef);
     b2Polygon groundBox = b2MakeBox(1500.0f, 1.0f);
     b2ShapeDef groundShapeDef = b2DefaultShapeDef();
-   // groundShapeDef.filter.categoryBits = Cat::Walls;
     b2CreatePolygonShape(groundId, &groundShapeDef, &groundBox);
 
     window = SDL_CreateWindow("SDL2", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, sizeY, sizeX, 0);
@@ -45,7 +44,7 @@ bool GameEngine::Update(float deltaTime)
         SDL_RenderCopy(render, backgroundTexture, NULL, NULL);
         for (size_t i = 0; i < myLevel->bmpArray.size(); ++i)
         { 
-            SDL_RenderCopy(render, myLevel->bmpArray[i], myLevel->everyArray[i]->GetRect(), myLevel->everyArray[i]->GetPosition());
+            SDL_RenderCopyEx(render, myLevel->bmpArray[i], myLevel->everyArray[i]->GetRect(), myLevel->everyArray[i]->GetPosition(), myLevel->everyArray[i]->GetAngle(), myLevel->everyArray[i]->GetPivot(), SDL_FLIP_NONE);
         }
         SDL_RenderPresent(render);
 

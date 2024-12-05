@@ -6,5 +6,8 @@ class Rusher : public GameObject
 public:
 	Rusher(Level* mylevel, GameEngine engine);
 	~Rusher();
+
+	void Update(float deltaTime) override;
+
 };
 

@@ -23,8 +23,9 @@ public:
 protected:
 	float delta = 0.0f;
 	float moveSpeed  = 0.0f;
-	int healt = 1;
+	int healt = 3;
 	float timedelta = 0.0f;
 	bool alive = true;
+	float timeinv;
 };
 

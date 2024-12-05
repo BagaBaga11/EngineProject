@@ -88,10 +88,10 @@ void Level::ProccesContact(b2ContactEvents sensorEvents)
         b2ContactBeginTouchEvent* beginTouch = sensorEvents.beginEvents + i;
         for (size_t t = 0; t < objectArray.size(); t++)
         {
-            if (objectArray[t]->GetShape()->index1 == beginTouch->shapeIdA.index1 ||
-                objectArray[t]->GetShape()->index1 == beginTouch->shapeIdB.index1)
+            GameObject* object = objectArray[t];
+            if (object && ((object->GetShape()->index1 == beginTouch->shapeIdA.index1) && (object->GetShape()->world0 == beginTouch->shapeIdA.world0) && (object->GetShape()->revision == beginTouch->shapeIdA.revision)) || ((object->GetShape()->index1 == beginTouch->shapeIdB.index1) && (object->GetShape()->world0 == beginTouch->shapeIdB.world0) && (object->GetShape()->revision == beginTouch->shapeIdB.revision)) )
             {
-                objectArray[t]->Hit();
+                object->Hit();
             }
         }
     }

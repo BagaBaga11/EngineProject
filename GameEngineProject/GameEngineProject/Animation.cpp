@@ -4,6 +4,15 @@
 #include <string>
 #include <iostream>
 
+Animation::Animation()
+{
+}
+
+Animation::~Animation()
+{
+    animations.clear();
+}
+
 void Animation::AddAnimation(const std::string& name, const std::vector<int>& frames, float frameTime)
 {
     animations[name] = { frames, frameTime };
@@ -25,7 +34,7 @@ void Animation::Update(float deltaTime)
         return;
 
     elapsedTime += deltaTime;
-    if (elapsedTime >= currentAnimation->frameDuration) 
+    if (elapsedTime >= currentAnimation->frameDuration)
     {
         elapsedTime = 0.0f;
 
@@ -63,7 +72,7 @@ std::vector<int> Animation::GetAnimation(const std::string& anim)
             return it->second.frames;
         }
     }
-    
+
     if (currentAnimation)
     {
         return currentAnimation->frames;
