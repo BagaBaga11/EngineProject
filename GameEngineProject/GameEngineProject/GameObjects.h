@@ -5,6 +5,7 @@
 class Level;
 class b2BodyId;
 class b2ShapeId;
+class b2WorldId;
 
 class GameObject : public Sprite
 {
@@ -14,7 +15,6 @@ public:
 
     void StartObject() override;
     virtual void Update(float deltaTime) override;
-    void SetStartPos(float x, float y);
     void SetGravScale(float scale);
     float GetGravScale() const;
     void SetSensor(bool bullet);
@@ -27,6 +27,7 @@ protected:
     Level* mylevel;
     b2BodyId* bodyID = nullptr;
     b2ShapeId* shapeID = nullptr;
+    b2WorldId* worldID = nullptr;
 
     float scaleGrav = 1.0f;
     bool missile = false;

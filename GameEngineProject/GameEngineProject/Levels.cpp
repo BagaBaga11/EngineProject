@@ -27,35 +27,13 @@ void Level::Update(float deltaTime)
 {
     float timeStep = 1.0f / 60.0f;
     int subStepCount = 4;
-    for (auto i = 0; i < 2; ++i)
+    b2World_Step(*GetWorld(), timeStep, subStepCount);
+    for (size_t i = 0; i < everyArray.size(); ++i)
     {
-        b2World_Step(*GetWorld(), timeStep, subStepCount);
+        everyArray[i]->Update(deltaTime);
     }
-
-    for (size_t i = 0; i < objectArray.size(); ++i)
-    {
-        objectArray[i]->Update(deltaTime);
-    }
-
     b2ContactEvents sensorEvents = b2World_GetContactEvents(*GetWorld());
-    for (int i = 0; i < sensorEvents.beginCount; ++i)
-    {
-        b2ContactBeginTouchEvent* beginTouch = sensorEvents.beginEvents + i;
-        for (size_t t = 0; t < objectArray.size(); t++)
-        {
-           if (objectArray[t]->GetShape()->index1 == beginTouch->shapeIdA.index1)
-           {
-               objectArray[t]->Hit();
-           }
-           if (objectArray[t]->GetShape()->index1 == beginTouch->shapeIdB.index1)
-           {
-               objectArray[t]->Hit();
-           }
-        }
-
-
-    }
-
+    ProccesContact(sensorEvents);
 
 }
 
@@ -99,5 +77,22 @@ float Level::GetGrav(const char* initial)
     else
     {
         return 0.0f;
+    }
+}
+
+void Level::ProccesContact(b2ContactEvents sensorEvents)
+{
+    for (int i = 0; i < sensorEvents.beginCount; ++i)
+    {
+
+        b2ContactBeginTouchEvent* beginTouch = sensorEvents.beginEvents + i;
+        for (size_t t = 0; t < objectArray.size(); t++)
+        {
+            if (objectArray[t]->GetShape()->index1 == beginTouch->shapeIdA.index1 ||
+                objectArray[t]->GetShape()->index1 == beginTouch->shapeIdB.index1)
+            {
+                objectArray[t]->Hit();
+            }
+        }
     }
 }

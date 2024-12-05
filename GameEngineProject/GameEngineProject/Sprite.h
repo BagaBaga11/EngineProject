@@ -19,6 +19,7 @@ public:
     SDL_Rect* GetRect() const;
     SDL_Rect* GetPosition() const { return objPosition; }
     SDL_Texture* GetTexture() const { return texture; }
+    void SetStartPos(float x, float y);
 
     Animation animationManager;
 protected:

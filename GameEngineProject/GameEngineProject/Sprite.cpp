@@ -77,3 +77,9 @@ SDL_Rect* Sprite::GetRect() const
 {
     return objRect;
 }
+
+void Sprite::SetStartPos(float x, float y)
+{
+    newposX = x;
+    newposY = y;
+}

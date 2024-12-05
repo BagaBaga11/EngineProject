@@ -5,11 +5,12 @@
 #include "GameObjects.h"
 #include "SDL.h"
 
-class SDL_Texture;
+struct SDL_Texture;
 struct SDL_Renderer;
-struct b2WorldId;
+class b2WorldId;
 class GameObject;
 class Sprite;
+class b2ContactEvents;
 
 class Level
 {
@@ -31,10 +32,12 @@ public:
 	b2WorldId* GetWorld() const;
 	void SetGrav(float horizontal, float vertical);
 	float GetGrav(const char* initial);
+
+	void ProccesContact(b2ContactEvents sensorEvents);
 protected:
 	std::string background;
 	SDL_Renderer* renderL = nullptr;
-	b2WorldId* worldID;
+	b2WorldId* worldID = nullptr;
 	float verticalGrav, horizontalGrav = 0;
 };
 

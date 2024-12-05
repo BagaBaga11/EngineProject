@@ -1,32 +1,22 @@
-﻿  GameObjects.cpp
+﻿  Levels.cpp
 C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\include\SDL_rect.h(79,1): warning C4099: 'SDL_Rect': type name first seen using 'class' now seen using 'struct'
 C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\include\SDL_rect.h(78,16): message : see declaration of 'SDL_Rect'
 C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\include\SDL_render.h(147,19): warning C4099: 'SDL_Texture': type name first seen using 'class' now seen using 'struct'
 C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.h(7,7): message : see declaration of 'SDL_Texture'
 C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\include\SDL_render.h(148,39): warning C4099: 'SDL_Texture': type name first seen using 'class' now seen using 'struct'
 C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\include\SDL_render.h(147,8): message : see declaration of 'SDL_Texture'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Levels.h(8,19): warning C4099: 'SDL_Texture': type name first seen using 'class' now seen using 'struct'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\include\SDL_render.h(147,8): message : see declaration of 'SDL_Texture'
 C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\GameEngineProject.h(8,19): warning C4099: 'SDL_Texture': type name first seen using 'class' now seen using 'struct'
-C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Levels.h(8,7): message : see declaration of 'SDL_Texture'
-C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\GameEngineProject.h(35,19): warning C4099: 'SDL_Texture': type name first seen using 'class' now seen using 'struct'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Levels.h(8,8): message : see declaration of 'SDL_Texture'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\GameEngineProject.h(37,19): warning C4099: 'SDL_Texture': type name first seen using 'class' now seen using 'struct'
 C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\GameEngineProject.h(8,8): message : see declaration of 'SDL_Texture'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\binclude\id.h(38,1): warning C4099: 'b2WorldId': type name first seen using 'class' now seen using 'struct'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\binclude\id.h(37,16): message : see declaration of 'b2WorldId'
 C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\binclude\id.h(45,1): warning C4099: 'b2BodyId': type name first seen using 'class' now seen using 'struct'
 C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\binclude\id.h(44,16): message : see declaration of 'b2BodyId'
 C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\binclude\id.h(53,1): warning C4099: 'b2ShapeId': type name first seen using 'class' now seen using 'struct'
 C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\binclude\id.h(52,16): message : see declaration of 'b2ShapeId'
-C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\GameObjects.cpp(43,59): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\GameObjects.cpp(43,46): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  Sprite.cpp
-C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\include\SDL_rect.h(79,1): warning C4099: 'SDL_Rect': type name first seen using 'class' now seen using 'struct'
-C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\include\SDL_rect.h(78,16): message : see declaration of 'SDL_Rect'
-C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\include\SDL_render.h(147,19): warning C4099: 'SDL_Texture': type name first seen using 'class' now seen using 'struct'
-C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.h(7,7): message : see declaration of 'SDL_Texture'
-C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\include\SDL_render.h(148,39): warning C4099: 'SDL_Texture': type name first seen using 'class' now seen using 'struct'
-C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\include\SDL_render.h(147,8): message : see declaration of 'SDL_Texture'
-C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\GameEngineProject.h(8,19): warning C4099: 'SDL_Texture': type name first seen using 'class' now seen using 'struct'
-C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Levels.h(8,7): message : see declaration of 'SDL_Texture'
-C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\GameEngineProject.h(35,19): warning C4099: 'SDL_Texture': type name first seen using 'class' now seen using 'struct'
-C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\GameEngineProject.h(8,8): message : see declaration of 'SDL_Texture'
-C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(52,22): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(53,22): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-  Generating Code...
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\binclude\types.h(1045,1): warning C4099: 'b2ContactEvents': type name first seen using 'class' now seen using 'struct'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\binclude\types.h(1044,16): message : see declaration of 'b2ContactEvents'
   GameEngineProject.vcxproj -> C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\x64\Debug\GameEngineProject.lib

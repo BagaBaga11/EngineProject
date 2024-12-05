@@ -23,6 +23,8 @@ class GameEngine
 
 		void SetLevel(Level* level);
 		int Tick();
+		float getRandomFloat(float min, float max);
+		bool RandomBool();
 protected:
 		Level* myLevel = nullptr;
 		SDL_Renderer* render = nullptr;

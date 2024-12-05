@@ -7,7 +7,7 @@
 #include <vector>
 #include "Levels.h"
 #include "Pawns.h"
-
+#include <random>
 
 void GameEngine::Start(int sizeX, int sizeY)
 {
@@ -19,7 +19,7 @@ void GameEngine::Start(int sizeX, int sizeY)
 
     b2BodyDef groundBodyDef = b2DefaultBodyDef();
     groundBodyDef.position = b2Vec2{ 240.0f, 680.0f };
-    b2BodyId groundId = b2CreateBody(*myLevel->GetWorld(), &groundBodyDef);
+    b2BodyId groundId = b2CreateBody(*worl, &groundBodyDef);
     b2Polygon groundBox = b2MakeBox(1500.0f, 1.0f);
     b2ShapeDef groundShapeDef = b2DefaultShapeDef();
    // groundShapeDef.filter.categoryBits = Cat::Walls;
@@ -31,10 +31,6 @@ void GameEngine::Start(int sizeX, int sizeY)
 
     SDL_Surface* windowSurface = SDL_GetWindowSurface(window);
     backgroundTexture = LoadTexture(myLevel->GetBackground(), render);
-    for (size_t i = 0; i < myLevel->objectArray.size(); i++)
-    {
-        myLevel->objectArray[i]->StartObject();
-    } 
 }
 bool GameEngine::Update(float deltaTime)
 {          
@@ -97,4 +93,22 @@ SDL_Texture* LoadTexture(std::string filePath, SDL_Renderer* renderTarget)
     return texture;
 }
 
+
+float GameEngine::getRandomFloat(float min, float max) 
+{
+    static std::random_device rd;          
+    static std::mt19937 gen(rd());           
+    std::uniform_real_distribution<float> dis(min, max);
+
+    return dis(gen);                    
+}
+
+bool GameEngine::RandomBool()
+{
+    std::random_device rd; 
+    std::mt19937 gen(rd()); 
+    std::bernoulli_distribution dist(0.5);
+
+    return dist(gen);
+}
 

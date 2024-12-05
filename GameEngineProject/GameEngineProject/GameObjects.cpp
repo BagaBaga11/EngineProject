@@ -32,7 +32,6 @@ GameObject::~GameObject()
 
 void GameObject::StartObject()
 {
-
     b2BodyDef bodyDef = b2DefaultBodyDef();
     bodyDef.type = b2_dynamicBody;
     bodyDef.gravityScale = GetGravScale();
@@ -55,12 +54,6 @@ void GameObject::Update(float deltaTime)
     newposX = position.x;
     newposY = position.y;
     Sprite::Update(deltaTime);
-}
-
-void GameObject::SetStartPos(float x, float y)
-{
-    newposX = x;
-    newposY = y;
 }
 
 void GameObject::SetGravScale(float scale)
