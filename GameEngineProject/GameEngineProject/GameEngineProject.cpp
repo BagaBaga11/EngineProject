@@ -8,9 +8,18 @@
 #include "Levels.h"
 #include "Pawns.h"
 #include <random>
+#include "glad/glad.h"
 
 void GameEngine::Start(int sizeX, int sizeY)
 {
+    SDL_Init(SDL_INIT_VIDEO);
+
+
+    SDL_GL_SetAttribute(SDL_GL_CONTEXT_PROFILE_MASK, SDL_GL_CONTEXT_PROFILE_CORE);
+    SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 3);
+    SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 2);
+    SDL_GL_SetAttribute(SDL_GL_STENCIL_SIZE, 8);
+
     ev = new SDL_Event;
     b2WorldDef worldDef = b2DefaultWorldDef();
     worldDef.gravity = b2Vec2{ myLevel->GetGrav("h"), myLevel->GetGrav("v")};
@@ -25,6 +34,14 @@ void GameEngine::Start(int sizeX, int sizeY)
     b2CreatePolygonShape(groundId, &groundShapeDef, &groundBox);
 
     window = SDL_CreateWindow("SDL2", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, sizeY, sizeX, 0);
+    SDL_GLContext context = SDL_GL_CreateContext(window);
+
+    if (!gladLoadGLLoader((GLADloadproc)SDL_GL_GetProcAddress))
+    {
+        std::cout << "Failed to initialize GLAD" << std::endl;
+        SDL_Quit();
+        return -2;
+    }
     render = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
     myLevel->SetRender(render);
 
