@@ -7,6 +7,9 @@ class SDL_Rect;
 class SDL_Texture;
 class Animation;
 class SDL_Point;
+typedef unsigned int GLuint;
+typedef mat4;
+typedef vec3;
 class Sprite
 {
 public:
@@ -19,19 +22,26 @@ public:
 
     SDL_Rect* GetRect() const;
     SDL_Rect* GetPosition() const { return objPosition; }
-    SDL_Texture* GetTexture() const { return texture; }
     void SetStartPos(float x, float y);
 
     void SetRotation(double angle, SDL_Point pivot);
+    void Draw(GLuint shadrProg, GLuint vao);
+
+    void SetTransform(vec3 position, vec3 scale, float rotationAngle, vec3 rotationAxis);
+
+    GLuint* LoadTexture(std::string filePath);
 
     SDL_Point* GetPivot();
     double GetAngle();
 
     Animation animationManager;
 protected:
-    SDL_Texture* texture = nullptr;
     SDL_Rect* objRect = nullptr;
     SDL_Rect* objPosition = nullptr;
+
+    mat4* modelMatrix = nullptr;
+
+    GLuint* texture = nullptr;;
 
     Level* mylevel;
 

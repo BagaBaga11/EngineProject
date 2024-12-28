@@ -11,6 +11,8 @@ class b2WorldId;
 class GameObject;
 class Sprite;
 class b2ContactEvents;
+typedef unsigned int GLuint;
+
 
 class Level
 {
@@ -24,7 +26,7 @@ public:
 
 	std::vector<GameObject*> objectArray;
 	std::vector<Sprite*> everyArray;
-	std::vector<SDL_Texture*> bmpArray;
+	std::vector<GLuint*> bmpArray;
 
 	SDL_Renderer* GiveRender();
 	void SetRender(SDL_Renderer* rnd);

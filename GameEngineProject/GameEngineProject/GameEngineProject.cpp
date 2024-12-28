@@ -9,6 +9,7 @@
 #include "Pawns.h"
 #include <random>
 #include "glad/glad.h"
+#include "stb_image.h"
 
 void GameEngine::Start(int sizeX, int sizeY)
 {
@@ -40,13 +41,140 @@ void GameEngine::Start(int sizeX, int sizeY)
     {
         std::cout << "Failed to initialize GLAD" << std::endl;
         SDL_Quit();
-        return -2;
     }
     render = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
     myLevel->SetRender(render);
 
     SDL_Surface* windowSurface = SDL_GetWindowSurface(window);
-    backgroundTexture = LoadTexture(myLevel->GetBackground(), render);
+
+    float vertices[] = {
+        // positions         // colors   
+        0.1f,  0.1f, 0.0f,   1.0f, 0.0f, 0.0f,// top right
+        0.1f, -0.1f, 0.0f,   0.0f, 1.0f, 0.0f,// bottom right
+       -0.1f, -0.1f, 0.0f,   0.0f, 0.0f, 1.0f,// bottom left
+       -0.1f,  0.1f, 0.0f,   1.0f, 1.0f, 0.0f // top left
+    };
+
+    unsigned int indices[] = {  // note that we start from 0!
+        0, 1, 3,   // first triangle
+        1, 2, 3    // second triangle
+    };
+
+    vbo = new GLuint; // vertex buffer object
+    glGenBuffers(1, vbo); // Generate 1 buffer
+
+    ebo = new GLuint;
+    glGenBuffers(1, ebo);
+
+   vao = new GLuint;
+    glGenVertexArrays(1, vao);
+
+    glBindVertexArray(*vao);
+
+    glBindBuffer(GL_ARRAY_BUFFER, *vbo);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, *ebo);
+    glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
+
+    const char* vertexShaderSource = R"glsl(
+		#version 330 core
+
+        in vec3 position;
+        in vec3 color;
+        
+        out vec3 Color;
+        out vec2 TexCoord;
+
+        uniform vec2 texCoordStart;
+        uniform vec2 texCoordEnd;
+
+        void main()
+        {
+            Color = color;
+            TexCoord = vec2(position.x * (texCoordEnd.x - texCoordStart.x) + texCoordStart.x,
+                             position.y * (texCoordEnd.y - texCoordStart.y) + texCoordStart.y);
+            gl_Position = vec4(position, 1.0);
+        }
+    )glsl";
+
+
+    // Vertex Shader
+
+    *vertexShader = glCreateShader(GL_VERTEX_SHADER);
+    glShaderSource(*vertexShader, 1, &vertexShaderSource, NULL);
+    glCompileShader(*vertexShader);
+
+    GLint  success;
+    char infoLog[512];
+    glGetShaderiv(*vertexShader, GL_COMPILE_STATUS, &success);
+
+    if (!success)
+    {
+        glGetShaderInfoLog(*vertexShader, 512, NULL, infoLog);
+        std::cout << "ERROR::SHADER::VERTEX::COMPILATION_FAILED\n" << infoLog << std::endl;
+    }
+
+    // Fragment Shader
+
+    const char* fragmentShaderSource = R"glsl(
+		#version 330 core
+		in vec3 Color;
+		in vec2 TexCoord;
+
+		out vec4 outColor;
+
+		uniform sampler2D ourTexture;
+		uniform float scaleFactor;
+
+		void main()
+		{
+			 vec2 scaledTexCoord = TexCoord * scaleFactor; // Scale texture by 2x
+			outColor = texture(ourTexture, scaledTexCoord);
+
+			 if (outColor == vec4(1.0f, 0.0f, 1.0f, 1.0f)) 
+				 discard;
+		}
+    )glsl";
+
+    *fragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
+
+    glShaderSource(*fragmentShader, 1, &fragmentShaderSource, NULL);
+    glCompileShader(*fragmentShader);
+
+    glGetShaderiv(*fragmentShader, GL_COMPILE_STATUS, &success);
+
+    if (!success)
+    {
+        glGetShaderInfoLog(*fragmentShader, 512, NULL, infoLog);
+        std::cout << "ERROR::SHADER::FRAGMENT::COMPILATION_FAILED\n" << infoLog << std::endl;
+    }
+
+    shaderProgram = new GLuint;
+    *shaderProgram = glCreateProgram();
+
+    glAttachShader(*shaderProgram, *vertexShader);
+    glAttachShader(*shaderProgram, *fragmentShader);
+    glLinkProgram(*shaderProgram);
+
+    glDeleteShader(*vertexShader);
+    glDeleteShader(*fragmentShader);
+
+    glGetProgramiv(*shaderProgram, GL_LINK_STATUS, &success);
+    if (!success) {
+        glGetProgramInfoLog(*shaderProgram, 512, NULL, infoLog);
+        std::cout << "ERROR::SHADER::PROGRAM::COMPILATION_FAILED\n" << infoLog << std::endl;
+    }
+
+    // 3. then set our vertex attributes pointers
+    GLint posAttrib = glGetAttribLocation(*shaderProgram, "position");
+    glEnableVertexAttribArray(posAttrib);
+    glVertexAttribPointer(posAttrib, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)0);
+
+    GLint colorAttrib = glGetAttribLocation(*shaderProgram, "color");
+    glEnableVertexAttribArray(colorAttrib);
+    glVertexAttribPointer(colorAttrib, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)(3 * sizeof(float)));
+
 }
 bool GameEngine::Update(float deltaTime)
 {          
@@ -57,22 +185,24 @@ bool GameEngine::Update(float deltaTime)
             return false;
         }
         myLevel->Update(deltaTime);
-        SDL_RenderClear(render);
-        SDL_RenderCopy(render, backgroundTexture, NULL, NULL);
         for (size_t i = 0; i < myLevel->bmpArray.size(); ++i)
         { 
-            SDL_RenderCopyEx(render, myLevel->bmpArray[i], myLevel->everyArray[i]->GetRect(), myLevel->everyArray[i]->GetPosition(), myLevel->everyArray[i]->GetAngle(), myLevel->everyArray[i]->GetPivot(), SDL_FLIP_NONE);
+            myLevel->everyArray.Draw(*shaderProgram);
         }
-        SDL_RenderPresent(render);
+        SDL_GL_SwapWindow(window);
 
         return true;
 }
 
 void GameEngine::End()
 {
+    delete shaderProgram;
+    delete vbo;
+    delete ebo;
+    delete vao;
     delete ev;
+    glBindVertexArray(0);
     b2DestroyWorld(*myLevel->GetWorld());
-    SDL_DestroyTexture(backgroundTexture);
     SDL_DestroyRenderer(render);
     SDL_DestroyWindow(window);
 }
@@ -86,29 +216,6 @@ int GameEngine::Tick()
 {
     return SDL_GetTicks();
 }
-
-
-SDL_Texture* LoadTexture(std::string filePath, SDL_Renderer* renderTarget)
-{
-    SDL_Texture* texture = nullptr;
-    SDL_Surface* surface = SDL_LoadBMP(filePath.c_str());
-    if (surface == NULL)
-    {
-        std::cout << "bruh" << std::endl;
-    }
-    else
-    {
-        SDL_SetColorKey(surface, SDL_TRUE, SDL_MapRGB(surface->format, 255, 0, 255));
-        texture = SDL_CreateTextureFromSurface(renderTarget, surface);
-        if (texture == NULL)
-            std::cout << "Errodr" << std::endl;
-    }
-
-    SDL_FreeSurface(surface);
-
-    return texture;
-}
-
 
 float GameEngine::getRandomFloat(float min, float max) 
 {

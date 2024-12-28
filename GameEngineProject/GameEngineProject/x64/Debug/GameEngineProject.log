@@ -1,4 +1,12 @@
-﻿  Levels.cpp
+﻿  GameEngineProject.cpp
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.h(11,9): error C2653: 'glm': is not a class or namespace name
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.h(11,18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.h(12,9): error C2653: 'glm': is not a class or namespace name
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.h(12,18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.h(30,23): error C2653: 'glm': is not a class or namespace name
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.h(30,43): error C2653: 'glm': is not a class or namespace name
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.h(30,81): error C2653: 'glm': is not a class or namespace name
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.h(42,5): error C2653: 'glm': is not a class or namespace name
 C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\include\SDL_rect.h(49,1): warning C4099: 'SDL_Point': type name first seen using 'class' now seen using 'struct'
 C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\include\SDL_rect.h(48,16): message : see declaration of 'SDL_Point'
 C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\include\SDL_rect.h(79,1): warning C4099: 'SDL_Rect': type name first seen using 'class' now seen using 'struct'
@@ -11,8 +19,6 @@ C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineP
 C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\include\SDL_render.h(147,8): message : see declaration of 'SDL_Texture'
 C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\GameEngineProject.h(8,19): warning C4099: 'SDL_Texture': type name first seen using 'class' now seen using 'struct'
 C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Levels.h(8,8): message : see declaration of 'SDL_Texture'
-C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\GameEngineProject.h(37,19): warning C4099: 'SDL_Texture': type name first seen using 'class' now seen using 'struct'
-C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\GameEngineProject.h(8,8): message : see declaration of 'SDL_Texture'
 C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\binclude\id.h(38,1): warning C4099: 'b2WorldId': type name first seen using 'class' now seen using 'struct'
 C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\binclude\id.h(37,16): message : see declaration of 'b2WorldId'
 C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\binclude\id.h(45,1): warning C4099: 'b2BodyId': type name first seen using 'class' now seen using 'struct'
@@ -21,4 +27,201 @@ C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineP
 C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\binclude\id.h(52,16): message : see declaration of 'b2ShapeId'
 C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\binclude\types.h(1045,1): warning C4099: 'b2ContactEvents': type name first seen using 'class' now seen using 'struct'
 C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\binclude\types.h(1044,16): message : see declaration of 'b2ContactEvents'
-  GameEngineProject.vcxproj -> C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\x64\Debug\GameEngineProject.lib
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\GameEngineProject.cpp(190,33): error C2039: 'Draw': is not a member of 'std::vector<Sprite *,std::allocator<Sprite *>>'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Levels.h(28,7): message : see declaration of 'std::vector<Sprite *,std::allocator<Sprite *>>'
+  GameObjects.cpp
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.h(11,9): error C2653: 'glm': is not a class or namespace name
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.h(11,18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.h(12,9): error C2653: 'glm': is not a class or namespace name
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.h(12,18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.h(30,23): error C2653: 'glm': is not a class or namespace name
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.h(30,43): error C2653: 'glm': is not a class or namespace name
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.h(30,81): error C2653: 'glm': is not a class or namespace name
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.h(42,5): error C2653: 'glm': is not a class or namespace name
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\include\SDL_rect.h(49,1): warning C4099: 'SDL_Point': type name first seen using 'class' now seen using 'struct'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\include\SDL_rect.h(48,16): message : see declaration of 'SDL_Point'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\include\SDL_rect.h(79,1): warning C4099: 'SDL_Rect': type name first seen using 'class' now seen using 'struct'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\include\SDL_rect.h(78,16): message : see declaration of 'SDL_Rect'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\include\SDL_render.h(147,19): warning C4099: 'SDL_Texture': type name first seen using 'class' now seen using 'struct'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.h(7,7): message : see declaration of 'SDL_Texture'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\include\SDL_render.h(148,39): warning C4099: 'SDL_Texture': type name first seen using 'class' now seen using 'struct'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\include\SDL_render.h(147,8): message : see declaration of 'SDL_Texture'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Levels.h(8,19): warning C4099: 'SDL_Texture': type name first seen using 'class' now seen using 'struct'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\include\SDL_render.h(147,8): message : see declaration of 'SDL_Texture'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\binclude\id.h(38,1): warning C4099: 'b2WorldId': type name first seen using 'class' now seen using 'struct'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\binclude\id.h(37,16): message : see declaration of 'b2WorldId'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\binclude\id.h(45,1): warning C4099: 'b2BodyId': type name first seen using 'class' now seen using 'struct'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\binclude\id.h(44,16): message : see declaration of 'b2BodyId'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\binclude\id.h(53,1): warning C4099: 'b2ShapeId': type name first seen using 'class' now seen using 'struct'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\binclude\id.h(52,16): message : see declaration of 'b2ShapeId'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\binclude\types.h(1045,1): warning C4099: 'b2ContactEvents': type name first seen using 'class' now seen using 'struct'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\binclude\types.h(1044,16): message : see declaration of 'b2ContactEvents'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\GameEngineProject.h(8,19): warning C4099: 'SDL_Texture': type name first seen using 'class' now seen using 'struct'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Levels.h(8,8): message : see declaration of 'SDL_Texture'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\GameObjects.cpp(43,56): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\GameObjects.cpp(43,45): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  Levels.cpp
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.h(11,9): error C2653: 'glm': is not a class or namespace name
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.h(11,18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.h(12,9): error C2653: 'glm': is not a class or namespace name
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.h(12,18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.h(30,23): error C2653: 'glm': is not a class or namespace name
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.h(30,43): error C2653: 'glm': is not a class or namespace name
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.h(30,81): error C2653: 'glm': is not a class or namespace name
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.h(42,5): error C2653: 'glm': is not a class or namespace name
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\include\SDL_rect.h(49,1): warning C4099: 'SDL_Point': type name first seen using 'class' now seen using 'struct'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\include\SDL_rect.h(48,16): message : see declaration of 'SDL_Point'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\include\SDL_rect.h(79,1): warning C4099: 'SDL_Rect': type name first seen using 'class' now seen using 'struct'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\include\SDL_rect.h(78,16): message : see declaration of 'SDL_Rect'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\include\SDL_render.h(147,19): warning C4099: 'SDL_Texture': type name first seen using 'class' now seen using 'struct'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.h(7,7): message : see declaration of 'SDL_Texture'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\include\SDL_render.h(148,39): warning C4099: 'SDL_Texture': type name first seen using 'class' now seen using 'struct'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\include\SDL_render.h(147,8): message : see declaration of 'SDL_Texture'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Levels.h(8,19): warning C4099: 'SDL_Texture': type name first seen using 'class' now seen using 'struct'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\include\SDL_render.h(147,8): message : see declaration of 'SDL_Texture'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\GameEngineProject.h(8,19): warning C4099: 'SDL_Texture': type name first seen using 'class' now seen using 'struct'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Levels.h(8,8): message : see declaration of 'SDL_Texture'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\binclude\id.h(38,1): warning C4099: 'b2WorldId': type name first seen using 'class' now seen using 'struct'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\binclude\id.h(37,16): message : see declaration of 'b2WorldId'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\binclude\id.h(45,1): warning C4099: 'b2BodyId': type name first seen using 'class' now seen using 'struct'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\binclude\id.h(44,16): message : see declaration of 'b2BodyId'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\binclude\id.h(53,1): warning C4099: 'b2ShapeId': type name first seen using 'class' now seen using 'struct'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\binclude\id.h(52,16): message : see declaration of 'b2ShapeId'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\binclude\types.h(1045,1): warning C4099: 'b2ContactEvents': type name first seen using 'class' now seen using 'struct'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\binclude\types.h(1044,16): message : see declaration of 'b2ContactEvents'
+  Pawns.cpp
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.h(11,9): error C2653: 'glm': is not a class or namespace name
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.h(11,18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.h(12,9): error C2653: 'glm': is not a class or namespace name
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.h(12,18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.h(30,23): error C2653: 'glm': is not a class or namespace name
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.h(30,43): error C2653: 'glm': is not a class or namespace name
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.h(30,81): error C2653: 'glm': is not a class or namespace name
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.h(42,5): error C2653: 'glm': is not a class or namespace name
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\include\SDL_rect.h(49,1): warning C4099: 'SDL_Point': type name first seen using 'class' now seen using 'struct'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\include\SDL_rect.h(48,16): message : see declaration of 'SDL_Point'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\include\SDL_rect.h(79,1): warning C4099: 'SDL_Rect': type name first seen using 'class' now seen using 'struct'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\include\SDL_rect.h(78,16): message : see declaration of 'SDL_Rect'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\include\SDL_render.h(147,19): warning C4099: 'SDL_Texture': type name first seen using 'class' now seen using 'struct'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.h(7,7): message : see declaration of 'SDL_Texture'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\include\SDL_render.h(148,39): warning C4099: 'SDL_Texture': type name first seen using 'class' now seen using 'struct'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\include\SDL_render.h(147,8): message : see declaration of 'SDL_Texture'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Levels.h(8,19): warning C4099: 'SDL_Texture': type name first seen using 'class' now seen using 'struct'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\include\SDL_render.h(147,8): message : see declaration of 'SDL_Texture'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\GameEngineProject.h(8,19): warning C4099: 'SDL_Texture': type name first seen using 'class' now seen using 'struct'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Levels.h(8,8): message : see declaration of 'SDL_Texture'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\binclude\id.h(38,1): warning C4099: 'b2WorldId': type name first seen using 'class' now seen using 'struct'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\binclude\id.h(37,16): message : see declaration of 'b2WorldId'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\binclude\id.h(45,1): warning C4099: 'b2BodyId': type name first seen using 'class' now seen using 'struct'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\binclude\id.h(44,16): message : see declaration of 'b2BodyId'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\binclude\id.h(53,1): warning C4099: 'b2ShapeId': type name first seen using 'class' now seen using 'struct'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\binclude\id.h(52,16): message : see declaration of 'b2ShapeId'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\binclude\types.h(1045,1): warning C4099: 'b2ContactEvents': type name first seen using 'class' now seen using 'struct'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\binclude\types.h(1044,16): message : see declaration of 'b2ContactEvents'
+  Sprite.cpp
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.h(11,9): error C2653: 'glm': is not a class or namespace name
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.h(11,18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.h(12,9): error C2653: 'glm': is not a class or namespace name
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.h(12,18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.h(30,23): error C2653: 'glm': is not a class or namespace name
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.h(30,43): error C2653: 'glm': is not a class or namespace name
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.h(30,81): error C2653: 'glm': is not a class or namespace name
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.h(42,5): error C2653: 'glm': is not a class or namespace name
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\include\SDL_rect.h(49,1): warning C4099: 'SDL_Point': type name first seen using 'class' now seen using 'struct'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\include\SDL_rect.h(48,16): message : see declaration of 'SDL_Point'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\include\SDL_rect.h(79,1): warning C4099: 'SDL_Rect': type name first seen using 'class' now seen using 'struct'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\include\SDL_rect.h(78,16): message : see declaration of 'SDL_Rect'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\include\SDL_render.h(147,19): warning C4099: 'SDL_Texture': type name first seen using 'class' now seen using 'struct'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.h(7,7): message : see declaration of 'SDL_Texture'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\include\SDL_render.h(148,39): warning C4099: 'SDL_Texture': type name first seen using 'class' now seen using 'struct'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\include\SDL_render.h(147,8): message : see declaration of 'SDL_Texture'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Levels.h(8,19): warning C4099: 'SDL_Texture': type name first seen using 'class' now seen using 'struct'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\include\SDL_render.h(147,8): message : see declaration of 'SDL_Texture'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\GameEngineProject.h(8,19): warning C4099: 'SDL_Texture': type name first seen using 'class' now seen using 'struct'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Levels.h(8,8): message : see declaration of 'SDL_Texture'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(16,19): error C2440: '=': cannot convert from 'glm::mat4 *' to 'mat4 *'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(16,19): message : Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or parenthesized function-style cast
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(51,22): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(52,22): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(100,52): error C2672: 'glm::value_ptr': no matching overloaded function found
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\glad\include\glm\gtc\type_ptr.inl(161,24): message : could be 'T *glm::value_ptr(glm::qua<T,Q> &)'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(100,52): message : 'T *glm::value_ptr(glm::qua<T,Q> &)': could not deduce template argument for 'glm::qua<T,Q> &' from 'mat4'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\glad\include\glm\gtc\type_ptr.inl(155,31): message : or       'const T *glm::value_ptr(const glm::qua<T,Q> &)'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(100,52): message : 'const T *glm::value_ptr(const glm::qua<T,Q> &)': could not deduce template argument for 'const glm::qua<T,Q> &' from 'mat4'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\glad\include\glm\gtc\type_ptr.inl(149,25): message : or       'T *glm::value_ptr(glm::mat<4,3,T,Q> &)'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(100,52): message : 'T *glm::value_ptr(glm::mat<4,3,T,Q> &)': could not deduce template argument for 'glm::mat<4,3,T,Q> &' from 'mat4'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\glad\include\glm\gtc\type_ptr.inl(143,30): message : or       'const T *glm::value_ptr(const glm::mat<4,3,T,Q> &)'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(100,52): message : 'const T *glm::value_ptr(const glm::mat<4,3,T,Q> &)': could not deduce template argument for 'const glm::mat<4,3,T,Q> &' from 'mat4'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\glad\include\glm\gtc\type_ptr.inl(137,24): message : or       'T *glm::value_ptr(glm::mat<3,4,T,Q> &)'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(100,52): message : 'T *glm::value_ptr(glm::mat<3,4,T,Q> &)': could not deduce template argument for 'glm::mat<3,4,T,Q> &' from 'mat4'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\glad\include\glm\gtc\type_ptr.inl(131,30): message : or       'const T *glm::value_ptr(const glm::mat<3,4,T,Q> &)'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(100,52): message : 'const T *glm::value_ptr(const glm::mat<3,4,T,Q> &)': could not deduce template argument for 'const glm::mat<3,4,T,Q> &' from 'mat4'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\glad\include\glm\gtc\type_ptr.inl(125,24): message : or       'T *glm::value_ptr(glm::mat<4,2,T,Q> &)'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(100,52): message : 'T *glm::value_ptr(glm::mat<4,2,T,Q> &)': could not deduce template argument for 'glm::mat<4,2,T,Q> &' from 'mat4'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\glad\include\glm\gtc\type_ptr.inl(119,30): message : or       'const T *glm::value_ptr(const glm::mat<4,2,T,Q> &)'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(100,52): message : 'const T *glm::value_ptr(const glm::mat<4,2,T,Q> &)': could not deduce template argument for 'const glm::mat<4,2,T,Q> &' from 'mat4'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\glad\include\glm\gtc\type_ptr.inl(113,24): message : or       'T *glm::value_ptr(glm::mat<2,4,T,Q> &)'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(100,52): message : 'T *glm::value_ptr(glm::mat<2,4,T,Q> &)': could not deduce template argument for 'glm::mat<2,4,T,Q> &' from 'mat4'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\glad\include\glm\gtc\type_ptr.inl(107,30): message : or       'const T *glm::value_ptr(const glm::mat<2,4,T,Q> &)'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(100,52): message : 'const T *glm::value_ptr(const glm::mat<2,4,T,Q> &)': could not deduce template argument for 'const glm::mat<2,4,T,Q> &' from 'mat4'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\glad\include\glm\gtc\type_ptr.inl(101,24): message : or       'T *glm::value_ptr(glm::mat<3,2,T,Q> &)'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(100,52): message : 'T *glm::value_ptr(glm::mat<3,2,T,Q> &)': could not deduce template argument for 'glm::mat<3,2,T,Q> &' from 'mat4'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\glad\include\glm\gtc\type_ptr.inl(95,30): message : or       'const T *glm::value_ptr(const glm::mat<3,2,T,Q> &)'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(100,52): message : 'const T *glm::value_ptr(const glm::mat<3,2,T,Q> &)': could not deduce template argument for 'const glm::mat<3,2,T,Q> &' from 'mat4'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\glad\include\glm\gtc\type_ptr.inl(89,24): message : or       'T *glm::value_ptr(glm::mat<2,3,T,Q> &)'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(100,52): message : 'T *glm::value_ptr(glm::mat<2,3,T,Q> &)': could not deduce template argument for 'glm::mat<2,3,T,Q> &' from 'mat4'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\glad\include\glm\gtc\type_ptr.inl(83,30): message : or       'const T *glm::value_ptr(const glm::mat<2,3,T,Q> &)'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(100,52): message : 'const T *glm::value_ptr(const glm::mat<2,3,T,Q> &)': could not deduce template argument for 'const glm::mat<2,3,T,Q> &' from 'mat4'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\glad\include\glm\gtc\type_ptr.inl(77,24): message : or       'T *glm::value_ptr(glm::mat<4,4,T,Q> &)'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(100,52): message : 'T *glm::value_ptr(glm::mat<4,4,T,Q> &)': could not deduce template argument for 'glm::mat<4,4,T,Q> &' from 'mat4'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\glad\include\glm\gtc\type_ptr.inl(71,30): message : or       'const T *glm::value_ptr(const glm::mat<4,4,T,Q> &)'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(100,52): message : 'const T *glm::value_ptr(const glm::mat<4,4,T,Q> &)': could not deduce template argument for 'const glm::mat<4,4,T,Q> &' from 'mat4'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\glad\include\glm\gtc\type_ptr.inl(65,24): message : or       'T *glm::value_ptr(glm::mat<3,3,T,Q> &)'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(100,52): message : 'T *glm::value_ptr(glm::mat<3,3,T,Q> &)': could not deduce template argument for 'glm::mat<3,3,T,Q> &' from 'mat4'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\glad\include\glm\gtc\type_ptr.inl(59,30): message : or       'const T *glm::value_ptr(const glm::mat<3,3,T,Q> &)'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(100,52): message : 'const T *glm::value_ptr(const glm::mat<3,3,T,Q> &)': could not deduce template argument for 'const glm::mat<3,3,T,Q> &' from 'mat4'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\glad\include\glm\gtc\type_ptr.inl(53,24): message : or       'T *glm::value_ptr(glm::mat<2,2,T,Q> &)'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(100,52): message : 'T *glm::value_ptr(glm::mat<2,2,T,Q> &)': could not deduce template argument for 'glm::mat<2,2,T,Q> &' from 'mat4'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\glad\include\glm\gtc\type_ptr.inl(47,30): message : or       'const T *glm::value_ptr(const glm::mat<2,2,T,Q> &)'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(100,52): message : 'const T *glm::value_ptr(const glm::mat<2,2,T,Q> &)': could not deduce template argument for 'const glm::mat<2,2,T,Q> &' from 'mat4'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\glad\include\glm\gtc\type_ptr.inl(41,24): message : or       'T *glm::value_ptr(glm::vec<4,T,Q> &)'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(100,52): message : 'T *glm::value_ptr(glm::vec<4,T,Q> &)': could not deduce template argument for 'glm::vec<4,T,Q> &' from 'mat4'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\glad\include\glm\gtc\type_ptr.inl(35,30): message : or       'const T *glm::value_ptr(const glm::vec<4,T,Q> &)'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(100,52): message : 'const T *glm::value_ptr(const glm::vec<4,T,Q> &)': could not deduce template argument for 'const glm::vec<4,T,Q> &' from 'mat4'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\glad\include\glm\gtc\type_ptr.inl(29,24): message : or       'T *glm::value_ptr(glm::vec<3,T,Q> &)'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(100,52): message : 'T *glm::value_ptr(glm::vec<3,T,Q> &)': could not deduce template argument for 'glm::vec<3,T,Q> &' from 'mat4'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\glad\include\glm\gtc\type_ptr.inl(23,31): message : or       'const T *glm::value_ptr(const glm::vec<3,T,Q> &)'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(100,52): message : 'const T *glm::value_ptr(const glm::vec<3,T,Q> &)': could not deduce template argument for 'const glm::vec<3,T,Q> &' from 'mat4'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\glad\include\glm\gtc\type_ptr.inl(17,24): message : or       'T *glm::value_ptr(glm::vec<2,T,Q> &)'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(100,52): message : 'T *glm::value_ptr(glm::vec<2,T,Q> &)': could not deduce template argument for 'glm::vec<2,T,Q> &' from 'mat4'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\glad\include\glm\gtc\type_ptr.inl(11,30): message : or       'const T *glm::value_ptr(const glm::vec<2,T,Q> &)'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(100,52): message : 'const T *glm::value_ptr(const glm::vec<2,T,Q> &)': could not deduce template argument for 'const glm::vec<2,T,Q> &' from 'mat4'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\glad\include\glm\gtc\type_ptr.hpp(65,53): message : or       'const genType::value_type *glm::value_ptr(const genType &)'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(100,52): message : Failed to specialize function template 'const genType::value_type *glm::value_ptr(const genType &)'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(100,52): message : With the following template arguments:
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(100,52): message : 'genType=mat4'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(100,5): error C2198: 'PFNGLUNIFORMMATRIX4FVPROC': too few arguments for call
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(105,14): error C2511: 'void Sprite::SetTransform(glm::vec3,glm::vec3,float,glm::vec3)': overloaded member function not found in 'Sprite'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Levels.h(12,7): message : see declaration of 'Sprite'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(107,6): error C2597: illegal reference to non-static member 'Sprite::modelMatrix'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.h(42,16): message : see declaration of 'Sprite::modelMatrix'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(108,6): error C2597: illegal reference to non-static member 'Sprite::modelMatrix'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.h(42,16): message : see declaration of 'Sprite::modelMatrix'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(108,36): error C2597: illegal reference to non-static member 'Sprite::modelMatrix'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.h(42,16): message : see declaration of 'Sprite::modelMatrix'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(108,25): error C2672: 'glm::translate': no matching overloaded function found
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\glad\include\glm\ext\matrix_transform.hpp(64,46): message : could be 'glm::mat<4,4,T,Q> glm::translate(const glm::mat<4,4,T,Q> &,const glm::vec<3,T,Q> &)'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(109,6): error C2597: illegal reference to non-static member 'Sprite::modelMatrix'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.h(42,16): message : see declaration of 'Sprite::modelMatrix'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(109,32): error C2597: illegal reference to non-static member 'Sprite::modelMatrix'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.h(42,16): message : see declaration of 'Sprite::modelMatrix'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(109,25): error C2672: 'glm::scale': no matching overloaded function found
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\glad\include\glm\ext\matrix_transform.hpp(95,32): message : could be 'glm::mat<4,4,T,Q> glm::scale(const glm::mat<4,4,T,Q> &,const glm::vec<3,T,Q> &)'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(110,6): error C2597: illegal reference to non-static member 'Sprite::modelMatrix'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.h(42,16): message : see declaration of 'Sprite::modelMatrix'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(110,33): error C2597: illegal reference to non-static member 'Sprite::modelMatrix'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.h(42,16): message : see declaration of 'Sprite::modelMatrix'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(110,25): error C2672: 'glm::rotate': no matching overloaded function found
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\glad\include\glm\ext\quaternion_transform.hpp(43,26): message : could be 'glm::qua<T,Q> glm::rotate(const glm::qua<T,Q> &,const T &,const glm::vec<3,T,Q> &)'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\glad\include\glm\ext\matrix_transform.hpp(80,32): message : or       'glm::mat<4,4,T,Q> glm::rotate(const glm::mat<4,4,T,Q> &,T,const glm::vec<3,T,Q> &)'
+  Generating Code...
