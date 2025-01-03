@@ -113,6 +113,7 @@
     <Lib>
       <AdditionalLibraryDirectories>$(ProjectDir)Vendor\SDL2;$(ProjectDir)Vendor\Box2D;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>SDL2.lib;SDL2main.lib;box2dd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <Verbose>true</Verbose>
     </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -138,6 +139,9 @@
     <ClCompile Include="Levels.cpp" />
     <ClCompile Include="Pawns.cpp" />
     <ClCompile Include="Sprite.cpp" />
+    <ClCompile Include="Vendor\glad\src\glad.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Animation.h" />

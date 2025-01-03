@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include <memory>
 #include "Animation.h"
 
 class Level;
@@ -8,8 +9,22 @@ class SDL_Texture;
 class Animation;
 class SDL_Point;
 typedef unsigned int GLuint;
-typedef mat4;
-typedef vec3;
+
+class Transform {
+public:
+    Transform();
+    ~Transform();
+    void SetPosition(float x, float y, float z);
+    void SetScale(float x, float y, float z);
+    void SetRotation(float angle, float x, float y, float z);
+
+    void Draw(unsigned int textureID);
+    void Start();
+private:
+    struct Impl;
+    std::unique_ptr<Impl> pImpl;
+};
+
 class Sprite
 {
 public:
@@ -25,11 +40,7 @@ public:
     void SetStartPos(float x, float y);
 
     void SetRotation(double angle, SDL_Point pivot);
-    void Draw(GLuint shadrProg, GLuint vao);
-
-    void SetTransform(vec3 position, vec3 scale, float rotationAngle, vec3 rotationAxis);
-
-    GLuint* LoadTexture(std::string filePath);
+    void Draw();
 
     SDL_Point* GetPivot();
     double GetAngle();
@@ -38,10 +49,6 @@ public:
 protected:
     SDL_Rect* objRect = nullptr;
     SDL_Rect* objPosition = nullptr;
-
-    mat4* modelMatrix = nullptr;
-
-    GLuint* texture = nullptr;;
 
     Level* mylevel;
 
