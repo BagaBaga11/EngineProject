@@ -19,6 +19,7 @@ struct Transform::Impl {
     GLuint vao;
     GLuint shaderProgram;
     GLuint texture;
+    float size, col, lin;
 };
 
 Transform::Transform() : pImpl(std::make_unique<Impl>()) {
@@ -51,11 +52,35 @@ void Transform::SetRotation(float angle, float x, float y, float z) {
 
 void Transform::Draw()
 {
+    GLuint texCoordStartLocation = glGetUniformLocation(pImpl->shaderProgram, "texCoordStart");
+    GLuint texCoordEndLocation = glGetUniformLocation(pImpl->shaderProgram, "texCoordEnd");
+    GLuint scaleFactorLocation = glGetUniformLocation(pImpl->shaderProgram, "scaleFactor");
+
+    glUseProgram(pImpl->shaderProgram);
+    glUniform1f(scaleFactorLocation, pImpl->size);
+
+
+    float x1 = 1.0 / (2 * pImpl->col);
+    float x2 = x1 + 2.0 / (2 * pImpl->col);
+    float y1 = ((2 * pImpl->lin) + 1) / (2 * pImpl->lin);
+    float y2 = y1 - (2 / (2 * pImpl->lin));
+
+    GLuint textureLocation;
+    GLuint textureLocation2;
+
+    glUniform2f(texCoordStartLocation, x1, y2);
+    glUniform2f(texCoordEndLocation, x2, y1);
+
+    glClearColor(0.2f, 0.5f, 0.3f, 1.0f);
+
     glUseProgram(pImpl->shaderProgram);
     glBindVertexArray(pImpl->vao);
 
     glActiveTexture(GL_TEXTURE0);
     glBindTexture(GL_TEXTURE_2D, pImpl->texture);
+    textureLocation = glGetUniformLocation(pImpl->shaderProgram, "ourTexture");
+
+    glUniform1i(textureLocation, 0);
 
     GLuint modelLoc = glGetUniformLocation(pImpl->shaderProgram, "model");
     glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(pImpl->modelMatrix));
@@ -68,11 +93,11 @@ void Transform::Start()
 {
 
     float vertices[] = {
-        // positions          // colors
-         0.1f,  0.1f, 0.0f,   1.0f, 0.0f, 0.0f, // top right
-         0.1f, -0.1f, 0.0f,   0.0f, 1.0f, 0.0f, // bottom right
-        -0.1f, -0.1f, 0.0f,   0.0f, 0.0f, 1.0f, // bottom left
-        -0.1f,  0.1f, 0.0f,   1.0f, 1.0f, 0.0f  // top left
+        // positions          // colors         // texture coords
+         0.1f,  0.1f, 0.0f,   1.0f, 0.0f, 0.0f,  1.0f, 1.0f, // top right
+         0.1f, -0.1f, 0.0f,   0.0f, 1.0f, 0.0f,  1.0f, 0.0f, // bottom right
+        -0.1f, -0.1f, 0.0f,   0.0f, 0.0f, 1.0f,  0.0f, 0.0f, // bottom left
+        -0.1f,  0.1f, 0.0f,   1.0f, 1.0f, 0.0f,  0.0f, 1.0f  // top left
     };
 
     unsigned int indices[] = {
@@ -95,29 +120,35 @@ void Transform::Start()
     glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
 
     const char* vertexShaderSource = R"glsl(
-        #version 330 core
-        layout(location = 0) in vec3 position;
-        layout(location = 1) in vec3 color;
+    #version 330 core
+    layout(location = 0) in vec3 position;
+    layout(location = 1) in vec3 color;
+    layout(location = 2) in vec2 texCoord;
 
-        out vec3 Color;
+    out vec3 Color;
+    out vec2 TexCoord;
 
-        uniform mat4 model;
+    uniform mat4 model;
 
-        void main() {
-            Color = color;
-            gl_Position = model * vec4(position, 1.0);
-        }
+    void main() {
+        Color = color;
+        TexCoord = texCoord;
+        gl_Position = model * vec4(position, 1.0);
+    }
     )glsl";
 
     const char* fragmentShaderSource = R"glsl(
         #version 330 core
-        in vec3 Color;
+    in vec3 Color;
+    in vec2 TexCoord; // Receive texture coordinates
 
-        out vec4 FragColor;
+    out vec4 FragColor;
 
-        void main() {
-            FragColor = vec4(Color, 1.0);
-        }
+    uniform sampler2D ourTexture; // Texture uniform
+
+    void main() {
+        FragColor = texture(ourTexture, TexCoord); // Sample texture
+    }
     )glsl";
 
     GLuint vertexShader = glCreateShader(GL_VERTEX_SHADER);
@@ -156,65 +187,44 @@ void Transform::Start()
     glDeleteShader(vertexShader);
     glDeleteShader(fragmentShader);
 
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)0);
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)0);
     glEnableVertexAttribArray(0);
 
-    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)(3 * sizeof(float)));
+    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(3 * sizeof(float)));
     glEnableVertexAttribArray(1);
+
+    glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(6 * sizeof(float)));
+    glEnableVertexAttribArray(2);
 
     glBindVertexArray(0);  
 }
 
 void Transform::SetTexture(const char* image, float Ncol,float Nlin, float size)
 {
+    pImpl->col = Ncol;
+    pImpl->lin = Nlin;
+    pImpl->size = size;
     glGenTextures(1, &pImpl->texture);
     glBindTexture(GL_TEXTURE_2D, pImpl->texture);
 
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 
     stbi_set_flip_vertically_on_load(true);
 
     int width, height, nrChannels;
     unsigned char* data = stbi_load(image, &width, &height, &nrChannels, 0);
-    if (data)
-    {
-        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
+    if (data) {
+        GLenum format = (nrChannels == 4) ? GL_RGBA : GL_RGB;
+        glTexImage2D(GL_TEXTURE_2D, 0, format, width, height, 0, format, GL_UNSIGNED_BYTE, data);
         glGenerateMipmap(GL_TEXTURE_2D);
     }
-    else
-    {
-        std::cout << "Failed to load texture" << std::endl;
+    else {
+        std::cout << "Failed to load texture: " << image << std::endl;
     }
     stbi_image_free(data);
-
-    GLuint texCoordStartLocation = glGetUniformLocation(pImpl->shaderProgram, "texCoordStart");
-    GLuint texCoordEndLocation = glGetUniformLocation(pImpl->shaderProgram, "texCoordEnd");
-    GLuint scaleFactorLocation = glGetUniformLocation(pImpl->shaderProgram, "scaleFactor");
-
-    glUseProgram(pImpl->shaderProgram);
-    glUniform1f(scaleFactorLocation, size);
-
-
-    float x1 = 1.0 / (2 * Ncol);
-    float x2 = x1 + 2.0 / (2 * Ncol);  
-    float y1 = ((2 * Nlin) + 1) / (2 * Nlin);  
-    float y2 = y1 - (2 / (2 * Nlin));  
-
-    GLuint textureLocation;
-    GLuint textureLocation2;
-
-    glUniform2f(texCoordStartLocation, x1, y2); 
-    glUniform2f(texCoordEndLocation, x2, y1);  
-
-
-    textureLocation = glGetUniformLocation(pImpl->shaderProgram, "ourTexture");
-
-    glUniform1i(textureLocation, 0);
-
-    glClearColor(0.2f, 0.5f, 0.3f, 1.0f);
 }
 
 Sprite::Sprite(Level* mylevel) : mylevel(mylevel)
@@ -248,7 +258,7 @@ Sprite::~Sprite() {
 void Sprite::SetBMP(const std::string& image, int wSec, int hSec, int objsize)
 {
     objSize = objsize;
-    t->SetTexture(image.c_str(), wSec, hSec, 20);
+    t->SetTexture(image.c_str(), hSec, wSec, 20);
 }
 
 void Sprite::Update(float deltaTime)

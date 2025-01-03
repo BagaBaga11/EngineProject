@@ -11,11 +11,11 @@ C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineP
 C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\include\SDL_render.h(147,8): message : see declaration of 'SDL_Texture'
 C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\GameEngineProject.h(8,19): warning C4099: 'SDL_Texture': type name first seen using 'class' now seen using 'struct'
 C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Levels.h(8,8): message : see declaration of 'SDL_Texture'
-C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(201,14): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(202,14): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(207,12): warning C4101: 'textureLocation2': unreferenced local variable
-C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(251,40): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(251,34): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(63,14): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(64,14): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(69,12): warning C4101: 'textureLocation2': unreferenced local variable
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(264,40): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(264,34): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
   Appending SDL2.dll
   Appending SDL2.dll
   Appending SDL2.dll
