@@ -57,13 +57,14 @@ void Transform::Draw()
     GLuint scaleFactorLocation = glGetUniformLocation(pImpl->shaderProgram, "scaleFactor");
 
     glUseProgram(pImpl->shaderProgram);
-    glUniform1f(scaleFactorLocation, pImpl->size);
 
+    int coluna = 1;
+    int linha = 1;
 
-    float x1 = 1.0 / (2 * pImpl->col);
-    float x2 = x1 + 2.0 / (2 * pImpl->col);
-    float y1 = ((2 * pImpl->lin) + 1) / (2 * pImpl->lin);
-    float y2 = y1 - (2 / (2 * pImpl->lin));
+    float x1 = (coluna - 1) / (float)pImpl->lin;
+    float x2 = x1 + 1.0f / (float)pImpl->lin;
+    float y1 = (pImpl->col - linha) / (float)pImpl->col;
+    float y2 = y1 + 1.0f / (float)pImpl->col;
 
     GLuint textureLocation;
     GLuint textureLocation2;
@@ -93,11 +94,11 @@ void Transform::Start()
 {
 
     float vertices[] = {
-        // positions          // colors         // texture coords
-         0.1f,  0.1f, 0.0f,   1.0f, 0.0f, 0.0f,  1.0f, 1.0f, // top right
-         0.1f, -0.1f, 0.0f,   0.0f, 1.0f, 0.0f,  1.0f, 0.0f, // bottom right
-        -0.1f, -0.1f, 0.0f,   0.0f, 0.0f, 1.0f,  0.0f, 0.0f, // bottom left
-        -0.1f,  0.1f, 0.0f,   1.0f, 1.0f, 0.0f,  0.0f, 1.0f  // top left
+        // positions         // texture coords
+         0.5f,  0.5f, 0.0f,    1.0f, 1.0f, // top right
+         0.5f, -0.5f, 0.0f,    1.0f, 0.0f, // bottom right
+        -0.5f, -0.5f, 0.0f,    0.0f, 0.0f, // bottom left
+        -0.5f,  0.5f, 0.0f,    0.0f, 1.0f  // top left
     };
 
     unsigned int indices[] = {
@@ -122,32 +123,32 @@ void Transform::Start()
     const char* vertexShaderSource = R"glsl(
     #version 330 core
     layout(location = 0) in vec3 position;
-    layout(location = 1) in vec3 color;
-    layout(location = 2) in vec2 texCoord;
+    layout(location = 1) in vec2 texCoord;
 
-    out vec3 Color;
     out vec2 TexCoord;
 
     uniform mat4 model;
+    uniform vec2 texCoordStart;
+    uniform vec2 texCoordEnd;
 
     void main() {
-        Color = color;
-        TexCoord = texCoord;
+        TexCoord = mix(texCoordStart, texCoordEnd, texCoord);
         gl_Position = model * vec4(position, 1.0);
     }
     )glsl";
 
     const char* fragmentShaderSource = R"glsl(
         #version 330 core
-    in vec3 Color;
-    in vec2 TexCoord; // Receive texture coordinates
+    in vec2 TexCoord; 
 
     out vec4 FragColor;
 
-    uniform sampler2D ourTexture; // Texture uniform
+    uniform sampler2D ourTexture;
 
     void main() {
-        FragColor = texture(ourTexture, TexCoord); // Sample texture
+        FragColor = texture(ourTexture, TexCoord);
+        if (FragColor == vec4(1.0f, 0.0f, 1.0f, 1.0f)) 
+                        discard;
     }
     )glsl";
 
@@ -187,14 +188,11 @@ void Transform::Start()
     glDeleteShader(vertexShader);
     glDeleteShader(fragmentShader);
 
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)0);
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)0);
     glEnableVertexAttribArray(0);
 
-    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(3 * sizeof(float)));
+    glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)(3 * sizeof(float)));
     glEnableVertexAttribArray(1);
-
-    glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(6 * sizeof(float)));
-    glEnableVertexAttribArray(2);
 
     glBindVertexArray(0);  
 }
@@ -207,12 +205,12 @@ void Transform::SetTexture(const char* image, float Ncol,float Nlin, float size)
     glGenTextures(1, &pImpl->texture);
     glBindTexture(GL_TEXTURE_2D, pImpl->texture);
 
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
 
-    stbi_set_flip_vertically_on_load(true);
+    stbi_set_flip_vertically_on_load(false);
 
     int width, height, nrChannels;
     unsigned char* data = stbi_load(image, &width, &height, &nrChannels, 0);
