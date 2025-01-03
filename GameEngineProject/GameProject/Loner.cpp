@@ -52,7 +52,6 @@ void Loner::Update(float deltaTime)
 		missile->animationManager.AddAnimation("Project", { 0,1,2,3,4,5,6,7 }, 0.1f);
 		missile->animationManager.SetCurrentAnimation("Project");
 		SDL_Point pivot = { objSize/2,  objSize / 2 };
-		missile->SetRotation(180.0, pivot);
 		missile->StartObject();
 		time = 0.0f;
 	}

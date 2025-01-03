@@ -1,1 +1,4 @@
-﻿  GameProject.vcxproj -> C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\x64\Debug\GameProject.exe
+﻿  GameProject.cpp
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameProject\GameProject.cpp(66,28): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameProject\GameProject.cpp(66,23): warning C4305: 'argument': truncation from 'double' to 'float'
+  GameProject.vcxproj -> C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\x64\Debug\GameProject.exe

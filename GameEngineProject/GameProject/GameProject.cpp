@@ -62,6 +62,8 @@ int main(int argc, char* argv[])
     engine.Start(640,480);
 
     Spaceship = new Player(mylevel);
+    Spaceship->SetPos(1, 1, 0);
+    Spaceship->SetSca(0.2, 0.2, 0);
 
     //Loner* lone = new Loner(mylevel,engine);
     //Enemies.push_back(lone);

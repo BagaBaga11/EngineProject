@@ -1,19 +1,7 @@
 ﻿  Sprite.cpp
-C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\include\SDL_rect.h(49,1): warning C4099: 'SDL_Point': type name first seen using 'class' now seen using 'struct'
-C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\include\SDL_rect.h(48,16): message : see declaration of 'SDL_Point'
-C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\include\SDL_rect.h(79,1): warning C4099: 'SDL_Rect': type name first seen using 'class' now seen using 'struct'
-C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\include\SDL_rect.h(78,16): message : see declaration of 'SDL_Rect'
-C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\include\SDL_render.h(147,19): warning C4099: 'SDL_Texture': type name first seen using 'class' now seen using 'struct'
-C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.h(8,7): message : see declaration of 'SDL_Texture'
-C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\include\SDL_render.h(148,39): warning C4099: 'SDL_Texture': type name first seen using 'class' now seen using 'struct'
-C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\include\SDL_render.h(147,8): message : see declaration of 'SDL_Texture'
-C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Levels.h(8,19): warning C4099: 'SDL_Texture': type name first seen using 'class' now seen using 'struct'
-C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\include\SDL_render.h(147,8): message : see declaration of 'SDL_Texture'
-C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\GameEngineProject.h(8,19): warning C4099: 'SDL_Texture': type name first seen using 'class' now seen using 'struct'
-C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Levels.h(8,8): message : see declaration of 'SDL_Texture'
-C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(70,12): warning C4101: 'textureLocation2': unreferenced local variable
-C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(259,40): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(259,34): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(71,12): warning C4101: 'textureLocation2': unreferenced local variable
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(256,40): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(256,34): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
   Appending SDL2.dll
   Appending SDL2.dll
   Appending SDL2.dll

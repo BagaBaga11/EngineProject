@@ -38,17 +38,18 @@ Transform::~Transform()
 
 void Transform::SetPosition(float x, float y, float z) {
     pImpl->position = glm::vec3(x, y, z);
-    pImpl->modelMatrix = glm::translate(glm::mat4(1.0f), pImpl->position);
+    pImpl->modelMatrix = glm::translate(pImpl->modelMatrix, pImpl->position);
 }
 
 void Transform::SetScale(float x, float y, float z) {
     pImpl->scale = glm::vec3(x, y, z);
-    pImpl->modelMatrix = glm::scale(glm::mat4(1.0f), pImpl->scale);
+    pImpl->modelMatrix = glm::scale(pImpl->modelMatrix, pImpl->scale);
 }
 
 void Transform::SetRotation(float angle, float x, float y, float z) {
-    pImpl->modelMatrix = glm::rotate(glm::mat4(1.0f), glm::radians(angle), glm::vec3(x, y, z));
+    pImpl->modelMatrix = glm::rotate(pImpl->modelMatrix, glm::radians(angle), glm::vec3(x, y, z));
 }
+
 
 void Transform::Draw()
 {
@@ -233,10 +234,6 @@ Sprite::Sprite(Level* mylevel) : mylevel(mylevel)
     }
 }
 Sprite::~Sprite() {
-    objRect = nullptr;
-
-    objPosition = nullptr;
-
 
         auto itObject = std::find(mylevel->everyArray.begin(), mylevel->everyArray.end(), this);
 
@@ -274,14 +271,7 @@ void Sprite::StartObject()
         frameWidth = textureWidth / widthSection;
         frameHeight = textureHeight / heightSection;
     }
-    objRect = new SDL_Rect{ 0, 0, frameWidth, frameHeight };
-    objPosition = new SDL_Rect;
     //mylevel->bmpArray.push_back(texture);
-}
-
-SDL_Rect* Sprite::GetRect() const
-{
-    return objRect;
 }
 
 void Sprite::SetStartPos(float x, float y)
@@ -290,26 +280,21 @@ void Sprite::SetStartPos(float x, float y)
     newposY = y;
 }
 
-void Sprite::SetRotation(double angle,SDL_Point pivot)
-{
-    rotationAngle = angle;
-    rotationPivot = new SDL_Point(pivot);
-}
-
 void Sprite::Draw()
 {
 }
 
-SDL_Point* Sprite::GetPivot()
+void Sprite::SetPos(float x, float y, float z)
 {
-    if (rotationPivot)
-    {
-         return rotationPivot;
-    }
-    return 0;
+    t->SetPosition(x, y, z);
+}
+void Sprite::SetRot(float angle, float x, float y, float z)
+{
+    t->SetRotation(angle,x, y, z);
+}
+void Sprite::SetSca(float x, float y, float z)
+{
+    t->SetScale(x, y, z);
 }
 
-double Sprite::GetAngle()
-{
-    return rotationAngle;
-}
+

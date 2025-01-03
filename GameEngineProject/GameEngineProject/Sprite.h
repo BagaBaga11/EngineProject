@@ -4,11 +4,7 @@
 #include "Animation.h"
 
 class Level;
-class SDL_Rect;
-class SDL_Texture;
 class Animation;
-class SDL_Point;
-typedef unsigned int GLuint;
 
 class Transform {
 public:
@@ -36,25 +32,19 @@ public:
     virtual void Update(float deltaTime);
     virtual void StartObject();
 
-    SDL_Rect* GetRect() const;
-    SDL_Rect* GetPosition() const { return objPosition; }
     void SetStartPos(float x, float y);
 
-    void SetRotation(double angle, SDL_Point pivot);
     void Draw();
 
-    SDL_Point* GetPivot();
-    double GetAngle();
+    void SetPos(float x, float y, float z);
+    void SetSca(float x, float y, float z);
+    void SetRot(float angle, float x, float y, float z);
 
     Animation animationManager;
 protected:
-    SDL_Rect* objRect = nullptr;
-    SDL_Rect* objPosition = nullptr;
 
     Level* mylevel;
 
-     SDL_Point* rotationPivot;
-    double rotationAngle = 0.0;
     int textureWidth = 0;
     int textureHeight = 0;
     int frameWidth = 0;
@@ -67,7 +57,7 @@ protected:
     std::string myBMP;
     bool isSprite = false;
     float centerX;
-        float centerY;
+    float centerY;
         Transform* t;
 };
 
