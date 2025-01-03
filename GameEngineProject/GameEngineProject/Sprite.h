@@ -18,8 +18,9 @@ public:
     void SetScale(float x, float y, float z);
     void SetRotation(float angle, float x, float y, float z);
 
-    void Draw(unsigned int textureID);
+    void Draw();
     void Start();
+    void SetTexture(const char* image, float Ncol, float Nlin, float size);
 private:
     struct Impl;
     std::unique_ptr<Impl> pImpl;
@@ -67,5 +68,6 @@ protected:
     bool isSprite = false;
     float centerX;
         float centerY;
+        Transform* t;
 };
 

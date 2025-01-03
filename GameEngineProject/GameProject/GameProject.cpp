@@ -63,11 +63,11 @@ int main(int argc, char* argv[])
 
     Spaceship = new Player(mylevel);
 
-    Loner* lone = new Loner(mylevel,engine);
-    Enemies.push_back(lone);
+    //Loner* lone = new Loner(mylevel,engine);
+    //Enemies.push_back(lone);
 
-    Rusher* rusher = new Rusher(mylevel, engine);
-    Enemies.push_back(rusher);
+    //Rusher* rusher = new Rusher(mylevel, engine);
+    //Enemies.push_back(rusher);
 
     Update();
     engine.End();

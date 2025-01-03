@@ -8,6 +8,7 @@
 #include "glm/gtc/matrix_transform.hpp"
 #include "glm/gtc/type_ptr.hpp"
 #include <memory>
+#include "stb_image.h"
 
 struct Transform::Impl {
     glm::vec3 position;
@@ -17,6 +18,7 @@ struct Transform::Impl {
     GLuint vbo;
     GLuint vao;
     GLuint shaderProgram;
+    GLuint texture;
 };
 
 Transform::Transform() : pImpl(std::make_unique<Impl>()) {
@@ -47,13 +49,13 @@ void Transform::SetRotation(float angle, float x, float y, float z) {
     pImpl->modelMatrix = glm::rotate(glm::mat4(1.0f), glm::radians(angle), glm::vec3(x, y, z));
 }
 
-void Transform::Draw(unsigned int textureID)
+void Transform::Draw()
 {
     glUseProgram(pImpl->shaderProgram);
     glBindVertexArray(pImpl->vao);
 
     glActiveTexture(GL_TEXTURE0);
-    glBindTexture(GL_TEXTURE_2D, textureID);
+    glBindTexture(GL_TEXTURE_2D, pImpl->texture);
 
     GLuint modelLoc = glGetUniformLocation(pImpl->shaderProgram, "model");
     glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(pImpl->modelMatrix));
@@ -64,6 +66,7 @@ void Transform::Draw(unsigned int textureID)
 }
 void Transform::Start()
 {
+
     float vertices[] = {
         // positions          // colors
          0.1f,  0.1f, 0.0f,   1.0f, 0.0f, 0.0f, // top right
@@ -159,11 +162,64 @@ void Transform::Start()
     glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)(3 * sizeof(float)));
     glEnableVertexAttribArray(1);
 
-    glBindVertexArray(0); 
+    glBindVertexArray(0);  
+}
+
+void Transform::SetTexture(const char* image, float Ncol,float Nlin, float size)
+{
+    glGenTextures(1, &pImpl->texture);
+    glBindTexture(GL_TEXTURE_2D, pImpl->texture);
+
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
+
+    stbi_set_flip_vertically_on_load(true);
+
+    int width, height, nrChannels;
+    unsigned char* data = stbi_load(image, &width, &height, &nrChannels, 0);
+    if (data)
+    {
+        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
+        glGenerateMipmap(GL_TEXTURE_2D);
+    }
+    else
+    {
+        std::cout << "Failed to load texture" << std::endl;
+    }
+    stbi_image_free(data);
+
+    GLuint texCoordStartLocation = glGetUniformLocation(pImpl->shaderProgram, "texCoordStart");
+    GLuint texCoordEndLocation = glGetUniformLocation(pImpl->shaderProgram, "texCoordEnd");
+    GLuint scaleFactorLocation = glGetUniformLocation(pImpl->shaderProgram, "scaleFactor");
+
+    glUseProgram(pImpl->shaderProgram);
+    glUniform1f(scaleFactorLocation, size);
+
+
+    float x1 = 1.0 / (2 * Ncol);
+    float x2 = x1 + 2.0 / (2 * Ncol);  
+    float y1 = ((2 * Nlin) + 1) / (2 * Nlin);  
+    float y2 = y1 - (2 / (2 * Nlin));  
+
+    GLuint textureLocation;
+    GLuint textureLocation2;
+
+    glUniform2f(texCoordStartLocation, x1, y2); 
+    glUniform2f(texCoordEndLocation, x2, y1);  
+
+
+    textureLocation = glGetUniformLocation(pImpl->shaderProgram, "ourTexture");
+
+    glUniform1i(textureLocation, 0);
+
+    glClearColor(0.2f, 0.5f, 0.3f, 1.0f);
 }
 
 Sprite::Sprite(Level* mylevel) : mylevel(mylevel)
 {
+    t = new Transform;
     if (mylevel) {
         mylevel->everyArray.push_back(this);
     }
@@ -186,31 +242,26 @@ Sprite::~Sprite() {
                 mylevel->bmpArray.erase(mylevel->bmpArray.begin() + index);
             }*/
         } 
+        delete(t);
 }
 
 void Sprite::SetBMP(const std::string& image, int wSec, int hSec, int objsize)
 {
-    myBMP = image;
-    widthSection = wSec;
-    heightSection = hSec;
     objSize = objsize;
+    t->SetTexture(image.c_str(), wSec, hSec, 20);
 }
 
 void Sprite::Update(float deltaTime)
 {
-    objPosition->x = newposX;
-    objPosition->y = newposY;
-    objPosition->h = objSize;
-    objPosition->w = objSize;
+    t->Draw();
     animationManager.Update(deltaTime);
 
     int frameIndex = animationManager.GetCurrentFrame();
-    objRect->x = (frameIndex % widthSection) * frameWidth;
-    objRect->y = (frameIndex / widthSection) * frameHeight;
 }
 
 void Sprite::StartObject()
 {
+    t->Start();
     if (widthSection != 0 && heightSection != 0) {
         frameWidth = textureWidth / widthSection;
         frameHeight = textureHeight / heightSection;
