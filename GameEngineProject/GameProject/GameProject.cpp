@@ -56,7 +56,7 @@ void Update()
 int main(int argc, char* argv[])
 {
     mylevel = new Level;
-    mylevel->SetGrav(0.0f, 1.0f);
+    mylevel->SetGrav(0.0f, 0.1f);
     engine.SetLevel(mylevel);
     engine.Start(640,480);
 
@@ -65,11 +65,10 @@ int main(int argc, char* argv[])
     BackGround->animationManager.AddAnimation("Idle", { 1 }, 10);
     BackGround->animationManager.SetCurrentAnimation("Idle");
     BackGround->StartObject();
-    BackGround->SetSca(2, 2, 0);
+    BackGround->SetSca(10, 10, 0);
 
     Spaceship = new Player(mylevel);
     Spaceship->SetPos(0.5, 0.5, 0);
-    Spaceship->SetSca(0.2, 0.2, 0);
 
     //Loner* lone = new Loner(mylevel,engine);
     //Enemies.push_back(lone);

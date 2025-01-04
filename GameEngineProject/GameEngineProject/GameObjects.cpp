@@ -53,6 +53,7 @@ void GameObject::StartObject()
 void GameObject::Update(float deltaTime)
 {
     Sprite::Update(deltaTime);
+    SetPos(newposX, newposY, 0);
 }
 
 void GameObject::SetGravScale(float scale)

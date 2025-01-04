@@ -4,6 +4,10 @@ C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineP
 C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(234,17): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
 C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(270,40): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
 C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(270,34): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(307,69): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(308,13): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(309,32): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Sprite.cpp(309,22): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
   Appending SDL2.dll
   Appending SDL2.dll
   Appending SDL2.dll

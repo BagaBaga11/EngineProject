@@ -94,10 +94,10 @@ void Transform::Start()
 
     float vertices[] = {
         // positions         // texture coords
-         0.5f,  0.5f, 0.0f,    1.0f, 1.0f, // top right
-         0.5f, -0.5f, 0.0f,    1.0f, 0.0f, // bottom right
-        -0.5f, -0.5f, 0.0f,    0.0f, 0.0f, // bottom left
-        -0.5f,  0.5f, 0.0f,    0.0f, 1.0f  // top left
+         0.1f,  0.1f, 0.0f,    1.0f, 1.0f, // top right
+         0.1f, -0.1f, 0.0f,    1.0f, 0.0f, // bottom right
+        -0.1f, -0.1f, 0.0f,    0.0f, 0.0f, // bottom left
+        -0.1f,  0.1f, 0.0f,    0.0f, 1.0f  // top left
     };
 
     unsigned int indices[] = {
@@ -304,7 +304,9 @@ void Sprite::Draw()
 
 void Sprite::SetPos(float x, float y, float z)
 {
-    t->SetPosition(x, y, z);
+    x = ( - 0.5 + ((x - -20) / (640 - -20)) * (0.5 - (-0.5)) / 640) - 0.5f;
+    y =0.5f - ( 0.5 - ((y - -20) / (480 - -20)) * (0.5 - (-0.5))/640) ;
+    t->SetPosition(x * 0.01, y * 0.01, z);
 }
 void Sprite::SetRot(float angle, float x, float y, float z)
 {

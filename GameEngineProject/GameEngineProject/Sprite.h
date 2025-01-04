@@ -60,8 +60,6 @@ protected:
     float newposY = 0.0f;
     std::string myBMP;
     bool isSprite = false;
-    float centerX;
-    float centerY;
         Transform* t;
 };
 
