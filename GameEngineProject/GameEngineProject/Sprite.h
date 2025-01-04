@@ -17,6 +17,10 @@ public:
     void Draw();
     void Start();
     void SetTexture(const char* image, float Ncol, float Nlin, float size);
+
+    int GetCollum();
+    int GetLine();
+    void SetGrid(int col, int lin);
 private:
     struct Impl;
     std::unique_ptr<Impl> pImpl;

@@ -20,6 +20,7 @@ struct Transform::Impl {
     GLuint shaderProgram;
     GLuint texture;
     float size, col, lin;
+    int coluna, line;
 };
 
 Transform::Transform() : pImpl(std::make_unique<Impl>()) {
@@ -59,19 +60,16 @@ void Transform::Draw()
 
     glUseProgram(pImpl->shaderProgram);
 
-    int coluna = 1;
-    int linha = 1;
-
-    float x1 = (coluna - 1) / (float)pImpl->lin;
-    float x2 = x1 + 1.0f / (float)pImpl->lin;
-    float y1 = (pImpl->col - linha) / (float)pImpl->col;
-    float y2 = y1 + 1.0f / (float)pImpl->col;
+    float x1 = (pImpl->coluna - 1) / (float)pImpl->col;
+    float x2 = x1 + 1.0f / (float)pImpl->col;
+    float y1 = (pImpl->lin - pImpl->line) / (float)pImpl->lin;
+    float y2 = y1 + 1.0f / (float)pImpl->lin;
 
     GLuint textureLocation;
     GLuint textureLocation2;
 
-    glUniform2f(texCoordStartLocation, x1, y2);
-    glUniform2f(texCoordEndLocation, x2, y1);
+    glUniform2f(texCoordStartLocation, x1, y1);
+    glUniform2f(texCoordEndLocation, x2, y2);
 
     glClearColor(0.2f, 0.5f, 0.3f, 1.0f);
 
@@ -211,7 +209,7 @@ void Transform::SetTexture(const char* image, float Ncol,float Nlin, float size)
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
 
-    stbi_set_flip_vertically_on_load(false);
+    stbi_set_flip_vertically_on_load(true);
 
     int width, height, nrChannels;
     unsigned char* data = stbi_load(image, &width, &height, &nrChannels, 0);
@@ -224,6 +222,22 @@ void Transform::SetTexture(const char* image, float Ncol,float Nlin, float size)
         std::cout << "Failed to load texture: " << image << std::endl;
     }
     stbi_image_free(data);
+}
+
+int Transform::GetCollum()
+{
+    return pImpl->col;
+}
+
+int Transform::GetLine()
+{
+    return pImpl->lin;
+}
+
+void Transform::SetGrid(int col, int lin)
+{
+    pImpl->coluna = col;
+    pImpl->line = lin;
 }
 
 Sprite::Sprite(Level* mylevel) : mylevel(mylevel)
@@ -253,15 +267,19 @@ Sprite::~Sprite() {
 void Sprite::SetBMP(const std::string& image, int wSec, int hSec, int objsize)
 {
     objSize = objsize;
-    t->SetTexture(image.c_str(), hSec, wSec, 20);
+    t->SetTexture(image.c_str(), wSec, hSec, 20);
 }
 
 void Sprite::Update(float deltaTime)
-{
-    t->Draw();
-    animationManager.Update(deltaTime);
-
+{   
+    animationManager.Update(deltaTime); 
     int frameIndex = animationManager.GetCurrentFrame();
+    int colun = (frameIndex-1) / t->GetCollum(); 
+    int line = (frameIndex-1) % t->GetCollum();
+    colun++;
+    line++;
+    t->SetGrid(line, colun);
+    t->Draw();
 }
 
 void Sprite::StartObject()

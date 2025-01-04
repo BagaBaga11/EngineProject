@@ -42,11 +42,6 @@ void GameEngine::Start(int sizeX, int sizeY)
         std::cout << "Failed to initialize GLAD" << std::endl;
         SDL_Quit();
     }
-    render = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
-    myLevel->SetRender(render);
-
-    SDL_Surface* windowSurface = SDL_GetWindowSurface(window);
-
 }
 bool GameEngine::Update(float deltaTime)
 {          

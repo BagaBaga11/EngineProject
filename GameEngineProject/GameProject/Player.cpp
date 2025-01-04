@@ -11,10 +11,10 @@ Player::Player(Level* mylevel):Pawn(mylevel)
 	SetSpeed(200.0f);
 	SetSensor(true);
 
-	animationManager.AddAnimation("idle", { 3 }, 1.0f);
-	animationManager.AddAnimation("Damage", { 3,17 }, 1.0f);
-	animationManager.AddAnimation("tleft", { 2,1,0 }, 0.1f);
-	animationManager.AddAnimation("tright", { 4,5,6 }, 0.1f);
+	animationManager.AddAnimation("idle", { 4 }, 1.0f);
+	animationManager.AddAnimation("Damage", { 4,18 }, 1.0f);
+	animationManager.AddAnimation("tleft", { 3,2,1 }, 0.1f);
+	animationManager.AddAnimation("tright", { 5,6,7 }, 0.1f);
 	animationManager.SetCurrentAnimation("idle");
 	StartObject();
 }

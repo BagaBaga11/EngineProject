@@ -56,13 +56,19 @@ void Update()
 int main(int argc, char* argv[])
 {
     mylevel = new Level;
-    mylevel->SetBackground("graphics/galaxy2.bmp");
     mylevel->SetGrav(0.0f, 1.0f);
     engine.SetLevel(mylevel);
     engine.Start(640,480);
 
+    Sprite* BackGround = new Sprite(mylevel);
+    BackGround->SetBMP("graphics/galaxy2.bmp", 1, 1, 1);
+    BackGround->animationManager.AddAnimation("Idle", { 1 }, 10);
+    BackGround->animationManager.SetCurrentAnimation("Idle");
+    BackGround->StartObject();
+    BackGround->SetSca(2, 2, 0);
+
     Spaceship = new Player(mylevel);
-    Spaceship->SetPos(1, 1, 0);
+    Spaceship->SetPos(0.5, 0.5, 0);
     Spaceship->SetSca(0.2, 0.2, 0);
 
     //Loner* lone = new Loner(mylevel,engine);
