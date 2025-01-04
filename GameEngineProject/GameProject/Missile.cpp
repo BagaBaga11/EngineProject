@@ -13,8 +13,7 @@ Missile::~Missile()
 void Missile::Update(float deltaTime)
 {
 	GetPosition();
-	newposX = Firstpos;
-	newposY = Secondpos;
+	SetPos(Firstpos, Secondpos,0);
 	mytimer += deltaTime;
 	GameObject::Update(deltaTime);
 	if (mytimer > 5)
@@ -26,7 +25,7 @@ void Missile::Update(float deltaTime)
 void Missile::Hit()
 {
 	Explo* sion = new Explo(mylevel);
-	sion->SetStartPos(newposX, newposY);
+	sion->SetStartPos(Firstpos, Secondpos);
 	sion->StartObject();
 	GameObject::Hit();
 }

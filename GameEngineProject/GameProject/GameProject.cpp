@@ -56,7 +56,7 @@ void Update()
 int main(int argc, char* argv[])
 {
     mylevel = new Level;
-    mylevel->SetGrav(0.0f, 0.1f);
+    mylevel->SetGrav(0.0f, 1.0f);
     engine.SetLevel(mylevel);
     engine.Start(640,480);
 

@@ -1,4 +1,5 @@
 #include "explo.h"
+#include <iostream>
 
 Explo::Explo(Level* mylevel) : Sprite(mylevel)
 {
@@ -15,7 +16,7 @@ void Explo::Update(float deltaTime)
 {
 	Sprite::Update(deltaTime);
 	if (animationManager.GetCurrentFrame() == 9)
-	{
+	{	
 		delete this;
 	}
 }

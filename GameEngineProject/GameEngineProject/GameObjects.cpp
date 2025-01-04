@@ -53,7 +53,6 @@ void GameObject::StartObject()
 void GameObject::Update(float deltaTime)
 {
     Sprite::Update(deltaTime);
-    SetPos(newposX, newposY, 0);
 }
 
 void GameObject::SetGravScale(float scale)
@@ -90,7 +89,7 @@ b2ShapeId* GameObject::GetShape() const
 void GameObject::GetPosition()
 {
     b2Vec2 position = b2Body_GetPosition(*bodyID);
-    Firstpos = position.x;
+    Firstpos= position.x;
     Secondpos = position.y;
 }
 

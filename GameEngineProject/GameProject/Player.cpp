@@ -6,9 +6,9 @@
 Player::Player(Level* mylevel):Pawn(mylevel)
 {
 	SetBMP("graphics/Ship2.bmp", 7, 3, 64);
-	SetStartPos(240.0f, 320.0f);
+	SetStartPos(0,0);
 	SetGravScale(0.0f);
-	SetSpeed(200.0f);
+	SetSpeed(1.0f);
 	SetSensor(true);
 
 	animationManager.AddAnimation("idle", { 4 }, 1.0f);
@@ -24,16 +24,14 @@ Player::~Player()
 }
 
 void Player::Up()
-{
+{	
 	if (animationManager.GetAnimation("") != animationManager.GetAnimation("idle"))
 	{
 		animationManager.SetCurrentAnimation("idle");
 	}
-	newposY -= moveSpeed * delta;
-	if (newposY < 0)
-	{
-		newposY = 0;
-	}
+	Secondpos -= moveSpeed * delta * 320;
+	t->AddPosition(0, moveSpeed * delta, 0);
+
 }
 
 void Player::Left()
@@ -43,11 +41,8 @@ void Player::Left()
 		animationManager.SetCurrentAnimation("tleft");
 		animationManager.SetStopFrame(2);
 	}
-	newposX -= moveSpeed * delta;	
-	if (newposX < 0)
-	{
-		newposX = 0;
-	}
+	Firstpos -= moveSpeed * delta * 240;
+	t->AddPosition(-(moveSpeed * delta), 0, 0);
 }
 
 void Player::Right()
@@ -57,24 +52,18 @@ void Player::Right()
 		animationManager.SetCurrentAnimation("tright");
 		animationManager.SetStopFrame(2);
 	}
-	newposX += moveSpeed * delta;
-	if (newposX > 418)
-	{
-		newposX = 418;
-	}
+	Firstpos += moveSpeed * delta * 240;
+	t->AddPosition(moveSpeed * delta, 0, 0);
 }
 
 void Player::Down()
-{
+{	
 	if (animationManager.GetAnimation("") != animationManager.GetAnimation("idle"))
 	{
 		animationManager.SetCurrentAnimation("idle");
 	}
-	newposY += moveSpeed * delta;
-	if (newposY > 578)
-	{
-		newposY = 578;
-	}
+	Secondpos += moveSpeed * delta * 320;
+	t->AddPosition(0, -(moveSpeed * delta), 0);
 }
 
 void Player::Update(float deltaTime)
@@ -82,6 +71,7 @@ void Player::Update(float deltaTime)
 	timeinv += delta;
 	delta = deltaTime;
 	timedelta += deltaTime;
+	std::cout << Firstpos << "/" << Secondpos << std::endl;
 	Pawn::Update(deltaTime);
 }
 
@@ -135,7 +125,7 @@ void Player::Fire()
 	{
 		Missile* missile = new Missile(mylevel);
 		missile->SetBMP("graphics/hmissile.bmp", 4, 4, 32);
-		missile->SetStartPos(newposX + 17.0f, newposY - 50.0f);
+		missile->SetStartPos(Firstpos + 17.0f, Secondpos - 50.0f);
 		missile->SetGravScale(-100.0f);
 		missile->SetSensor(true);
 		missile->StartObject();

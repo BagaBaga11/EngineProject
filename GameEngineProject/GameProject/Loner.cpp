@@ -32,12 +32,11 @@ Loner::~Loner()
 }
 
 void Loner::Update(float deltaTime)
-{
-	GetPosition();
-	newposX = Secondpos;
-	newposY = Firstpos;	
+{	
 	GameObject::Update(deltaTime);
-	if (newposX > 510 || newposX < -100 )
+	GetPosition();
+	SetPos(Secondpos, Firstpos, 0);
+	if (Secondpos > 510 || Secondpos < -100 )
 	{
 		Hit();
 	}
@@ -46,7 +45,7 @@ void Loner::Update(float deltaTime)
 	{
 		Missile* missile = new Missile(mylevel);
 		missile->SetBMP("graphics/EnWeap6.bmp", 8, 1, 32);
-		missile->SetStartPos(newposX + 17.0f, newposY + 40.0f);
+		missile->SetStartPos(Secondpos + 17.0f, Firstpos + 40.0f);
 		missile->SetGravScale(100.0f);
 		missile->SetSensor(true);
 		missile->animationManager.AddAnimation("Project", { 0,1,2,3,4,5,6,7 }, 0.1f);

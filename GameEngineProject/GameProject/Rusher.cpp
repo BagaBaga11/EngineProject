@@ -18,8 +18,7 @@ Rusher::~Rusher()
 void Rusher::Update(float deltaTime)
 {
 	GetPosition();
-	newposX = Firstpos;
-	newposY = Secondpos;
+	SetPos(Firstpos, Secondpos, 0);
 	GameObject::Update(deltaTime);
 }
 

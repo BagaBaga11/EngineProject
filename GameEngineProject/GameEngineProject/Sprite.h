@@ -13,6 +13,7 @@ public:
     void SetPosition(float x, float y, float z);
     void SetScale(float x, float y, float z);
     void SetRotation(float angle, float x, float y, float z);
+    void AddPosition(float x, float y, float z);
 
     void Draw();
     void Start();
@@ -43,6 +44,7 @@ public:
     void SetPos(float x, float y, float z);
     void SetSca(float x, float y, float z);
     void SetRot(float angle, float x, float y, float z);
+    void ChangeCoordinates(float x, float y, float& newx, float& newy);
 
     Animation animationManager;
 protected:

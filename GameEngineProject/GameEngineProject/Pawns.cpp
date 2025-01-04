@@ -83,5 +83,5 @@ void Pawn::Update(float deltaTime)
 {
     Sprite::Update(deltaTime);
     CheckKeyboard();
-    b2Body_SetTransform(*GetBody(), b2Vec2{ newposX,newposY }, b2Body_GetRotation(*GetBody()));
+    b2Body_SetTransform(*GetBody(), b2Vec2{ Firstpos,Secondpos }, b2Body_GetRotation(*GetBody()));
 }

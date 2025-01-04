@@ -9,6 +9,7 @@
 #include "glm/gtc/type_ptr.hpp"
 #include <memory>
 #include "stb_image.h"
+#include <utility>
 
 struct Transform::Impl {
     glm::vec3 position;
@@ -34,11 +35,17 @@ Transform::~Transform()
     if (pImpl->vao) glDeleteVertexArrays(1, &pImpl->vao);
     if (pImpl->vbo) glDeleteBuffers(1, &pImpl->vbo);
     if (pImpl->ebo) glDeleteBuffers(1, &pImpl->ebo);
+    if (pImpl->texture) glDeleteTextures(1, &pImpl->texture);
     if (pImpl->shaderProgram) glDeleteProgram(pImpl->shaderProgram);
 }
-
+void Transform::AddPosition(float x, float y, float z) 
+{
+    pImpl->position = glm::vec3(x, y, z);
+    pImpl->modelMatrix = glm::translate(pImpl->modelMatrix, pImpl->position);
+};
 void Transform::SetPosition(float x, float y, float z) {
     pImpl->position = glm::vec3(x, y, z);
+    pImpl->modelMatrix = glm::mat4(1.0f);
     pImpl->modelMatrix = glm::translate(pImpl->modelMatrix, pImpl->position);
 }
 
@@ -198,6 +205,9 @@ void Transform::Start()
 
 void Transform::SetTexture(const char* image, float Ncol,float Nlin, float size)
 {
+    if (pImpl->texture) {
+        glDeleteTextures(1, &pImpl->texture);
+    }
     pImpl->col = Ncol;
     pImpl->lin = Nlin;
     pImpl->size = size;
@@ -296,6 +306,7 @@ void Sprite::SetStartPos(float x, float y)
 {
     newposX = x;
     newposY = y;
+    SetPos(x, y, 0);
 }
 
 void Sprite::Draw()
@@ -304,9 +315,15 @@ void Sprite::Draw()
 
 void Sprite::SetPos(float x, float y, float z)
 {
-    x = ( - 0.5 + ((x - -20) / (640 - -20)) * (0.5 - (-0.5)) / 640) - 0.5f;
-    y =0.5f - ( 0.5 - ((y - -20) / (480 - -20)) * (0.5 - (-0.5))/640) ;
-    t->SetPosition(x * 0.01, y * 0.01, z);
+    float newx, newy;
+    ChangeCoordinates(x, y, newx, newy);
+    t->SetPosition(newx, newy, z);
+}
+
+void Sprite::ChangeCoordinates(float x, float y, float& newx, float& newy)
+{
+    newx = ((x / 480) - 0.5f) * 2;
+    newy = (0.5f - (y / 640)) * 2;
 }
 void Sprite::SetRot(float angle, float x, float y, float z)
 {
@@ -316,5 +333,7 @@ void Sprite::SetSca(float x, float y, float z)
 {
     t->SetScale(x, y, z);
 }
+
+
 
 
