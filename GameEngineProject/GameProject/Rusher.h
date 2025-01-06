@@ -1,7 +1,7 @@
 #pragma once
-#include <GameObjects.h>
+#include "Enemy.h"
 #include "GameEngineProject.h"
-class Rusher : public GameObject
+class Rusher : public Enemy
 {
 public:
 	Rusher(Level* mylevel, GameEngine engine);

@@ -1,6 +1,6 @@
 #include "Loner.h"
 #include "GameEngineProject.h"
-#include "Missile.h"
+#include "EnemyMissile.h"
 
 Loner::Loner(Level* mylevel, GameEngine engine) : GameObject(mylevel)
 {
@@ -43,15 +43,8 @@ void Loner::Update(float deltaTime)
 	time += deltaTime;
 	if (time > 2)
 	{
-		Missile* missile = new Missile(mylevel);
-		missile->SetBMP("graphics/EnWeap6.bmp", 8, 1, 32);
+		EnemyMissile* missile = new EnemyMissile(mylevel);
 		missile->SetStartPos(Secondpos + 17.0f, Firstpos + 40.0f);
-		missile->SetGravScale(100.0f);
-		missile->SetSensor(true);
-		missile->animationManager.AddAnimation("Project", { 0,1,2,3,4,5,6,7 }, 0.1f);
-		missile->animationManager.SetCurrentAnimation("Project");
-		SDL_Point pivot = { objSize/2,  objSize / 2 };
-		missile->StartObject();
 		time = 0.0f;
 	}
 }

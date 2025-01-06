@@ -1,9 +1,9 @@
 #pragma once
-#include <GameObjects.h>
+#include "Enemy.h"
 #include "GameEngineProject.h"
 #include "explo.h"
 
-class Loner : public GameObject
+class Loner : public Enemy
 {
 public:
 	Loner(Level* mylevel,GameEngine engine);

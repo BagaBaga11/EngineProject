@@ -1,77 +1,63 @@
 #include "XenonLevel.h"
 #include <iostream>
 #include "Player.h"
-#include "Rusher.h"
-#include "Loner.h"
-#include "Missile.h"
+#include "FriendlyMissile.h"
+#include "Enemy.h"
+#include "EnemyMissile.h"
 
 
 void XenonLevel::Contact(GameObject* A, GameObject* B)
 {
     if (auto* player = dynamic_cast<Player*>(A))
     {
-        if (auto* missile = dynamic_cast<Missile*>(B))
+        if (auto* enemyMissile = dynamic_cast<EnemyMissile*>(B))
         {
             player->Hit();
-            missile->Hit();
+            enemyMissile->Hit();
         }
-        else if (auto* rusher = dynamic_cast<Rusher*>(B))
+        else if (auto* enemy = dynamic_cast<Enemy*>(B))
         {
             player->Hit();
-            rusher->Hit();
-        }
-        else if (auto* loner = dynamic_cast<Loner*>(B))
-        {
-            player->Hit();
-            loner->Hit();
+            enemy->Hit();
         }
     }
-    else if (auto* loner = dynamic_cast<Loner*>(A))
+    else if (auto* friendlyMissile = dynamic_cast<FriendlyMissile*>(A))
     {
-        if (auto* missile = dynamic_cast<Missile*>(B))
+        if (auto* enemy = dynamic_cast<Enemy*>(B))
         {
-
+            friendlyMissile->Hit();
+            enemy->Hit();
         }
-        else if (auto* rusher = dynamic_cast<Rusher*>(B))
+        else if (auto* enemyMissile = dynamic_cast<EnemyMissile*>(B))
         {
-
-        }
-        else if (auto* player = dynamic_cast<Player*>(B))
-        {
-            player->Hit();
-            loner->Hit();
+            friendlyMissile->Hit();
+            enemyMissile->Hit();
         }
     }
-    else if (auto* missile = dynamic_cast<Missile*>(A))
+    else if (auto* enemyMissile = dynamic_cast<EnemyMissile*>(A))
     {
         if (auto* player = dynamic_cast<Player*>(B))
         {
             player->Hit();
-            missile->Hit();
+            enemyMissile->Hit();
         }
-        else if (auto* rusher = dynamic_cast<Rusher*>(B))
+        else if (auto* friendlyMissile = dynamic_cast<FriendlyMissile*>(B))
         {
-
-        }
-        else if (auto* loner = dynamic_cast<Loner*>(B))
-        {
-
+            friendlyMissile->Hit();
+            enemyMissile->Hit();
         }
     }
-    else if (auto* rusher = dynamic_cast<Rusher*>(A))
+    else if (auto* enemy = dynamic_cast<Enemy*>(A))
     {
         if (auto* player = dynamic_cast<Player*>(B))
         {
             player->Hit();
-            rusher->Hit();
+            enemy->Hit();
         }
-        else if (auto* missile = dynamic_cast<Missile*>(B))
+        else if (auto* friendlyMissile = dynamic_cast<FriendlyMissile*>(B))
         {
-
-        }
-        else if (auto* loner = dynamic_cast<Loner*>(B))
-        {
-
+            friendlyMissile->Hit();
+            enemy->Hit();
         }
     }
 }

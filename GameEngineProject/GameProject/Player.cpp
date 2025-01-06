@@ -1,4 +1,4 @@
-#include "Missile.h"
+#include "FriendlyMissile.h"
 #include "Player.h"
 
 #include <iostream>
@@ -122,12 +122,8 @@ void Player::Fire()
 {
 	if (timedelta > 1)
 	{
-		Missile* missile = new Missile(mylevel);
-		missile->SetBMP("graphics/hmissile.bmp", 4, 4, 32);
+		FriendlyMissile* missile = new FriendlyMissile(mylevel);
 		missile->SetStartPos(Firstpos + 17.0f, Secondpos - 50.0f);
-		missile->SetGravScale(-100.0f);
-		missile->SetSensor(true);
-		missile->StartObject();
 		timedelta = 0.0f;
 	}
 
