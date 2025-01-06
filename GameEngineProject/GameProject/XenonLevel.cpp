@@ -8,6 +8,10 @@
 
 void XenonLevel::Contact(GameObject* A, GameObject* B)
 {
+    if (!A || !B)
+    {
+        return;
+    }
     if (auto* player = dynamic_cast<Player*>(A))
     {
         if (auto* enemyMissile = dynamic_cast<EnemyMissile*>(B))

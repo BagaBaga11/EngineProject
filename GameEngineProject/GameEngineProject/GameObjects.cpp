@@ -16,7 +16,6 @@ GameObject::GameObject(Level* mylevel) : Sprite(mylevel), mylevel(mylevel)
 
 GameObject::~GameObject()
 {
-    b2DestroyBody(*GetBody());
     delete bodyID;
     delete shapeID;
     if (mylevel != nullptr && !mylevel->objectArray.empty())
@@ -48,6 +47,8 @@ void GameObject::StartObject()
     shapeDef.enableContactEvents = true;
     
     shapeID = new b2ShapeId(b2CreatePolygonShape(*bodyID, &shapeDef, &dynamicBox));
+    Firstpos = newposX;
+    Secondpos = newposY;
     Sprite::StartObject();
 }
 

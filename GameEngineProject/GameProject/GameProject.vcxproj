@@ -139,6 +139,7 @@
     <ClCompile Include="Missile.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Rusher.cpp" />
+    <ClCompile Include="Wall.cpp" />
     <ClCompile Include="XenonLevel.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -223,6 +224,7 @@
     <ClInclude Include="Missile.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Rusher.h" />
+    <ClInclude Include="Wall.h" />
     <ClInclude Include="XenonLevel.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

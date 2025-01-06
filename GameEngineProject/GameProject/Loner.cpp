@@ -2,7 +2,7 @@
 #include "GameEngineProject.h"
 #include "EnemyMissile.h"
 
-Loner::Loner(Level* mylevel, GameEngine engine) : GameObject(mylevel)
+Loner::Loner(Level* mylevel, GameEngine engine) : Enemy(mylevel)
 {
    SetBMP("graphics/LonerA.bmp", 4, 4, 32);
    float value = engine.getRandomFloat(0, 460);
@@ -24,7 +24,6 @@ Loner::Loner(Level* mylevel, GameEngine engine) : GameObject(mylevel)
    SetSensor(false);
    animationManager.AddAnimation("Loner", { 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15 }, 0.1f);
    animationManager.SetCurrentAnimation("Loner");
-   StartObject();
 }
 Loner::~Loner()
 {
@@ -45,6 +44,7 @@ void Loner::Update(float deltaTime)
 	{
 		EnemyMissile* missile = new EnemyMissile(mylevel);
 		missile->SetStartPos(Secondpos + 17.0f, Firstpos + 40.0f);
+		missile->StartObject();
 		time = 0.0f;
 	}
 }

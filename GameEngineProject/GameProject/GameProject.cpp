@@ -9,11 +9,12 @@
 #include <string>
 #include "Loner.h"
 #include "Rusher.h"
+#include "XenonLevel.h"
 
 
 GameEngine engine;
 Player* Spaceship;   
-Level* mylevel;
+XenonLevel* mylevel;
 
 std::vector<GameObject*> Enemies;
 float times;
@@ -28,10 +29,12 @@ void Spawn(float deltaTime)
         {
             Loner* lone = new Loner(mylevel, engine);
             Enemies.push_back(lone);
+            lone->StartObject();
         }else
         {
             Rusher* rusher = new Rusher(mylevel, engine);
             Enemies.push_back(rusher);
+            rusher->StartObject();
         }
         times = 0;
     }
@@ -55,7 +58,7 @@ void Update()
 
 int main(int argc, char* argv[])
 {
-    mylevel = new Level;
+    mylevel = new XenonLevel;
     mylevel->SetGrav(0.0f, 1.0f);
     engine.SetLevel(mylevel);
     engine.Start(640,480);
@@ -68,13 +71,15 @@ int main(int argc, char* argv[])
     BackGround->SetSca(10, 10, 0);
 
     Spaceship = new Player(mylevel);
-    Spaceship->SetPos(0.5, 0.5, 0);
+    Spaceship->StartObject();
 
     Loner* lone = new Loner(mylevel,engine);
     Enemies.push_back(lone);
+    lone->StartObject();
 
     Rusher* rusher = new Rusher(mylevel, engine);
     Enemies.push_back(rusher);
+    rusher->StartObject();
 
     Update();
     engine.End();

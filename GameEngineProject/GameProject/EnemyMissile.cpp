@@ -7,7 +7,6 @@ EnemyMissile::EnemyMissile(Level* mylevel) : Missile(mylevel)
 	SetSensor(true);
 	animationManager.AddAnimation("Project", { 0,1,2,3,4,5,6,7 }, 0.1f);
 	animationManager.SetCurrentAnimation("Project");
-	StartObject();
 }
 
 EnemyMissile::~EnemyMissile()

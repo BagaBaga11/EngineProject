@@ -6,7 +6,7 @@
 Player::Player(Level* mylevel):Pawn(mylevel)
 {
 	SetBMP("graphics/Ship2.bmp", 7, 3, 64);
-	SetStartPos(0,0);
+	SetStartPos(240,320);
 	SetGravScale(0.0f);
 	SetSpeed(1.0f);
 	SetSensor(true);
@@ -16,7 +16,6 @@ Player::Player(Level* mylevel):Pawn(mylevel)
 	animationManager.AddAnimation("tleft", { 3,2,1 }, 0.1f);
 	animationManager.AddAnimation("tright", { 5,6,7 }, 0.1f);
 	animationManager.SetCurrentAnimation("idle");
-	StartObject();
 }
 
 Player::~Player()
@@ -124,6 +123,7 @@ void Player::Fire()
 	{
 		FriendlyMissile* missile = new FriendlyMissile(mylevel);
 		missile->SetStartPos(Firstpos + 17.0f, Secondpos - 50.0f);
+		missile->StartObject();
 		timedelta = 0.0f;
 	}
 

@@ -28,13 +28,12 @@ void Level::Update(float deltaTime)
     float timeStep = 1.0f / 60.0f;
     int subStepCount = 4;
     b2World_Step(*GetWorld(), timeStep, subStepCount);
+    b2ContactEvents sensorEvents = b2World_GetContactEvents(*GetWorld());
+    ProccesContact(sensorEvents);
     for (size_t i = 0; i < everyArray.size(); ++i)
     {
         everyArray[i]->Update(deltaTime);
     }
-    b2ContactEvents sensorEvents = b2World_GetContactEvents(*GetWorld());
-    ProccesContact(sensorEvents);
-
 }
 
 
@@ -99,12 +98,16 @@ void Level::ProccesContact(b2ContactEvents sensorEvents)
                 {
                     ObjectB = object;
                 }
-            }
+            } 
+
         }
-        if (ObjectA && ObjectB)
-        {
-            Contact(ObjectA, ObjectB);
-        }
+
+    }
+    if (ObjectA && ObjectB)
+    {
+         Contact(ObjectA, ObjectB);
+         ObjectA = nullptr;
+         ObjectB = nullptr;
     }
 }
 
