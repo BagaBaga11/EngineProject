@@ -35,10 +35,13 @@ public:
 	float GetGrav(const char* initial);
 
 	void ProccesContact(b2ContactEvents sensorEvents);
+	virtual void Contact(GameObject* A, GameObject* B);
 protected:
 	std::string background;
 	SDL_Renderer* renderL = nullptr;
 	b2WorldId* worldID = nullptr;
 	float verticalGrav, horizontalGrav = 0;
+	GameObject* ObjectA = nullptr;
+	GameObject*	ObjectB = nullptr;
 };
 

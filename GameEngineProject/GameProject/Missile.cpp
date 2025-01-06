@@ -27,7 +27,7 @@ void Missile::Hit()
 	Explo* sion = new Explo(mylevel);
 	sion->SetStartPos(Firstpos, Secondpos);
 	sion->StartObject();
-	GameObject::Hit();
+	delete this;
 }
 
 

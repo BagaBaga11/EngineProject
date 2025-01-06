@@ -16,6 +16,7 @@ GameObject::GameObject(Level* mylevel) : Sprite(mylevel), mylevel(mylevel)
 
 GameObject::~GameObject()
 {
+    b2DestroyBody(*GetBody());
     delete bodyID;
     delete shapeID;
     if (mylevel != nullptr && !mylevel->objectArray.empty())
@@ -72,8 +73,6 @@ void GameObject::SetSensor(bool bullet)
 
 void GameObject::Hit()
 {
-    b2DestroyBody(*GetBody());
-    delete this;
 }
 
 b2BodyId* GameObject::GetBody() const

@@ -10,8 +10,8 @@ public:
 	~Loner();
 
 	void Update(float deltaTime) override;
-
+	void Hit() override;
 protected :
-	float time;
+	float time = 0;
 };
 

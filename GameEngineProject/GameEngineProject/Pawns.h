@@ -22,6 +22,7 @@ public:
 	virtual void RemDown();
 	virtual void Fire();
 
+	virtual void Hit() override;
 	virtual void Update(float deltaTime) override;
 private:
 	const uint8_t* keyState;

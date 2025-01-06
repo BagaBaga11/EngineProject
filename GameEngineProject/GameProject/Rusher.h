@@ -8,6 +8,6 @@ public:
 	~Rusher();
 
 	void Update(float deltaTime) override;
-
+	void Hit() override;
 };
 

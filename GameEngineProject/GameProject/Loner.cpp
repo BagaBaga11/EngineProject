@@ -4,7 +4,7 @@
 
 Loner::Loner(Level* mylevel, GameEngine engine) : GameObject(mylevel)
 {
-   SetBMP("graphics/LonerC.bmp", 4, 4, 32);
+   SetBMP("graphics/LonerA.bmp", 4, 4, 32);
    float value = engine.getRandomFloat(0, 460);
    vertical = engine.RandomBool();
    float val;
@@ -54,5 +54,10 @@ void Loner::Update(float deltaTime)
 		missile->StartObject();
 		time = 0.0f;
 	}
+}
+
+void Loner::Hit()
+{
+	delete this;
 }
 

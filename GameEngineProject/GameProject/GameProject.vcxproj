@@ -136,6 +136,7 @@
     <ClCompile Include="Missile.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Rusher.cpp" />
+    <ClCompile Include="XenonLevel.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="graphics\bblogo.bmp" />
@@ -216,6 +217,7 @@
     <ClInclude Include="Missile.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Rusher.h" />
+    <ClInclude Include="XenonLevel.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -79,6 +79,10 @@ void Pawn::RemDown()
 {
 }
 
+void Pawn::Hit()
+{
+}
+
 void Pawn::Update(float deltaTime)
 {
     Sprite::Update(deltaTime);

@@ -71,7 +71,6 @@ void Player::Update(float deltaTime)
 	timeinv += delta;
 	delta = deltaTime;
 	timedelta += deltaTime;
-	std::cout << Firstpos << "/" << Secondpos << std::endl;
 	Pawn::Update(deltaTime);
 }
 
@@ -100,18 +99,18 @@ void Player::SetSpeed(float speed)
 
 void Player::Hit()
 {
-		if (healt <= 0)
-		{
-			alive = false;
-		}
-			if (timeinv > 2)
-			{
-				healt = healt--;
-				timeinv = 0;
-				std::cout << healt;
-			}
-		
+	if (timeinv > 2)
+	{
+		healt = healt--;
+		timeinv = 0;
+	}
+
 	animationManager.SetCurrentAnimation("Damage");
+
+	if (healt <= 0)
+	{
+		delete this;
+	}
 }
 
 bool Player::GetAlive()

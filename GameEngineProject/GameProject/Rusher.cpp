@@ -22,3 +22,8 @@ void Rusher::Update(float deltaTime)
 	GameObject::Update(deltaTime);
 }
 
+void Rusher::Hit()
+{
+	delete this;
+}
+
