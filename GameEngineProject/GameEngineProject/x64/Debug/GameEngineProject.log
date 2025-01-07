@@ -1,4 +1,4 @@
-﻿  GameObjects.cpp
+﻿  Levels.cpp
 C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\binclude\id.h(38,1): warning C4099: 'b2WorldId': type name first seen using 'class' now seen using 'struct'
 C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\binclude\id.h(37,16): message : see declaration of 'b2WorldId'
 C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\binclude\id.h(45,1): warning C4099: 'b2BodyId': type name first seen using 'class' now seen using 'struct'
@@ -7,8 +7,6 @@ C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineP
 C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\binclude\id.h(52,16): message : see declaration of 'b2ShapeId'
 C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\binclude\types.h(1045,1): warning C4099: 'b2ContactEvents': type name first seen using 'class' now seen using 'struct'
 C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\Vendor\binclude\types.h(1044,16): message : see declaration of 'b2ContactEvents'
-C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\GameObjects.cpp(43,56): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameEngineProject\GameObjects.cpp(43,45): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
   Appending SDL2.dll
   Appending SDL2.dll
   Appending SDL2.dll

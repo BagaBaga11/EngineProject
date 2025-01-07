@@ -3,10 +3,10 @@
 
 #include <iostream>
 
-Player::Player(Level* mylevel):Pawn(mylevel)
+Player::Player(Level* mylevel) :Pawn(mylevel)
 {
 	SetBMP("graphics/Ship2.bmp", 7, 3, 64);
-	SetStartPos(240,320);
+	SetStartPos(240, 320);
 	SetGravScale(0.0f);
 	SetSpeed(1.0f);
 	SetSensor(true);
@@ -23,14 +23,16 @@ Player::~Player()
 }
 
 void Player::Up()
-{	
+{
 	if (animationManager.GetAnimation("") != animationManager.GetAnimation("idle"))
 	{
 		animationManager.SetCurrentAnimation("idle");
 	}
-	Secondpos -= moveSpeed * delta * 320;
-	t->AddPosition(0, moveSpeed * delta, 0);
-
+	if (Secondpos >= 10)
+	{
+		Secondpos -= moveSpeed * delta * 320;
+		t->AddPosition(0, moveSpeed * delta, 0);
+	}
 }
 
 void Player::Left()
@@ -40,29 +42,39 @@ void Player::Left()
 		animationManager.SetCurrentAnimation("tleft");
 		animationManager.SetStopFrame(2);
 	}
-	Firstpos -= moveSpeed * delta * 240;
-	t->AddPosition(-(moveSpeed * delta), 0, 0);
+	if (Firstpos >= 10)
+	{
+		Firstpos -= moveSpeed * delta * 240;
+		t->AddPosition(-(moveSpeed * delta), 0, 0);
+	}
 }
 
 void Player::Right()
-{	
+{
 	if (animationManager.GetAnimation("") != animationManager.GetAnimation("tright"))
 	{
 		animationManager.SetCurrentAnimation("tright");
 		animationManager.SetStopFrame(2);
 	}
-	Firstpos += moveSpeed * delta * 240;
-	t->AddPosition(moveSpeed * delta, 0, 0);
+	if (Firstpos <= 460.0f)
+	{
+		Firstpos += moveSpeed * delta * 240;
+		t->AddPosition(moveSpeed * delta, 0, 0);
+	}
 }
 
 void Player::Down()
-{	
+{
 	if (animationManager.GetAnimation("") != animationManager.GetAnimation("idle"))
 	{
 		animationManager.SetCurrentAnimation("idle");
 	}
-	Secondpos += moveSpeed * delta * 320;
-	t->AddPosition(0, -(moveSpeed * delta), 0);
+	if (Secondpos <= 635.0f)
+	{
+		std::cout << Secondpos << std::endl;
+		Secondpos += moveSpeed * delta * 320;
+		t->AddPosition(0, -(moveSpeed * delta), 0);
+	}
 }
 
 void Player::Update(float deltaTime)

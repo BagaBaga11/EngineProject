@@ -15,7 +15,7 @@ GameObject::GameObject(Level* mylevel) : Sprite(mylevel), mylevel(mylevel)
 }
 
 GameObject::~GameObject()
-{
+{  
     delete bodyID;
     delete shapeID;
     if (mylevel != nullptr && !mylevel->objectArray.empty())
@@ -40,7 +40,7 @@ void GameObject::StartObject()
     bodyDef.fixedRotation = true;
     b2BodyId* body = new b2BodyId(b2CreateBody(*mylevel->GetWorld(), &bodyDef));
     bodyID = body;
-    b2Polygon dynamicBox = b2MakeBox(objSize/2, objSize/2);
+    b2Polygon dynamicBox = b2MakeBox(objSizeX/2, objSizeY/2);
     b2ShapeDef shapeDef = b2DefaultShapeDef();
     shapeDef.density = 1.0f;
     shapeDef.friction = 0.3f;

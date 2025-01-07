@@ -10,6 +10,7 @@
 #include "Loner.h"
 #include "Rusher.h"
 #include "XenonLevel.h"
+#include "Wall.h"
 
 
 GameEngine engine;
@@ -63,23 +64,21 @@ int main(int argc, char* argv[])
     engine.SetLevel(mylevel);
     engine.Start(640,480);
 
+    Wall* walldown = new Wall(mylevel);
+    walldown->SetBMP("", 0, 0, 2000, 2);
+    walldown->SetStartPos(240, 680);
+    walldown->StartObject();
+
+
     Sprite* BackGround = new Sprite(mylevel);
     BackGround->SetBMP("graphics/galaxy2.bmp", 1, 1, 1);
-    BackGround->animationManager.AddAnimation("Idle", { 1 }, 10);
+    BackGround->animationManager.AddAnimation("Idle", { 1 }, 999999999);
     BackGround->animationManager.SetCurrentAnimation("Idle");
     BackGround->StartObject();
     BackGround->SetSca(10, 10, 0);
 
     Spaceship = new Player(mylevel);
     Spaceship->StartObject();
-
-    Loner* lone = new Loner(mylevel,engine);
-    Enemies.push_back(lone);
-    lone->StartObject();
-
-    Rusher* rusher = new Rusher(mylevel, engine);
-    Enemies.push_back(rusher);
-    rusher->StartObject();
 
     Update();
     engine.End();

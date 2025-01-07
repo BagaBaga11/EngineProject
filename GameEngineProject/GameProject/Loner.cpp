@@ -35,12 +35,12 @@ void Loner::Update(float deltaTime)
 	GameObject::Update(deltaTime);
 	GetPosition();
 	SetPos(Secondpos, Firstpos, 0);
-	if (Secondpos > 510 || Secondpos < -100 )
+	if (Secondpos > 600 || Secondpos < -100 )
 	{
 		Hit();
 	}
 	time += deltaTime;
-	if (time > 2)
+	if (time > 3)
 	{
 		EnemyMissile* missile = new EnemyMissile(mylevel);
 		missile->SetStartPos(Secondpos + 17.0f, Firstpos + 40.0f);

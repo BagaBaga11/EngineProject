@@ -130,6 +130,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Collectibles.cpp" />
     <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="EnemyMissile.cpp" />
     <ClCompile Include="explo.cpp" />
@@ -216,6 +217,7 @@
     <None Include="graphics\Thumbs.db" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Collectibles.h" />
     <ClInclude Include="Enemy.h" />
     <ClInclude Include="EnemyMissile.h" />
     <ClInclude Include="explo.h" />

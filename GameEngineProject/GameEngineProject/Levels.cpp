@@ -24,12 +24,12 @@ const std::string Level::GetBackground()
 }
 
 void Level::Update(float deltaTime)
-{
+{   
+    b2ContactEvents sensorEvents = b2World_GetContactEvents(*GetWorld());
+    ProccesContact(sensorEvents);
     float timeStep = 1.0f / 60.0f;
     int subStepCount = 4;
     b2World_Step(*GetWorld(), timeStep, subStepCount);
-    b2ContactEvents sensorEvents = b2World_GetContactEvents(*GetWorld());
-    ProccesContact(sensorEvents);
     for (size_t i = 0; i < everyArray.size(); ++i)
     {
         everyArray[i]->Update(deltaTime);
@@ -103,12 +103,12 @@ void Level::ProccesContact(b2ContactEvents sensorEvents)
         }
 
     }
-    if (ObjectA && ObjectB)
-    {
-         Contact(ObjectA, ObjectB);
-         ObjectA = nullptr;
-         ObjectB = nullptr;
-    }
+            if (ObjectA && ObjectB)
+            {
+                 Contact(ObjectA, ObjectB);
+                 ObjectA = nullptr;
+                 ObjectB = nullptr;
+            }
 }
 
 void Level::Contact(GameObject* A, GameObject* B)

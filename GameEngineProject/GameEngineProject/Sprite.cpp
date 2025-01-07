@@ -274,22 +274,31 @@ Sprite::~Sprite() {
         delete(t);
 }
 
-void Sprite::SetBMP(const std::string& image, int wSec, int hSec, int objsize)
+void Sprite::SetBMP(const std::string& image, int wSec, int hSec, int objsizeX, int objsizeY)
 {
-    objSize = objsize;
-    t->SetTexture(image.c_str(), wSec, hSec, 20);
+    objSizeX = objsizeX;
+    objSizeY = (objsizeY == -1) ? objsizeX : objsizeY; 
+
+    if (!image.empty())
+    {
+        t->SetTexture(image.c_str(), wSec, hSec, 20);
+        hasTexture = false;
+    }
 }
 
 void Sprite::Update(float deltaTime)
 {   
-    animationManager.Update(deltaTime); 
-    int frameIndex = animationManager.GetCurrentFrame();
-    int colun = (frameIndex-1) / t->GetCollum(); 
-    int line = (frameIndex-1) % t->GetCollum();
-    colun++;
-    line++;
-    t->SetGrid(line, colun);
-    t->Draw();
+    if (!hasTexture)
+    {
+        animationManager.Update(deltaTime); 
+        int frameIndex = animationManager.GetCurrentFrame();
+        int colun = (frameIndex-1) / t->GetCollum(); 
+        int line = (frameIndex-1) % t->GetCollum();
+        colun++;
+        line++;
+        t->SetGrid(line, colun);
+        t->Draw();
+    }
 }
 
 void Sprite::StartObject()

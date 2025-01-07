@@ -33,7 +33,7 @@ public:
     Sprite(Level* mylevel);
     virtual ~Sprite();
 
-    void SetBMP(const std::string& image, int wSec, int hSec, int objsize);
+    void SetBMP(const std::string& image, int wSec, int hSec, int objsizeX, int objsizeY = -1);
     virtual void Update(float deltaTime);
     virtual void StartObject();
 
@@ -57,11 +57,13 @@ protected:
     int frameHeight = 0;
     int widthSection = 0;
     int heightSection = 0;
-    int objSize = 0;
+    int objSizeX;
+    int objSizeY;
     float newposX = 0.0f;
     float newposY = 0.0f;
     std::string myBMP;
     bool isSprite = false;
+    bool hasTexture = true;
         Transform* t;
 };
 
