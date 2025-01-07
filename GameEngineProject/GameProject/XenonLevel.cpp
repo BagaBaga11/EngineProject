@@ -4,7 +4,8 @@
 #include "FriendlyMissile.h"
 #include "Enemy.h"
 #include "EnemyMissile.h"
-#include "Wall.h"
+#include "Wall.h"~~
+#include "Collectibles.h"
 
 
 void XenonLevel::Contact(GameObject* A, GameObject* B)
@@ -23,16 +24,18 @@ void XenonLevel::Contact(GameObject* A, GameObject* B)
         }
         else if (auto* enemy = dynamic_cast<Enemy*>(B))
         {
-            std::cout << "P";
             player->Hit();
             enemy->Hit();
+        }
+        else if (auto* collectible = dynamic_cast<Collectibles*>(B))
+        {
+            collectible->Hit();
         }
     }
     else if (auto* friendlyMissile = dynamic_cast<FriendlyMissile*>(A))
     {
         if (auto* enemy = dynamic_cast<Enemy*>(B))
         {
-            std::cout << "F";
             friendlyMissile->Hit();
             enemy->Hit();
         }
@@ -67,24 +70,20 @@ void XenonLevel::Contact(GameObject* A, GameObject* B)
     {
         if (auto* player = dynamic_cast<Player*>(B))
         {
-            std::cout << "P";
             player->Hit();
             enemy->Hit();
         }
         else if (auto* friendlyMissile = dynamic_cast<FriendlyMissile*>(B))
         {
-            std::cout << "F";
             friendlyMissile->Hit();
             enemy->Hit();
         }
         else if (auto* wall = dynamic_cast<Wall*>(B))
         {
-            std::cout << "W";
             enemy->Hit();
         }
         else if (auto* ene = dynamic_cast<Enemy*>(B))
         {
-            std::cout << "E";
             enemy->Hit();
             ene->Hit();
         }
@@ -101,8 +100,14 @@ void XenonLevel::Contact(GameObject* A, GameObject* B)
         }
         else if (auto* enemy = dynamic_cast<Enemy*>(B))
         {
-            std::cout << "W";
             enemy->Hit();
+        }
+    }
+    else if (auto* collectible = dynamic_cast<Collectibles*>(A))
+    {
+        if (auto* player = dynamic_cast<Player*>(B))
+        {
+            collectible->Hit();
         }
     }
 }

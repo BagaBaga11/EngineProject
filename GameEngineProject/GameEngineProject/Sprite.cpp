@@ -20,7 +20,7 @@ struct Transform::Impl {
     GLuint vao;
     GLuint shaderProgram;
     GLuint texture;
-    float size, col, lin;
+    float XSize, YSize, col, lin;
     int coluna, line;
 };
 
@@ -40,24 +40,24 @@ Transform::~Transform()
 }
 void Transform::AddPosition(float x, float y, float z) 
 {
-    pImpl->position = glm::vec3(x, y, z);
-    pImpl->modelMatrix = glm::translate(pImpl->modelMatrix, pImpl->position);
+    pImpl->position += glm::vec3(x, y, z);
+    UpdateModelMatrix();
 };
 void Transform::SetPosition(float x, float y, float z) {
     pImpl->position = glm::vec3(x, y, z);
-    pImpl->modelMatrix = glm::mat4(1.0f);
-    pImpl->modelMatrix = glm::translate(pImpl->modelMatrix, pImpl->position);
+    UpdateModelMatrix();
 }
 
 void Transform::SetScale(float x, float y, float z) {
     pImpl->scale = glm::vec3(x, y, z);
+    UpdateModelMatrix();
+}
+
+void Transform::UpdateModelMatrix() {
+    pImpl->modelMatrix = glm::mat4(1.0f);
+    pImpl->modelMatrix = glm::translate(pImpl->modelMatrix, pImpl->position);
     pImpl->modelMatrix = glm::scale(pImpl->modelMatrix, pImpl->scale);
 }
-
-void Transform::SetRotation(float angle, float x, float y, float z) {
-    pImpl->modelMatrix = glm::rotate(pImpl->modelMatrix, glm::radians(angle), glm::vec3(x, y, z));
-}
-
 
 void Transform::Draw()
 {
@@ -200,17 +200,17 @@ void Transform::Start()
     glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)(3 * sizeof(float)));
     glEnableVertexAttribArray(1);
 
-    glBindVertexArray(0);  
+    glBindVertexArray(0); 
+
 }
 
-void Transform::SetTexture(const char* image, float Ncol,float Nlin, float size)
+void Transform::SetTexture(const char* image, float Ncol,float Nlin, float sizeX, float sizeY)
 {
     if (pImpl->texture) {
         glDeleteTextures(1, &pImpl->texture);
     }
     pImpl->col = Ncol;
     pImpl->lin = Nlin;
-    pImpl->size = size;
     glGenTextures(1, &pImpl->texture);
     glBindTexture(GL_TEXTURE_2D, pImpl->texture);
 
@@ -232,6 +232,7 @@ void Transform::SetTexture(const char* image, float Ncol,float Nlin, float size)
         std::cout << "Failed to load texture: " << image << std::endl;
     }
     stbi_image_free(data);
+    SetScale(sizeX/4,sizeY/4 , 1.0f);
 }
 
 int Transform::GetCollum()
@@ -278,10 +279,9 @@ void Sprite::SetBMP(const std::string& image, int wSec, int hSec, int objsizeX, 
 {
     objSizeX = objsizeX;
     objSizeY = (objsizeY == -1) ? objsizeX : objsizeY; 
-
     if (!image.empty())
     {
-        t->SetTexture(image.c_str(), wSec, hSec, 20);
+        t->SetTexture(image.c_str(), wSec, hSec, objSizeX, objSizeY);
         hasTexture = false;
     }
 }
@@ -333,10 +333,6 @@ void Sprite::ChangeCoordinates(float x, float y, float& newx, float& newy)
 {
     newx = ((x / 480) - 0.5f) * 2;
     newy = (0.5f - (y / 640)) * 2;
-}
-void Sprite::SetRot(float angle, float x, float y, float z)
-{
-    t->SetRotation(angle,x, y, z);
 }
 void Sprite::SetSca(float x, float y, float z)
 {

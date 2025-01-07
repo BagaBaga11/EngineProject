@@ -114,3 +114,13 @@ void Level::ProccesContact(b2ContactEvents sensorEvents)
 void Level::Contact(GameObject* A, GameObject* B)
 {
 }
+
+Pawn* Level::GetPawn()
+{
+    return myPawn;
+}
+
+void Level::SetPawn(Pawn* pwn)
+{
+    myPawn = pwn;
+}

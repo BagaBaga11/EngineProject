@@ -4,7 +4,7 @@
 
 Loner::Loner(Level* mylevel, GameEngine engine) : Enemy(mylevel)
 {
-   SetBMP("graphics/LonerA.bmp", 4, 4, 32);
+   SetBMP("graphics/LonerA.bmp", 4, 4, 4);
    float value = engine.getRandomFloat(0, 460);
    vertical = engine.RandomBool();
    float val;

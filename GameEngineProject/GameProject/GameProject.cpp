@@ -11,6 +11,7 @@
 #include "Rusher.h"
 #include "XenonLevel.h"
 #include "Wall.h"
+#include "PowerHealth.h"
 
 
 GameEngine engine;
@@ -25,8 +26,8 @@ void Spawn(float deltaTime)
     times += deltaTime;
     if (times > 5)
     {
-        bool spawn = engine.RandomBool();
-        if (spawn)
+        bool Enemspawn = engine.RandomBool();
+        if (Enemspawn)
         {
             Loner* lone = new Loner(mylevel, engine);
             Enemies.push_back(lone);
@@ -36,6 +37,16 @@ void Spawn(float deltaTime)
             Rusher* rusher = new Rusher(mylevel, engine);
             Enemies.push_back(rusher);
             rusher->StartObject();
+        }
+        bool Powerspawn = engine.RandomBool();
+        if (Powerspawn)
+        {
+            PowerHealth* powerhealth = new PowerHealth(mylevel, engine);
+            powerhealth->StartObject();
+        }
+        else
+        {
+            //Weapon powerUp
         }
         times = 0;
     }
@@ -71,11 +82,10 @@ int main(int argc, char* argv[])
 
 
     Sprite* BackGround = new Sprite(mylevel);
-    BackGround->SetBMP("graphics/galaxy2.bmp", 1, 1, 1);
+    BackGround->SetBMP("graphics/galaxy2.bmp", 1, 1, 40);
     BackGround->animationManager.AddAnimation("Idle", { 1 }, 999999999);
     BackGround->animationManager.SetCurrentAnimation("Idle");
     BackGround->StartObject();
-    BackGround->SetSca(10, 10, 0);
 
     Spaceship = new Player(mylevel);
     Spaceship->StartObject();

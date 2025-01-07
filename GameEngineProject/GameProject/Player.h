@@ -20,6 +20,7 @@ public:
 	 void SetSpeed(float speed);
 	 void Hit() override;
 	 bool GetAlive();
+	 void ChangeHealh(int diffhealth);
 protected:
 	float delta = 0.0f;
 	float moveSpeed  = 0.0f;

@@ -10,6 +10,7 @@
 Pawn::Pawn(Level* mylevel) : GameObject(mylevel)
 {
     keyState = SDL_GetKeyboardState(NULL);
+    mylevel->SetPawn(this);
 }
 
 Pawn::~Pawn()

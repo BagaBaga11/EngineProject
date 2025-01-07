@@ -3,6 +3,7 @@
 #include <iostream>
 #include <vector>
 #include "GameObjects.h"
+#include "Pawns.h"
 #include "SDL.h"
 
 struct SDL_Texture;
@@ -11,7 +12,7 @@ class b2WorldId;
 class GameObject;
 class Sprite;
 class b2ContactEvents;
-
+class Pawn;
 
 class Level
 {
@@ -36,6 +37,9 @@ public:
 
 	void ProccesContact(b2ContactEvents sensorEvents);
 	virtual void Contact(GameObject* A, GameObject* B);
+
+	Pawn* GetPawn();
+	void SetPawn(Pawn* pwn);
 protected:
 	std::string background;
 	SDL_Renderer* renderL = nullptr;
@@ -43,5 +47,6 @@ protected:
 	float verticalGrav, horizontalGrav = 0;
 	GameObject* ObjectA = nullptr;
 	GameObject*	ObjectB = nullptr;
+	Pawn* myPawn;
 };
 

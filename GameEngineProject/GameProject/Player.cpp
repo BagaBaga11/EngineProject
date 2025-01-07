@@ -5,7 +5,7 @@
 
 Player::Player(Level* mylevel) :Pawn(mylevel)
 {
-	SetBMP("graphics/Ship2.bmp", 7, 3, 64);
+	SetBMP("graphics/Ship2.bmp", 7, 3, 4);
 	SetStartPos(240, 320);
 	SetGravScale(0.0f);
 	SetSpeed(1.0f);
@@ -71,7 +71,6 @@ void Player::Down()
 	}
 	if (Secondpos <= 635.0f)
 	{
-		std::cout << Secondpos << std::endl;
 		Secondpos += moveSpeed * delta * 320;
 		t->AddPosition(0, -(moveSpeed * delta), 0);
 	}
@@ -129,12 +128,17 @@ bool Player::GetAlive()
 	return alive;
 }
 
+void Player::ChangeHealh(int diffhealth)
+{
+	healt += diffhealth;
+}
+
 void Player::Fire()
 {
 	if (timedelta > 1)
 	{
 		FriendlyMissile* missile = new FriendlyMissile(mylevel);
-		missile->SetStartPos(Firstpos + 17.0f, Secondpos - 50.0f);
+		missile->SetStartPos(Firstpos, Secondpos - 50.0f);
 		missile->StartObject();
 		timedelta = 0.0f;
 	}

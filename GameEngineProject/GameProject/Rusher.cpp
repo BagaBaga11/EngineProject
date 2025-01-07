@@ -2,7 +2,7 @@
 
 Rusher::Rusher(Level* mylevel, GameEngine engine) : Enemy(mylevel)
 {
-	SetBMP("graphics/rusher.bmp", 4, 6, 32);
+	SetBMP("graphics/rusher.bmp", 4, 6, 4);
 	float value = engine.getRandomFloat(0, 460);
 	SetStartPos(value, -100.0f);
 	SetGravScale(10.0f);

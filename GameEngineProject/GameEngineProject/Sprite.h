@@ -12,12 +12,12 @@ public:
     ~Transform();
     void SetPosition(float x, float y, float z);
     void SetScale(float x, float y, float z);
-    void SetRotation(float angle, float x, float y, float z);
     void AddPosition(float x, float y, float z);
 
     void Draw();
     void Start();
-    void SetTexture(const char* image, float Ncol, float Nlin, float size);
+    void SetTexture(const char* image, float Ncol, float Nlin, float sizeX, float sizeY);
+    void UpdateModelMatrix();
 
     int GetCollum();
     int GetLine();
@@ -43,7 +43,6 @@ public:
 
     void SetPos(float x, float y, float z);
     void SetSca(float x, float y, float z);
-    void SetRot(float angle, float x, float y, float z);
     void ChangeCoordinates(float x, float y, float& newx, float& newy);
 
     Animation animationManager;
