@@ -59,7 +59,7 @@ void Transform::UpdateModelMatrix() {
     pImpl->modelMatrix = glm::scale(pImpl->modelMatrix, pImpl->scale);
 }
 
-void Transform::Draw()
+void Transform::Draw(float deltatime)
 {
     GLuint texCoordStartLocation = glGetUniformLocation(pImpl->shaderProgram, "texCoordStart");
     GLuint texCoordEndLocation = glGetUniformLocation(pImpl->shaderProgram, "texCoordEnd");
@@ -297,7 +297,7 @@ void Sprite::Update(float deltaTime)
         colun++;
         line++;
         t->SetGrid(line, colun);
-        t->Draw();
+        t->Draw(deltaTime);
     }
 }
 
@@ -316,10 +316,6 @@ void Sprite::SetStartPos(float x, float y)
     newposX = x;
     newposY = y;
     SetPos(x, y, 0);
-}
-
-void Sprite::Draw()
-{
 }
 
 void Sprite::SetPos(float x, float y, float z)

@@ -130,6 +130,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Asteroids.cpp" />
     <ClCompile Include="Collectibles.cpp" />
     <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="EnemyMissile.cpp" />
@@ -137,10 +138,12 @@
     <ClCompile Include="FriendlyMissile.cpp" />
     <ClCompile Include="GameProject.cpp" />
     <ClCompile Include="Loner.cpp" />
+    <ClCompile Include="MetalAsteroids.cpp" />
     <ClCompile Include="Missile.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="PowerHealth.cpp" />
     <ClCompile Include="Rusher.cpp" />
+    <ClCompile Include="StoneAsteroids.cpp" />
     <ClCompile Include="Wall.cpp" />
     <ClCompile Include="XenonLevel.cpp" />
   </ItemGroup>
@@ -218,16 +221,19 @@
     <None Include="graphics\Thumbs.db" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Asteroids.h" />
     <ClInclude Include="Collectibles.h" />
     <ClInclude Include="Enemy.h" />
     <ClInclude Include="EnemyMissile.h" />
     <ClInclude Include="explo.h" />
     <ClInclude Include="FriendlyMissile.h" />
     <ClInclude Include="Loner.h" />
+    <ClInclude Include="MetalAsteroids.h" />
     <ClInclude Include="Missile.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="PowerHealth.h" />
     <ClInclude Include="Rusher.h" />
+    <ClInclude Include="StoneAsteroids.h" />
     <ClInclude Include="Wall.h" />
     <ClInclude Include="XenonLevel.h" />
   </ItemGroup>

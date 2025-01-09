@@ -14,7 +14,7 @@ public:
     void SetScale(float x, float y, float z);
     void AddPosition(float x, float y, float z);
 
-    void Draw();
+    void Draw(float deltatime);
     void Start();
     void SetTexture(const char* image, float Ncol, float Nlin, float sizeX, float sizeY);
     void UpdateModelMatrix();

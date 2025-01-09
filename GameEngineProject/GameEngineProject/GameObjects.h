@@ -20,6 +20,7 @@ public:
     float GetGravScale() const;
     void SetSensor(bool bullet);
     virtual void Hit();
+    void ApplyForce(float x, float y,float deltaTime);
 
     b2BodyId* GetBody() const;
     b2ShapeId* GetShape() const;

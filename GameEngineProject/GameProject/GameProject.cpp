@@ -12,6 +12,8 @@
 #include "XenonLevel.h"
 #include "Wall.h"
 #include "PowerHealth.h"
+#include "StoneAsteroids.h"
+#include "MetalAsteroids.h"
 
 
 GameEngine engine;
@@ -47,6 +49,32 @@ void Spawn(float deltaTime)
         else
         {
             //Weapon powerUp
+        }
+        bool Asteroids = engine.RandomBool();
+        if (Asteroids)
+        {
+            bool Stonesize = engine.RandomBool();
+            StoneAsteroids* StoneAsteroid = new StoneAsteroids(mylevel, engine);
+            if (Stonesize)
+            {
+                StoneAsteroid->SetBMP("graphics/SAster96.bmp", 5, 5, 4);
+            }
+            else
+            {
+                StoneAsteroid->SetBMP("graphics/SAster64.bmp", 8, 3, 2);
+            }
+            float value = engine.getRandomFloat(0, 460);
+            StoneAsteroid->SetStartPos(value, -100.0f);
+            StoneAsteroid->StartObject();
+            
+        }
+        else
+        {
+            MetalAsteroids* MetalAsteroid = new MetalAsteroids(mylevel, engine);
+            MetalAsteroid->SetBMP("graphics/MAster96.bmp", 5, 5, 4);
+            float value1 = engine.getRandomFloat(0, 460);
+            MetalAsteroid->SetStartPos(value1, -100.0f);
+            MetalAsteroid->StartObject();
         }
         times = 0;
     }
@@ -89,6 +117,9 @@ int main(int argc, char* argv[])
 
     Spaceship = new Player(mylevel);
     Spaceship->StartObject();
+
+    mylevel->Display("New Score", 10, 10);
+    mylevel->UpdateScore(0);
 
     Update();
     engine.End();

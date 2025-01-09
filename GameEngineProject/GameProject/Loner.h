@@ -13,5 +13,6 @@ public:
 	void Hit() override;
 protected :
 	float time = 0;
+	float grav;
 };
 

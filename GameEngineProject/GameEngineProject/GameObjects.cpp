@@ -40,7 +40,7 @@ void GameObject::StartObject()
     bodyDef.fixedRotation = true;
     b2BodyId* body = new b2BodyId(b2CreateBody(*mylevel->GetWorld(), &bodyDef));
     bodyID = body;
-    b2Polygon dynamicBox = b2MakeBox(objSizeX, objSizeY);
+    b2Polygon dynamicBox = b2MakeBox(objSizeX * 5, objSizeY * 5);
     b2ShapeDef shapeDef = b2DefaultShapeDef();
     shapeDef.density = 1.0f;
     shapeDef.friction = 0.3f;
@@ -74,6 +74,12 @@ void GameObject::SetSensor(bool bullet)
 
 void GameObject::Hit()
 {
+}
+
+void GameObject::ApplyForce(float x, float y, float deltaTime)
+{
+    b2Vec2 vec = b2Vec2{ x,y };
+    b2Body_ApplyForceToCenter(*bodyID, vec, true);
 }
 
 b2BodyId* GameObject::GetBody() const
