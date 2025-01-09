@@ -132,6 +132,7 @@
   <ItemGroup>
     <ClCompile Include="Asteroids.cpp" />
     <ClCompile Include="Collectibles.cpp" />
+    <ClCompile Include="Drone.cpp" />
     <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="EnemyMissile.cpp" />
     <ClCompile Include="explo.cpp" />
@@ -141,10 +142,10 @@
     <ClCompile Include="MetalAsteroids.cpp" />
     <ClCompile Include="Missile.cpp" />
     <ClCompile Include="Player.cpp" />
+    <ClCompile Include="PowerBullet.cpp" />
     <ClCompile Include="PowerHealth.cpp" />
     <ClCompile Include="Rusher.cpp" />
     <ClCompile Include="StoneAsteroids.cpp" />
-    <ClCompile Include="Wall.cpp" />
     <ClCompile Include="XenonLevel.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -223,6 +224,7 @@
   <ItemGroup>
     <ClInclude Include="Asteroids.h" />
     <ClInclude Include="Collectibles.h" />
+    <ClInclude Include="Drone.h" />
     <ClInclude Include="Enemy.h" />
     <ClInclude Include="EnemyMissile.h" />
     <ClInclude Include="explo.h" />
@@ -231,10 +233,10 @@
     <ClInclude Include="MetalAsteroids.h" />
     <ClInclude Include="Missile.h" />
     <ClInclude Include="Player.h" />
+    <ClInclude Include="PowerBullet.h" />
     <ClInclude Include="PowerHealth.h" />
     <ClInclude Include="Rusher.h" />
     <ClInclude Include="StoneAsteroids.h" />
-    <ClInclude Include="Wall.h" />
     <ClInclude Include="XenonLevel.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

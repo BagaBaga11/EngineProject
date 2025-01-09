@@ -36,7 +36,7 @@ void GameObject::StartObject()
     bodyDef.type = b2_dynamicBody;
     bodyDef.gravityScale = GetGravScale();
     bodyDef.position = b2Vec2{ newposX,newposY };
-    bodyDef.isBullet = false;
+    bodyDef.isBullet = true;
     bodyDef.fixedRotation = true;
     b2BodyId* body = new b2BodyId(b2CreateBody(*mylevel->GetWorld(), &bodyDef));
     bodyID = body;
@@ -80,6 +80,18 @@ void GameObject::ApplyForce(float x, float y, float deltaTime)
 {
     b2Vec2 vec = b2Vec2{ x,y };
     b2Body_ApplyForceToCenter(*bodyID, vec, true);
+}
+
+void GameObject::ResetXForce()
+{
+    float w = b2Body_GetLinearVelocity(*bodyID).y;
+    b2Body_SetLinearVelocity(*bodyID, { 0,w });
+}
+
+void GameObject::ResetYForce()
+{
+    float w = b2Body_GetLinearVelocity(*bodyID).x;
+    b2Body_SetLinearVelocity(*bodyID, { w,0 });
 }
 
 b2BodyId* GameObject::GetBody() const

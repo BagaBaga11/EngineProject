@@ -1,6 +1,10 @@
 #pragma once
 #pragma once
 #include <iostream>
+#include <unordered_map>
+#include <functional>
+#include <typeindex>
+#include <tuple>
 #include <vector>
 #include <Levels.h>
 class XenonLevel : public Level
@@ -13,6 +17,7 @@ public:
     std::vector<int> GetIndices(const std::string& input);
     void Display(const std::string& input, float x, float y, std::vector<Sprite*>* customLetters = nullptr);
     void UpdateScore(int scoreToAdd);
+    void Update(float deltaTime) override;
 private:
     char LetterMap[96] = {
         ' ', '!', '"', '#', '$', '%', '&', '\'', '(', ')', '*', '+', ',', '-', '.', '/',
@@ -25,6 +30,6 @@ private:
 
     std::vector<Sprite*> letterforPoints;
 
-    int points = 50;
+    int points = 0;
 };
 

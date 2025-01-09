@@ -21,6 +21,8 @@ public:
     void SetSensor(bool bullet);
     virtual void Hit();
     void ApplyForce(float x, float y,float deltaTime);
+    void ResetXForce();
+    void ResetYForce();
 
     b2BodyId* GetBody() const;
     b2ShapeId* GetShape() const;

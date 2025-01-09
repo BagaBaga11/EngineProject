@@ -4,7 +4,6 @@
 #include "FriendlyMissile.h"
 #include "Enemy.h"
 #include "EnemyMissile.h"
-#include "Wall.h"
 #include <iomanip>
 #include <sstream>
 #include "Collectibles.h"
@@ -65,10 +64,6 @@ void XenonLevel::Contact(GameObject* A, GameObject* B)
             friendlyMissile->Hit();
             enemyMissile->Hit();
         }
-        else if (auto* wall = dynamic_cast<Wall*>(B))
-        {
-            friendlyMissile->Hit();
-        }
         else if (auto* stone = dynamic_cast<StoneAsteroids*>(B))
         {
             friendlyMissile->Hit();
@@ -91,10 +86,6 @@ void XenonLevel::Contact(GameObject* A, GameObject* B)
             friendlyMissile->Hit();
             enemyMissile->Hit();
         }
-        else if (auto* wall = dynamic_cast<Wall*>(B))
-        {
-            enemyMissile->Hit();
-        }
         else if (auto* metal = dynamic_cast<MetalAsteroids*>(B))
         {
             enemyMissile->Hit();
@@ -113,36 +104,9 @@ void XenonLevel::Contact(GameObject* A, GameObject* B)
             enemy->Hit();
             UpdateScore(100);
         }
-        else if (auto* wall = dynamic_cast<Wall*>(B))
-        {
-            enemy->Hit();
-        }
         else if (auto* metal = dynamic_cast<MetalAsteroids*>(B))
         {
             enemy->Hit();
-        }
-    }
-    else if (auto* wall = dynamic_cast<Wall*>(A))
-    {
-        if (auto* friendlyMissile = dynamic_cast<FriendlyMissile*>(B))
-        {
-            friendlyMissile->Hit();
-        }
-        else if (auto* enemyMissile = dynamic_cast<EnemyMissile*>(B))
-        {
-            enemyMissile->Hit();
-        }
-        else if (auto* enemy = dynamic_cast<Enemy*>(B))
-        {
-            enemy->Hit();
-        }
-        else if (auto* stone = dynamic_cast<StoneAsteroids*>(B))
-        {
-            stone->Hit();
-        }
-        else if (auto* metal = dynamic_cast<MetalAsteroids*>(B))
-        {
-            metal->Hit();
         }
     }
     else if (auto* collectible = dynamic_cast<Collectibles*>(A))
@@ -164,11 +128,6 @@ void XenonLevel::Contact(GameObject* A, GameObject* B)
             friendlyMissile->Hit();
             stone->Hit();
         }
-        else if (auto* wall = dynamic_cast<Wall*>(B))
-        {
-            stone->SetDestruction(false);
-            stone->Hit();
-        }
     }
     else if (auto* metal = dynamic_cast<MetalAsteroids*>(A))
     {
@@ -180,10 +139,6 @@ void XenonLevel::Contact(GameObject* A, GameObject* B)
         else if (auto* friendlyMissile = dynamic_cast<FriendlyMissile*>(B))
         {
             friendlyMissile->Hit();
-        }
-        else if (auto* wall = dynamic_cast<Wall*>(B))
-        {
-            metal->Hit();
         }
     }
 }
@@ -242,5 +197,23 @@ void XenonLevel::UpdateScore(int scoreToAdd)
     }
     letterforPoints.clear();
 
-    Display(oss.str(), 200, 50, &letterforPoints);
+    Display(oss.str(), 110, 50, &letterforPoints);
+}
+
+void XenonLevel::Update(float deltaTime)
+{
+    for (size_t i = 0; i < everyArray.size(); ++i)
+    {
+        if (everyArray[i]->GetXPos() > 500 || everyArray[i]->GetXPos() < -100 )
+        {
+            delete everyArray[i];
+            std::cout << "terminated";
+        }
+        else if (everyArray[i]->GetYPos() > 700 || everyArray[i]->GetYPos() < -100)
+        {
+            delete everyArray[i];
+            std::cout << "terminated";
+        }
+    }
+    Level::Update(deltaTime);
 }

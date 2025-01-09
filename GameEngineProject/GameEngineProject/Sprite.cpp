@@ -308,7 +308,6 @@ void Sprite::StartObject()
         frameWidth = textureWidth / widthSection;
         frameHeight = textureHeight / heightSection;
     }
-    //mylevel->bmpArray.push_back(texture);
 }
 
 void Sprite::SetStartPos(float x, float y)
@@ -316,6 +315,16 @@ void Sprite::SetStartPos(float x, float y)
     newposX = x;
     newposY = y;
     SetPos(x, y, 0);
+}
+
+float Sprite::GetXPos()
+{
+    return newposX;
+}
+
+float Sprite::GetYPos()
+{
+    return newposY;
 }
 
 void Sprite::SetPos(float x, float y, float z)

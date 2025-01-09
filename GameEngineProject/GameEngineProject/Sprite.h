@@ -38,8 +38,8 @@ public:
     virtual void StartObject();
 
     void SetStartPos(float x, float y);
-
-    void Draw();
+    float GetXPos();
+    float GetYPos();
 
     void SetPos(float x, float y, float z);
     void SetSca(float x, float y, float z);

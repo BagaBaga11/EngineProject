@@ -21,6 +21,7 @@ public:
 	 void Hit() override;
 	 bool GetAlive();
 	 void ChangeHealh(int diffhealth);
+	 void ChangeMissile();
 protected:
 	float delta = 0.0f;
 	float moveSpeed  = 0.0f;
@@ -28,5 +29,6 @@ protected:
 	float timedelta = 0.0f;
 	bool alive = true;
 	float timeinv;
+	float missileTime;
 };
 

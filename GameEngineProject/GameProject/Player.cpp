@@ -78,6 +78,7 @@ void Player::Down()
 
 void Player::Update(float deltaTime)
 {
+	missileTime -= deltaTime;
 	timeinv += delta;
 	delta = deltaTime;
 	timedelta += deltaTime;
@@ -133,12 +134,38 @@ void Player::ChangeHealh(int diffhealth)
 	healt += diffhealth;
 }
 
+void Player::ChangeMissile()
+{
+	if (missileTime > 0)
+	{
+		missileTime += 10;
+	}else
+	{
+		missileTime = 10;
+	}
+}
+
 void Player::Fire()
 {
 	if (timedelta > 1)
 	{
 		FriendlyMissile* missile = new FriendlyMissile(mylevel);
 		missile->SetStartPos(Firstpos, Secondpos - 50.0f);
+		if (missileTime > 10)
+		{
+			missile->animationManager.SetCurrentAnimation("Three");
+			missile->SetGravScale(-400.0f);
+		}
+		else if(missileTime >0)
+		{
+			missile->animationManager.SetCurrentAnimation("Two");
+			missile->SetGravScale(-200.0f);
+		}
+		else
+		{
+			missile->animationManager.SetCurrentAnimation("One");
+			missile->SetGravScale(-100.0f);
+		}
 		missile->StartObject();
 		timedelta = 0.0f;
 	}

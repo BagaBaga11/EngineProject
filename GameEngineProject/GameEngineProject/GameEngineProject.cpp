@@ -27,13 +27,6 @@ void GameEngine::Start(int sizeX, int sizeY)
     b2WorldId* worl = new b2WorldId(b2CreateWorld(&worldDef));
     myLevel->SetWorld(worl);
 
-    b2BodyDef groundBodyDef = b2DefaultBodyDef();
-    groundBodyDef.position = b2Vec2{ 240.0f, 680.0f };
-    b2BodyId groundId = b2CreateBody(*worl, &groundBodyDef);
-    b2Polygon groundBox = b2MakeBox(1500.0f, 1.0f);
-    b2ShapeDef groundShapeDef = b2DefaultShapeDef();
-    b2CreatePolygonShape(groundId, &groundShapeDef, &groundBox);
-
     window = SDL_CreateWindow("SDL2", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, sizeY, sizeX, SDL_WINDOW_OPENGL);
 
     SDL_GLContext context = SDL_GL_CreateContext(window);
@@ -45,17 +38,12 @@ void GameEngine::Start(int sizeX, int sizeY)
 }
 bool GameEngine::Update(float deltaTime)
 {          
-
         while (SDL_PollEvent(ev))
         {
             if (ev->type == SDL_QUIT)
             return false;
         }
         myLevel->Update(deltaTime);
-     /*   for (size_t i = 0; i < myLevel->bmpArray.size(); ++i)
-        { 
-            myLevel->everyArray.Draw();
-        }*/
         SDL_GL_SwapWindow(window);
 
         return true;

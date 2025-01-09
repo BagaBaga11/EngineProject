@@ -22,7 +22,7 @@ public:
 	void SetBackground(std::string image);
 	const std::string GetBackground();
 
-	void Update(float deltaTime);
+	virtual void Update(float deltaTime);
 
 	std::vector<GameObject*> objectArray;
 	std::vector<Sprite*> everyArray;

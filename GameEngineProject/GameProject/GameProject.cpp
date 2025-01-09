@@ -10,10 +10,11 @@
 #include "Loner.h"
 #include "Rusher.h"
 #include "XenonLevel.h"
-#include "Wall.h"
 #include "PowerHealth.h"
 #include "StoneAsteroids.h"
 #include "MetalAsteroids.h"
+#include "Drone.h"
+#include "PowerBullet.h"
 
 
 GameEngine engine;
@@ -48,7 +49,8 @@ void Spawn(float deltaTime)
         }
         else
         {
-            //Weapon powerUp
+            PowerBullet* powerbullet= new PowerBullet(mylevel, engine);
+            powerbullet->StartObject();
         }
         bool Asteroids = engine.RandomBool();
         if (Asteroids)
@@ -103,12 +105,6 @@ int main(int argc, char* argv[])
     engine.SetLevel(mylevel);
     engine.Start(640,480);
 
-    Wall* walldown = new Wall(mylevel);
-    walldown->SetBMP("", 0, 0, 2000, 2);
-    walldown->SetStartPos(240, 680);
-    walldown->StartObject();
-
-
     Sprite* BackGround = new Sprite(mylevel);
     BackGround->SetBMP("graphics/galaxy2.bmp", 1, 1, 40);
     BackGround->animationManager.AddAnimation("Idle", { 1 }, 999999999);
@@ -118,7 +114,7 @@ int main(int argc, char* argv[])
     Spaceship = new Player(mylevel);
     Spaceship->StartObject();
 
-    mylevel->Display("New Score", 10, 10);
+    mylevel->Display("Score", 50, 50);
     mylevel->UpdateScore(0);
 
     Update();
