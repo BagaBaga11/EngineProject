@@ -15,6 +15,7 @@
 #include "MetalAsteroids.h"
 #include "Drone.h"
 #include "PowerBullet.h"
+#include "Companion.h"
 
 
 GameEngine engine;
@@ -22,36 +23,77 @@ Player* Spaceship;
 XenonLevel* mylevel;
 
 std::vector<GameObject*> Enemies;
-float times;
+float timeEnem;
+float timeStone;
+float timeUpgr;
+int drone = 0;
+float timeDrone;
 
 void Spawn(float deltaTime)
 {
-    times += deltaTime;
-    if (times > 5)
+    timeEnem += deltaTime;
+    timeDrone += deltaTime;
+    if (timeEnem > 15)
     {
+        drone += 1;
         bool Enemspawn = engine.RandomBool();
         if (Enemspawn)
         {
             Loner* lone = new Loner(mylevel, engine);
             Enemies.push_back(lone);
             lone->StartObject();
-        }else
+        }
+        else
         {
             Rusher* rusher = new Rusher(mylevel, engine);
             Enemies.push_back(rusher);
             rusher->StartObject();
         }
-        bool Powerspawn = engine.RandomBool();
-        if (Powerspawn)
+        if (drone > 3)
         {
-            PowerHealth* powerhealth = new PowerHealth(mylevel, engine);
-            powerhealth->StartObject();
+            int distancedrone = 0;
+            float value = engine.getRandomFloat(100, 400);
+            for (size_t i = 0; i < 5; i++)
+            {
+                Drone* drone = new Drone(mylevel, engine);
+                drone->SetStartPos(value, -30.0f + distancedrone);
+                drone->StartObject();
+                distancedrone -= 50;
+            }
+            drone = 0;
         }
-        else
+        timeEnem = 0;
+    }   
+}
+void SpawnUpgr(float deltaTime)
+{ 
+    timeUpgr += deltaTime;
+        if (timeUpgr > 20)
         {
-            PowerBullet* powerbullet= new PowerBullet(mylevel, engine);
-            powerbullet->StartObject();
+            bool Powerspawn = engine.RandomBool(); 
+            if (Powerspawn)
+            {
+                PowerHealth* powerhealth = new PowerHealth(mylevel, engine);
+                powerhealth->StartObject();
+            }
+            else
+            {
+                PowerBullet* powerbullet = new PowerBullet(mylevel, engine);
+                powerbullet->StartObject();
+                if (Spaceship->GetComp() == nullptr)
+                {
+                    Companion* s = new Companion(mylevel, engine);
+                    s->StartObject();
+                }
+            }
+            timeUpgr = 0;
         }
+}
+void SpawnStones(float deltaTime)
+{
+    timeStone += deltaTime;
+    if (timeStone > 5)
+    {
         bool Asteroids = engine.RandomBool();
         if (Asteroids)
         {
@@ -68,7 +110,7 @@ void Spawn(float deltaTime)
             float value = engine.getRandomFloat(0, 460);
             StoneAsteroid->SetStartPos(value, -100.0f);
             StoneAsteroid->StartObject();
-            
+
         }
         else
         {
@@ -78,7 +120,7 @@ void Spawn(float deltaTime)
             MetalAsteroid->SetStartPos(value1, -100.0f);
             MetalAsteroid->StartObject();
         }
-        times = 0;
+        timeStone = 0;
     }
 }
 void Update()
@@ -94,6 +136,8 @@ void Update()
         deltaTime = (now - last) / 1000.0f;
         
         Spawn(deltaTime);
+        SpawnStones(deltaTime);
+        SpawnUpgr(deltaTime);
         isRunning = engine.Update(deltaTime) && Spaceship->GetAlive();
     } 
 }
@@ -114,8 +158,9 @@ int main(int argc, char* argv[])
     Spaceship = new Player(mylevel);
     Spaceship->StartObject();
 
-    mylevel->Display("Score", 50, 50);
+    mylevel->Display("Score", 15, 15);
     mylevel->UpdateScore(0);
+    mylevel->StartUI();
 
     Update();
     engine.End();

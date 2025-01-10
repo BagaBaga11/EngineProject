@@ -7,32 +7,16 @@
       "RelativeMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|solutionrelative:GameProject\\GameProject.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6D1E78C5-17A9-41C1-983C-975D76735E7D}|GameEngineProject\\GameEngineProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameEngineProject\\GameEngineProject.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{6D1E78C5-17A9-41C1-983C-975D76735E7D}|GameEngineProject\\GameEngineProject.vcxproj|solutionrelative:GameEngineProject\\GameEngineProject.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D1E78C5-17A9-41C1-983C-975D76735E7D}|GameEngineProject\\GameEngineProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GAMEENGINEPROJECT\\GAMEENGINEPROJECT.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{6D1E78C5-17A9-41C1-983C-975D76735E7D}|GameEngineProject\\GameEngineProject.vcxproj|solutionrelative:GAMEENGINEPROJECT\\GAMEENGINEPROJECT.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D1E78C5-17A9-41C1-983C-975D76735E7D}|GameEngineProject\\GameEngineProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameEngineProject\\GameObjects.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{6D1E78C5-17A9-41C1-983C-975D76735E7D}|GameEngineProject\\GameEngineProject.vcxproj|solutionrelative:GameEngineProject\\GameObjects.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\XenonLevel.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|solutionrelative:GameProject\\XenonLevel.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6D1E78C5-17A9-41C1-983C-975D76735E7D}|GameEngineProject\\GameEngineProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameEngineProject\\Sprite.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{6D1E78C5-17A9-41C1-983C-975D76735E7D}|GameEngineProject\\GameEngineProject.vcxproj|solutionrelative:GameEngineProject\\Sprite.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{6D1E78C5-17A9-41C1-983C-975D76735E7D}|GameEngineProject\\GameEngineProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameEngineProject\\Levels.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6D1E78C5-17A9-41C1-983C-975D76735E7D}|GameEngineProject\\GameEngineProject.vcxproj|solutionrelative:GameEngineProject\\Levels.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6D1E78C5-17A9-41C1-983C-975D76735E7D}|GameEngineProject\\GameEngineProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GAMEENGINEPROJECT\\SPRITE.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{6D1E78C5-17A9-41C1-983C-975D76735E7D}|GameEngineProject\\GameEngineProject.vcxproj|solutionrelative:GAMEENGINEPROJECT\\SPRITE.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\Loner.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|solutionrelative:GameProject\\Loner.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{6D1E78C5-17A9-41C1-983C-975D76735E7D}|GameEngineProject\\GameEngineProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameEngineProject\\Levels.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6D1E78C5-17A9-41C1-983C-975D76735E7D}|GameEngineProject\\GameEngineProject.vcxproj|solutionrelative:GameEngineProject\\Levels.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -43,131 +27,152 @@
       "RelativeMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|solutionrelative:GameProject\\XenonLevel.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6D1E78C5-17A9-41C1-983C-975D76735E7D}|GameEngineProject\\GameEngineProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameEngineProject\\Levels.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{6D1E78C5-17A9-41C1-983C-975D76735E7D}|GameEngineProject\\GameEngineProject.vcxproj|solutionrelative:GameEngineProject\\Levels.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\FriendlyMissile.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|solutionrelative:GameProject\\FriendlyMissile.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|C:\\PROGRAM FILES\\MICROSOFT VISUAL STUDIO\\2022\\COMMUNITY\\VC\\TOOLS\\MSVC\\14.36.32532\\INCLUDE\\VECTOR||{3B902123-F8A7-4915-9F01-361F908088D0}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\EnemyMissile.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|solutionrelative:GameProject\\EnemyMissile.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\FriendlyMissile.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|solutionrelative:GameProject\\FriendlyMissile.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\Drone.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|solutionrelative:GameProject\\Drone.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\Drone.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|solutionrelative:GameProject\\Drone.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\explo.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|solutionrelative:GameProject\\explo.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\explo.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|solutionrelative:GameProject\\explo.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D1E78C5-17A9-41C1-983C-975D76735E7D}|GameEngineProject\\GameEngineProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameEngineProject\\Levels.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{6D1E78C5-17A9-41C1-983C-975D76735E7D}|GameEngineProject\\GameEngineProject.vcxproj|solutionrelative:GameEngineProject\\Levels.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D1E78C5-17A9-41C1-983C-975D76735E7D}|GameEngineProject\\GameEngineProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameEngineProject\\GameObjects.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{6D1E78C5-17A9-41C1-983C-975D76735E7D}|GameEngineProject\\GameEngineProject.vcxproj|solutionrelative:GameEngineProject\\GameObjects.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\Loner.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|solutionrelative:GameProject\\Loner.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\Rusher.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|solutionrelative:GameProject\\Rusher.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\Rusher.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|solutionrelative:GameProject\\Rusher.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\Enemy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|solutionrelative:GameProject\\Enemy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\PowerBullet.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|solutionrelative:GameProject\\PowerBullet.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\PowerBullet.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|solutionrelative:GameProject\\PowerBullet.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|solutionrelative:GameProject\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{6D1E78C5-17A9-41C1-983C-975D76735E7D}|GameEngineProject\\GameEngineProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameEngineProject\\GameObjects.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6D1E78C5-17A9-41C1-983C-975D76735E7D}|GameEngineProject\\GameEngineProject.vcxproj|solutionrelative:GameEngineProject\\GameObjects.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\StoneAsteroids.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|solutionrelative:GameProject\\StoneAsteroids.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\StoneAsteroids.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|solutionrelative:GameProject\\StoneAsteroids.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|solutionrelative:GameProject\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\PowerHealth.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|solutionrelative:GameProject\\PowerHealth.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\Companion.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|solutionrelative:GameProject\\Companion.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\PowerHealth.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|solutionrelative:GameProject\\PowerHealth.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{6D1E78C5-17A9-41C1-983C-975D76735E7D}|GameEngineProject\\GameEngineProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameEngineProject\\Sprite.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6D1E78C5-17A9-41C1-983C-975D76735E7D}|GameEngineProject\\GameEngineProject.vcxproj|solutionrelative:GameEngineProject\\Sprite.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\Missile.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|solutionrelative:GameProject\\Missile.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\Rusher.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|solutionrelative:GameProject\\Rusher.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\EnemyMissile.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|solutionrelative:GameProject\\EnemyMissile.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\Drone.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|solutionrelative:GameProject\\Drone.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D1E78C5-17A9-41C1-983C-975D76735E7D}|GameEngineProject\\GameEngineProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameEngineProject\\GameObjects.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6D1E78C5-17A9-41C1-983C-975D76735E7D}|GameEngineProject\\GameEngineProject.vcxproj|solutionrelative:GameEngineProject\\GameObjects.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6D1E78C5-17A9-41C1-983C-975D76735E7D}|GameEngineProject\\GameEngineProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameEngineProject\\Pawns.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{6D1E78C5-17A9-41C1-983C-975D76735E7D}|GameEngineProject\\GameEngineProject.vcxproj|solutionrelative:GameEngineProject\\Pawns.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\EnemyMissile.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|solutionrelative:GameProject\\EnemyMissile.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D1E78C5-17A9-41C1-983C-975D76735E7D}|GameEngineProject\\GameEngineProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameEngineProject\\GameEngineProject.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6D1E78C5-17A9-41C1-983C-975D76735E7D}|GameEngineProject\\GameEngineProject.vcxproj|solutionrelative:GameEngineProject\\GameEngineProject.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\Companion.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|solutionrelative:GameProject\\Companion.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\PowerBullet.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|solutionrelative:GameProject\\PowerBullet.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\Collectibles.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|solutionrelative:GameProject\\Collectibles.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\PowerHealth.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|solutionrelative:GameProject\\PowerHealth.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\PowerBullet.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|solutionrelative:GameProject\\PowerBullet.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\PowerHealth.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|solutionrelative:GameProject\\PowerHealth.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\Collectibles.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|solutionrelative:GameProject\\Collectibles.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\Enemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|solutionrelative:GameProject\\Enemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\Loner.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|solutionrelative:GameProject\\Loner.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6D1E78C5-17A9-41C1-983C-975D76735E7D}|GameEngineProject\\GameEngineProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameEngineProject\\Animation.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{6D1E78C5-17A9-41C1-983C-975D76735E7D}|GameEngineProject\\GameEngineProject.vcxproj|solutionrelative:GameEngineProject\\Animation.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6D1E78C5-17A9-41C1-983C-975D76735E7D}|GameEngineProject\\GameEngineProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameEngineProject\\Pawns.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{6D1E78C5-17A9-41C1-983C-975D76735E7D}|GameEngineProject\\GameEngineProject.vcxproj|solutionrelative:GameEngineProject\\Pawns.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\Missile.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|solutionrelative:GameProject\\Missile.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\Enemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|solutionrelative:GameProject\\Enemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\Enemy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|solutionrelative:GameProject\\Enemy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\Drone.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|solutionrelative:GameProject\\Drone.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\FriendlyMissile.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|solutionrelative:GameProject\\FriendlyMissile.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\FriendlyMissile.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|solutionrelative:GameProject\\FriendlyMissile.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\EnemyMissile.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|solutionrelative:GameProject\\EnemyMissile.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\StoneAsteroids.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|solutionrelative:GameProject\\StoneAsteroids.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\Rusher.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|solutionrelative:GameProject\\Rusher.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6D1E78C5-17A9-41C1-983C-975D76735E7D}|GameEngineProject\\GameEngineProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameEngineProject\\Animation.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{6D1E78C5-17A9-41C1-983C-975D76735E7D}|GameEngineProject\\GameEngineProject.vcxproj|solutionrelative:GameEngineProject\\Animation.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D1E78C5-17A9-41C1-983C-975D76735E7D}|GameEngineProject\\GameEngineProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GAMEENGINEPROJECT\\GAMEENGINEPROJECT.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6D1E78C5-17A9-41C1-983C-975D76735E7D}|GameEngineProject\\GameEngineProject.vcxproj|solutionrelative:GAMEENGINEPROJECT\\GAMEENGINEPROJECT.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D1E78C5-17A9-41C1-983C-975D76735E7D}|GameEngineProject\\GameEngineProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GAMEENGINEPROJECT\\SPRITE.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6D1E78C5-17A9-41C1-983C-975D76735E7D}|GameEngineProject\\GameEngineProject.vcxproj|solutionrelative:GAMEENGINEPROJECT\\SPRITE.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\explo.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|solutionrelative:GameProject\\explo.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\explo.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|solutionrelative:GameProject\\explo.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\Loner.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|solutionrelative:GameProject\\Loner.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\Missile.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{00F37B09-91D9-452C-8A15-F5E82DF2B33C}|GameProject\\GameProject.vcxproj|solutionrelative:GameProject\\Missile.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D1E78C5-17A9-41C1-983C-975D76735E7D}|GameEngineProject\\GameEngineProject.vcxproj|C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameEngineProject\\Pawns.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6D1E78C5-17A9-41C1-983C-975D76735E7D}|GameEngineProject\\GameEngineProject.vcxproj|solutionrelative:GameEngineProject\\Pawns.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -187,7 +192,7 @@
               "RelativeDocumentMoniker": "GameProject\\GameProject.cpp",
               "ToolTip": "C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\GameProject.cpp",
               "RelativeToolTip": "GameProject\\GameProject.cpp",
-              "ViewState": "AQIAAE0AAAAAAAAAAAAgwB0AAAARAAAA",
+              "ViewState": "AQIAAI0AAAAAAAAAAAAAAKAAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-11T17:30:01.41Z",
               "IsPinned": true,
@@ -195,33 +200,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "vector",
-              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\include\\vector",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\include\\vector",
-              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\include\\vector",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\include\\vector",
-              "ViewState": "AQIAAEUHAAAAAAAAAAAawFoHAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-01-09T19:54:03.699Z",
+              "DocumentIndex": 9,
+              "Title": "Companion.cpp",
+              "DocumentMoniker": "C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\Companion.cpp",
+              "RelativeDocumentMoniker": "GameProject\\Companion.cpp",
+              "ToolTip": "C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\Companion.cpp",
+              "RelativeToolTip": "GameProject\\Companion.cpp",
+              "ViewState": "AQIAAGcAAAAAAAAAAAAgwH8AAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-09T23:05:34.948Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
+              "Title": "Companion.h",
+              "DocumentMoniker": "C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\Companion.h",
+              "RelativeDocumentMoniker": "GameProject\\Companion.h",
+              "ToolTip": "C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\Companion.h",
+              "RelativeToolTip": "GameProject\\Companion.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-01-09T23:04:50.73Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "Drone.cpp",
               "DocumentMoniker": "C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\Drone.cpp",
               "RelativeDocumentMoniker": "GameProject\\Drone.cpp",
               "ToolTip": "C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\Drone.cpp",
               "RelativeToolTip": "GameProject\\Drone.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAOAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-01-09T17:46:14.055Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 29,
               "Title": "Drone.h",
               "DocumentMoniker": "C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\Drone.h",
               "RelativeDocumentMoniker": "GameProject\\Drone.h",
@@ -234,33 +252,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 18,
               "Title": "PowerBullet.cpp",
               "DocumentMoniker": "C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\PowerBullet.cpp",
               "RelativeDocumentMoniker": "GameProject\\PowerBullet.cpp",
               "ToolTip": "C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\PowerBullet.cpp",
               "RelativeToolTip": "GameProject\\PowerBullet.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAANAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-01-09T10:34:25.023Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 21,
               "Title": "PowerBullet.h",
               "DocumentMoniker": "C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\PowerBullet.h",
               "RelativeDocumentMoniker": "GameProject\\PowerBullet.h",
               "ToolTip": "C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\PowerBullet.h",
               "RelativeToolTip": "GameProject\\PowerBullet.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAFAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-01-09T10:33:12.978Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 7,
+              "Title": "StoneAsteroids.cpp",
+              "DocumentMoniker": "C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\StoneAsteroids.cpp",
+              "RelativeDocumentMoniker": "GameProject\\StoneAsteroids.cpp",
+              "ToolTip": "C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\StoneAsteroids.cpp",
+              "RelativeToolTip": "GameProject\\StoneAsteroids.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-09T02:33:28.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
               "Title": "StoneAsteroids.h",
               "DocumentMoniker": "C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\StoneAsteroids.h",
               "RelativeDocumentMoniker": "GameProject\\StoneAsteroids.h",
@@ -273,83 +304,72 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "StoneAsteroids.cpp",
-              "DocumentMoniker": "C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\StoneAsteroids.cpp",
-              "RelativeDocumentMoniker": "GameProject\\StoneAsteroids.cpp",
-              "ToolTip": "C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\StoneAsteroids.cpp",
-              "RelativeToolTip": "GameProject\\StoneAsteroids.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-01-09T02:33:28.781Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 2,
               "Title": "Levels.cpp",
               "DocumentMoniker": "C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameEngineProject\\Levels.cpp",
               "RelativeDocumentMoniker": "GameEngineProject\\Levels.cpp",
               "ToolTip": "C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameEngineProject\\Levels.cpp",
               "RelativeToolTip": "GameEngineProject\\Levels.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAFAAAA",
+              "ViewState": "AQIAAGkAAAAAAAAAAAAIwH8AAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-30T12:44:21.264Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 20,
               "Title": "PowerHealth.cpp",
               "DocumentMoniker": "C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\PowerHealth.cpp",
               "RelativeDocumentMoniker": "GameProject\\PowerHealth.cpp",
               "ToolTip": "C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\PowerHealth.cpp",
               "RelativeToolTip": "GameProject\\PowerHealth.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAA6wB4AAAAAAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAIwCMAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-01-07T11:08:54.885Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 22,
               "Title": "PowerHealth.h",
               "DocumentMoniker": "C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\PowerHealth.h",
               "RelativeDocumentMoniker": "GameProject\\PowerHealth.h",
               "ToolTip": "C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\PowerHealth.h",
               "RelativeToolTip": "GameProject\\PowerHealth.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-01-07T11:08:24.645Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 19,
               "Title": "Collectibles.cpp",
               "DocumentMoniker": "C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\Collectibles.cpp",
               "RelativeDocumentMoniker": "GameProject\\Collectibles.cpp",
               "ToolTip": "C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\Collectibles.cpp",
               "RelativeToolTip": "GameProject\\Collectibles.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAMAAAABAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-01-07T01:26:44.337Z"
+              "WhenOpened": "2025-01-07T01:26:44.337Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 23,
               "Title": "Collectibles.h",
               "DocumentMoniker": "C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\Collectibles.h",
               "RelativeDocumentMoniker": "GameProject\\Collectibles.h",
               "ToolTip": "C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\Collectibles.h",
               "RelativeToolTip": "GameProject\\Collectibles.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAGAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-01-07T01:26:07.177Z"
+              "WhenOpened": "2025-01-07T01:26:07.177Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 27,
               "Title": "Enemy.cpp",
               "DocumentMoniker": "C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\Enemy.cpp",
               "RelativeDocumentMoniker": "GameProject\\Enemy.cpp",
@@ -357,11 +377,12 @@
               "RelativeToolTip": "GameProject\\Enemy.cpp",
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwAgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-01-06T18:27:20.991Z"
+              "WhenOpened": "2025-01-06T18:27:20.991Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 28,
               "Title": "Enemy.h",
               "DocumentMoniker": "C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\Enemy.h",
               "RelativeDocumentMoniker": "GameProject\\Enemy.h",
@@ -374,7 +395,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 30,
               "Title": "FriendlyMissile.cpp",
               "DocumentMoniker": "C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\FriendlyMissile.cpp",
               "RelativeDocumentMoniker": "GameProject\\FriendlyMissile.cpp",
@@ -387,7 +408,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 31,
               "Title": "FriendlyMissile.h",
               "DocumentMoniker": "C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\FriendlyMissile.h",
               "RelativeDocumentMoniker": "GameProject\\FriendlyMissile.h",
@@ -400,7 +421,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 32,
               "Title": "EnemyMissile.cpp",
               "DocumentMoniker": "C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\EnemyMissile.cpp",
               "RelativeDocumentMoniker": "GameProject\\EnemyMissile.cpp",
@@ -413,7 +434,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 15,
               "Title": "EnemyMissile.h",
               "DocumentMoniker": "C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\EnemyMissile.h",
               "RelativeDocumentMoniker": "GameProject\\EnemyMissile.h",
@@ -421,37 +442,38 @@
               "RelativeToolTip": "GameProject\\EnemyMissile.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-01-06T12:02:02.746Z"
+              "WhenOpened": "2025-01-06T12:02:02.746Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "XenonLevel.cpp",
               "DocumentMoniker": "C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\XenonLevel.cpp",
               "RelativeDocumentMoniker": "GameProject\\XenonLevel.cpp",
               "ToolTip": "C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\XenonLevel.cpp",
               "RelativeToolTip": "GameProject\\XenonLevel.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAANEAAAAmAAAA",
+              "ViewState": "AQIAAP4AAAAAAAAAAAAAACIBAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-01-06T00:14:02.915Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 5,
               "Title": "XenonLevel.h",
               "DocumentMoniker": "C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\XenonLevel.h",
               "RelativeDocumentMoniker": "GameProject\\XenonLevel.h",
               "ToolTip": "C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\XenonLevel.h",
               "RelativeToolTip": "GameProject\\XenonLevel.h",
-              "ViewState": "AQIAAAQAAAAAAAAAAAA4wA4AAAAAAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAA9wBQAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-01-05T23:31:41.401Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 34,
               "Title": "Rusher.h",
               "DocumentMoniker": "C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\Rusher.h",
               "RelativeDocumentMoniker": "GameProject\\Rusher.h",
@@ -464,20 +486,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 11,
               "Title": "Rusher.cpp",
               "DocumentMoniker": "C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\Rusher.cpp",
               "RelativeDocumentMoniker": "GameProject\\Rusher.cpp",
               "ToolTip": "C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\Rusher.cpp",
               "RelativeToolTip": "GameProject\\Rusher.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBkAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAA6wAYAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-12-05T04:35:58.978Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 35,
               "Title": "Animation.cpp",
               "DocumentMoniker": "C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameEngineProject\\Animation.cpp",
               "RelativeDocumentMoniker": "GameEngineProject\\Animation.cpp",
@@ -485,37 +507,38 @@
               "RelativeToolTip": "GameEngineProject\\Animation.cpp",
               "ViewState": "AQIAACQAAAAAAAAAAAAAACQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-30T17:26:10.001Z"
+              "WhenOpened": "2024-11-30T17:26:10.001Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "GameObjects.cpp",
               "DocumentMoniker": "C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameEngineProject\\GameObjects.cpp",
               "RelativeDocumentMoniker": "GameEngineProject\\GameObjects.cpp",
               "ToolTip": "C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameEngineProject\\GameObjects.cpp",
               "RelativeToolTip": "GameEngineProject\\GameObjects.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAF0AAAApAAAA",
+              "ViewState": "AQIAAFQAAAAAAAAAAAAIwGwAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-30T12:56:08.646Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "Sprite.cpp",
               "DocumentMoniker": "C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameEngineProject\\Sprite.cpp",
               "RelativeDocumentMoniker": "GameEngineProject\\Sprite.cpp",
               "ToolTip": "C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameEngineProject\\Sprite.cpp",
               "RelativeToolTip": "GameEngineProject\\Sprite.cpp",
-              "ViewState": "AQIAAPgAAAAAAAAAAAAIwBIBAAASAAAA",
+              "ViewState": "AQIAAAMBAAAAAAAAAAAIwC8BAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-12-03T22:28:36.53Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 41,
               "Title": "Missile.cpp",
               "DocumentMoniker": "C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\Missile.cpp",
               "RelativeDocumentMoniker": "GameProject\\Missile.cpp",
@@ -527,20 +550,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 24,
               "Title": "Loner.cpp",
               "DocumentMoniker": "C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\Loner.cpp",
               "RelativeDocumentMoniker": "GameProject\\Loner.cpp",
               "ToolTip": "C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\Loner.cpp",
               "RelativeToolTip": "GameProject\\Loner.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAqAAAA",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwCoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-12-04T23:38:47.085Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 25,
               "Title": "Animation.h",
               "DocumentMoniker": "C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameEngineProject\\Animation.h",
               "RelativeDocumentMoniker": "GameEngineProject\\Animation.h",
@@ -548,24 +571,25 @@
               "RelativeToolTip": "GameEngineProject\\Animation.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-03T22:35:16.331Z"
+              "WhenOpened": "2024-12-03T22:35:16.331Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 4,
               "Title": "Player.cpp",
               "DocumentMoniker": "C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\Player.cpp",
               "RelativeDocumentMoniker": "GameProject\\Player.cpp",
               "ToolTip": "C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\Player.cpp",
               "RelativeToolTip": "GameProject\\Player.cpp",
-              "ViewState": "AQIAAHQAAAAAAAAAAAAIwKYAAAAbAAAA",
+              "ViewState": "AQIAAHcAAAAAAAAAAAAIwI0AAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-29T17:07:47.814Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 40,
               "Title": "Loner.h",
               "DocumentMoniker": "C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\Loner.h",
               "RelativeDocumentMoniker": "GameProject\\Loner.h",
@@ -578,20 +602,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 13,
               "Title": "GameObjects.h",
               "DocumentMoniker": "C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameEngineProject\\GameObjects.h",
               "RelativeDocumentMoniker": "GameEngineProject\\GameObjects.h",
               "ToolTip": "C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameEngineProject\\GameObjects.h",
               "RelativeToolTip": "GameEngineProject\\GameObjects.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBgAAAASAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBsAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-11-30T12:55:29.243Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 39,
               "Title": "explo.cpp",
               "DocumentMoniker": "C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\explo.cpp",
               "RelativeDocumentMoniker": "GameProject\\explo.cpp",
@@ -604,7 +628,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 38,
               "Title": "explo.h",
               "DocumentMoniker": "C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\explo.h",
               "RelativeDocumentMoniker": "GameProject\\explo.h",
@@ -617,20 +641,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 37,
               "Title": "Sprite.h",
               "DocumentMoniker": "C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameEngineProject\\Sprite.h",
               "RelativeDocumentMoniker": "GameEngineProject\\Sprite.h",
               "ToolTip": "C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameEngineProject\\Sprite.h",
               "RelativeToolTip": "GameEngineProject\\Sprite.h",
-              "ViewState": "AQIAABgAAAAAAAAAAAAowCkAAAANAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAowCkAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-12-03T22:28:37.541Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 36,
               "Title": "GameEngineProject.h",
               "DocumentMoniker": "C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameEngineProject\\GameEngineProject.h",
               "RelativeDocumentMoniker": "GameEngineProject\\GameEngineProject.h",
@@ -643,46 +667,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 8,
               "Title": "Player.h",
               "DocumentMoniker": "C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\Player.h",
               "RelativeDocumentMoniker": "GameProject\\Player.h",
               "ToolTip": "C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\Player.h",
               "RelativeToolTip": "GameProject\\Player.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAATAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-11-29T22:42:38.196Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 16,
               "Title": "GameEngineProject.cpp",
               "DocumentMoniker": "C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameEngineProject\\GameEngineProject.cpp",
               "RelativeDocumentMoniker": "GameEngineProject\\GameEngineProject.cpp",
               "ToolTip": "C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameEngineProject\\GameEngineProject.cpp",
               "RelativeToolTip": "GameEngineProject\\GameEngineProject.cpp",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAxwBsAAAAcAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAC4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-29T19:10:55.487Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 3,
               "Title": "Levels.h",
               "DocumentMoniker": "C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameEngineProject\\Levels.h",
               "RelativeDocumentMoniker": "GameEngineProject\\Levels.h",
               "ToolTip": "C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameEngineProject\\Levels.h",
               "RelativeToolTip": "GameEngineProject\\Levels.h",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAqwBgAAAAJAAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAqwCsAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-11-30T12:43:46.856Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 26,
               "Title": "Missile.h",
               "DocumentMoniker": "C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameProject\\Missile.h",
               "RelativeDocumentMoniker": "GameProject\\Missile.h",
@@ -690,23 +714,25 @@
               "RelativeToolTip": "GameProject\\Missile.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-05T00:40:19.078Z"
+              "WhenOpened": "2024-12-05T00:40:19.078Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 14,
               "Title": "Pawns.cpp",
               "DocumentMoniker": "C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameEngineProject\\Pawns.cpp",
               "RelativeDocumentMoniker": "GameEngineProject\\Pawns.cpp",
               "ToolTip": "C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameEngineProject\\Pawns.cpp",
               "RelativeToolTip": "GameEngineProject\\Pawns.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAwAAAAbAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-30T13:00:49.153Z"
+              "WhenOpened": "2024-11-30T13:00:49.153Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 42,
               "Title": "Pawns.h",
               "DocumentMoniker": "C:\\Users\\Utilizador\\Downloads\\Cloned\\EngineProject\\GameEngineProject\\GameEngineProject\\Pawns.h",
               "RelativeDocumentMoniker": "GameEngineProject\\Pawns.h",

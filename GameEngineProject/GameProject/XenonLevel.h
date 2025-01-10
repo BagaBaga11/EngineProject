@@ -18,6 +18,8 @@ public:
     void Display(const std::string& input, float x, float y, std::vector<Sprite*>* customLetters = nullptr);
     void UpdateScore(int scoreToAdd);
     void Update(float deltaTime) override;
+    void UpdateUI()override;
+    void StartUI();
 private:
     char LetterMap[96] = {
         ' ', '!', '"', '#', '$', '%', '&', '\'', '(', ')', '*', '+', ',', '-', '.', '/',
@@ -29,6 +31,7 @@ private:
     };
 
     std::vector<Sprite*> letterforPoints;
+    std::vector<Sprite*> Lives;
 
     int points = 0;
 };

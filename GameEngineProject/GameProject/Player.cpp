@@ -1,6 +1,7 @@
 #include "FriendlyMissile.h"
 #include "Player.h"
 
+
 #include <iostream>
 
 Player::Player(Level* mylevel) :Pawn(mylevel)
@@ -32,6 +33,10 @@ void Player::Up()
 	{
 		Secondpos -= moveSpeed * delta * 320;
 		t->AddPosition(0, moveSpeed * delta, 0);
+		if (myComp != nullptr)
+		{
+			myComp->Up(moveSpeed);
+		}
 	}
 }
 
@@ -46,6 +51,10 @@ void Player::Left()
 	{
 		Firstpos -= moveSpeed * delta * 240;
 		t->AddPosition(-(moveSpeed * delta), 0, 0);
+		if (myComp != nullptr)
+		{
+			myComp->Left(moveSpeed);
+		}
 	}
 }
 
@@ -60,6 +69,10 @@ void Player::Right()
 	{
 		Firstpos += moveSpeed * delta * 240;
 		t->AddPosition(moveSpeed * delta, 0, 0);
+		if (myComp != nullptr)
+		{
+			myComp->Right(moveSpeed);
+		}
 	}
 }
 
@@ -73,6 +86,10 @@ void Player::Down()
 	{
 		Secondpos += moveSpeed * delta * 320;
 		t->AddPosition(0, -(moveSpeed * delta), 0);
+		if (myComp != nullptr)
+		{
+			myComp->Down(moveSpeed);
+		}
 	}
 }
 
@@ -122,6 +139,7 @@ void Player::Hit()
 	{
 		delete this;
 	}
+	mylevel->UpdateUI();
 }
 
 bool Player::GetAlive()
@@ -132,6 +150,10 @@ bool Player::GetAlive()
 void Player::ChangeHealh(int diffhealth)
 {
 	healt += diffhealth;
+	if (healt > 3)
+	{
+		healt = 3;
+	}
 }
 
 void Player::ChangeMissile()
@@ -143,6 +165,21 @@ void Player::ChangeMissile()
 	{
 		missileTime = 10;
 	}
+}
+
+int Player::GetHealth()
+{
+	return healt;
+}
+
+void Player::SetComp(Companion* Comp)
+{
+	myComp = Comp;
+}
+
+Companion* Player::GetComp()
+{
+	return myComp;
 }
 
 void Player::Fire()
@@ -168,6 +205,10 @@ void Player::Fire()
 		}
 		missile->StartObject();
 		timedelta = 0.0f;
+		if (myComp != nullptr)
+		{
+			myComp->Fire();
+		}
 	}
 
 }

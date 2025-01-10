@@ -1,6 +1,7 @@
 #pragma once
 #include "Pawns.h"
 #include "Missile.h"
+#include "Companion.h"
 class Player : public Pawn
 {
 public:
@@ -22,6 +23,10 @@ public:
 	 bool GetAlive();
 	 void ChangeHealh(int diffhealth);
 	 void ChangeMissile();
+
+	 int GetHealth();
+	 void SetComp(Companion* Comp);
+	 Companion* GetComp();
 protected:
 	float delta = 0.0f;
 	float moveSpeed  = 0.0f;
@@ -30,5 +35,6 @@ protected:
 	bool alive = true;
 	float timeinv;
 	float missileTime;
+	Companion* myComp;
 };
 

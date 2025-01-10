@@ -6,7 +6,7 @@ class PowerHealth : public Collectibles
 public:
 	PowerHealth(Level* mylevel, GameEngine engine);
 	~PowerHealth();
-	void  Hit() override;
 	void Update(float deltaTime) override;
+	void Upgrade(GameObject* Object) override;
 };
 

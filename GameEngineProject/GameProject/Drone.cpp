@@ -3,8 +3,6 @@
 Drone::Drone(Level* mylevel, GameEngine engine) : Enemy(mylevel)
 {
 	SetBMP("graphics/drone.bmp", 8, 2, 4);
-	float value = engine.getRandomFloat(100, 400);
-	SetStartPos(value, -300.0f);
 	SetGravScale(10.0f);
 	SetSensor(false);
 	animationManager.AddAnimation("Drone", { 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16 }, 0.1f);

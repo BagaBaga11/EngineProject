@@ -16,15 +16,22 @@ PowerBullet::~PowerBullet()
 {
 }
 
-void PowerBullet::Hit()
-{
-	dynamic_cast<Player*>(mylevel->GetPawn())->ChangeMissile();
-	delete this;
-}
-
 void PowerBullet::Update(float deltaTime)
 {
 	GetPosition();
 	SetPos(Firstpos, Secondpos, 0);
 	GameObject::Update(deltaTime);
+}
+
+void PowerBullet::Upgrade(GameObject* Object)
+{
+	if (auto* p = dynamic_cast<Player*>(Object))
+	{
+		p->ChangeMissile();
+	}
+	else if (auto* c = dynamic_cast<Companion*>(Object))
+	{
+		c->ChangeMissile();
+	}
+	delete this;
 }

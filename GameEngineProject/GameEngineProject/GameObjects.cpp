@@ -36,7 +36,7 @@ void GameObject::StartObject()
     bodyDef.type = b2_dynamicBody;
     bodyDef.gravityScale = GetGravScale();
     bodyDef.position = b2Vec2{ newposX,newposY };
-    bodyDef.isBullet = true;
+    bodyDef.isBullet = false;
     bodyDef.fixedRotation = true;
     b2BodyId* body = new b2BodyId(b2CreateBody(*mylevel->GetWorld(), &bodyDef));
     bodyID = body;
@@ -92,6 +92,21 @@ void GameObject::ResetYForce()
 {
     float w = b2Body_GetLinearVelocity(*bodyID).x;
     b2Body_SetLinearVelocity(*bodyID, { w,0 });
+}
+
+void GameObject::SetContainerPosition(float x, float y)
+{
+    b2Body_SetTransform(*bodyID, { x,y }, b2Body_GetRotation(*bodyID));
+}
+
+float GameObject::GetCollisionX()
+{
+    return Firstpos;
+}
+
+float GameObject::GetCollisionY()
+{
+    return Secondpos;
 }
 
 b2BodyId* GameObject::GetBody() const

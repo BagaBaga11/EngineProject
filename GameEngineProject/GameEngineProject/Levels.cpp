@@ -124,3 +124,7 @@ void Level::SetPawn(Pawn* pwn)
 {
     myPawn = pwn;
 }
+
+void Level::UpdateUI()
+{
+}

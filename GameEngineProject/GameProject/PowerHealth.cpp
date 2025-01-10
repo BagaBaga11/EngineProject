@@ -14,21 +14,26 @@ PowerHealth::PowerHealth(Level* mylevel, GameEngine engine) : Collectibles(mylev
 }
 
 PowerHealth::~PowerHealth()
-{
+{	
 }
 
-void PowerHealth::Hit()
-{
-	if(auto* player = dynamic_cast<Player*>(mylevel->GetPawn()))
-	{
-		player->ChangeHealh(1);
-		delete this;
-	}
-}
 
 void PowerHealth::Update(float deltaTime)
 {
 	GetPosition();
 	SetPos(Firstpos, Secondpos, 0);
 	GameObject::Update(deltaTime);
+}
+
+void PowerHealth::Upgrade(GameObject* Object)
+{
+	if (auto* p = dynamic_cast<Player*>(Object))
+	{
+		p->ChangeHealh(1);
+	}
+	else if (auto* c = dynamic_cast<Companion*>(Object))
+	{
+		c->ChangeHealth(1);
+	}
+	delete this;
 }

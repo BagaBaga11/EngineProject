@@ -1,6 +1,5 @@
-﻿GameEngineProject.lib(world.obj) : warning LNK4099: PDB '' was not found with 'GameEngineProject.lib(world.obj)' or at ''; linking object as if no debug info
-GameEngineProject.lib(manifold.obj) : warning LNK4099: PDB '' was not found with 'GameEngineProject.lib(manifold.obj)' or at ''; linking object as if no debug info
-GameEngineProject.lib(hull.obj) : warning LNK4099: PDB '' was not found with 'GameEngineProject.lib(hull.obj)' or at ''; linking object as if no debug info
-GameEngineProject.lib(dynamic_tree.obj) : warning LNK4099: PDB '' was not found with 'GameEngineProject.lib(dynamic_tree.obj)' or at ''; linking object as if no debug info
-GameEngineProject.lib(aabb.obj) : warning LNK4099: PDB '' was not found with 'GameEngineProject.lib(aabb.obj)' or at ''; linking object as if no debug info
+﻿  GameProject.cpp
+C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameProject\GameProject.cpp(154,62): warning C4305: 'argument': truncation from 'int' to 'float'
+  XenonLevel.cpp
+  Generating Code...
   GameProject.vcxproj -> C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\x64\Debug\GameProject.exe

@@ -132,6 +132,7 @@
   <ItemGroup>
     <ClCompile Include="Asteroids.cpp" />
     <ClCompile Include="Collectibles.cpp" />
+    <ClCompile Include="Companion.cpp" />
     <ClCompile Include="Drone.cpp" />
     <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="EnemyMissile.cpp" />
@@ -224,6 +225,7 @@
   <ItemGroup>
     <ClInclude Include="Asteroids.h" />
     <ClInclude Include="Collectibles.h" />
+    <ClInclude Include="Companion.h" />
     <ClInclude Include="Drone.h" />
     <ClInclude Include="Enemy.h" />
     <ClInclude Include="EnemyMissile.h" />

@@ -23,6 +23,9 @@ public:
     void ApplyForce(float x, float y,float deltaTime);
     void ResetXForce();
     void ResetYForce();
+    void SetContainerPosition(float x, float y);
+    float GetCollisionX();
+    float GetCollisionY();
 
     b2BodyId* GetBody() const;
     b2ShapeId* GetShape() const;

@@ -40,6 +40,8 @@ public:
 
 	Pawn* GetPawn();
 	void SetPawn(Pawn* pwn);
+
+	virtual void UpdateUI();
 protected:
 	std::string background;
 	SDL_Renderer* renderL = nullptr;

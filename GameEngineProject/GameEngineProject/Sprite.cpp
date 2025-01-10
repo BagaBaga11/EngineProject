@@ -266,11 +266,6 @@ Sprite::~Sprite() {
         {
             size_t index = std::distance(mylevel->everyArray.begin(), itObject);
             mylevel->everyArray.erase(itObject);
-
-           /* if (index < mylevel->bmpArray.size())
-            {
-                mylevel->bmpArray.erase(mylevel->bmpArray.begin() + index);
-            }*/
         } 
         delete(t);
 }
