@@ -17,28 +17,33 @@ StoneAsteroids::~StoneAsteroids()
 
 void StoneAsteroids::Update(float deltaTime)
 {
-    GetPosition();
+    float gravMultiplier;
     switch (asteroidType)
     {
-    case MainAsteroid:
+    case MainAsteroid: 
+        GetPosition();
         SetPos(Firstpos, Secondpos, 0);
         break;
 
     case RightAsteroid:
-        SetPos(Secondpos, Secondpos, 0);
+        gravMultiplier = 1;
+        ApplyForce(100000 * gravMultiplier, 0, deltaTime);
+        ResetXForce();
+        GetPosition();
+        SetPos(Firstpos, Secondpos, 0);
         break;
 
     case LeftAsteroid:
-        SetPos(Secondpos* -1, Secondpos, 0);
+        gravMultiplier = -1;
+        ApplyForce(100000 * gravMultiplier, 0, deltaTime);
+        ResetXForce();
+        GetPosition();
+        SetPos(Firstpos, Secondpos, 0);
         break;
 
     default:
         break;
     }
-    
-    GameObject::Update(deltaTime);
-
-}
 
 void StoneAsteroids::Hit()
 {
