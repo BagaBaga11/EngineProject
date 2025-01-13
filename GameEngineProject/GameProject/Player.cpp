@@ -134,12 +134,11 @@ void Player::Hit()
 	}
 
 	animationManager.SetCurrentAnimation("Damage");
-
+	mylevel->UpdateUI();
 	if (healt <= 0)
 	{
 		delete this;
 	}
-	mylevel->UpdateUI();
 }
 
 bool Player::GetAlive()

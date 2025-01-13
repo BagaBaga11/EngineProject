@@ -34,5 +34,6 @@ private:
     std::vector<Sprite*> Lives;
 
     int points = 0;
+    int lives = 9999;
 };
 

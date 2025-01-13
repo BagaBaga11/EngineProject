@@ -9,6 +9,7 @@
 #include "Collectibles.h"
 #include "StoneAsteroids.h"
 #include "MetalAsteroids.h"
+#include "Player.h"
 
 XenonLevel::XenonLevel()
 {
@@ -309,14 +310,27 @@ void XenonLevel::Update(float deltaTime)
 
 void XenonLevel::UpdateUI()
 {
+    int health = 0;
     if (auto* player = dynamic_cast<Player*>(myPawn))
     {
-        int health = player->GetHealth();
-        if (health >= 0 && health <= 2)
+        health = player->GetHealth();
+        if (lives > health)
         {
-            Lives[health]->animationManager.SetCurrentAnimation("Dead");
+            if (health >= 0 && health <= 2)
+            {
+                Lives[health]->animationManager.SetCurrentAnimation("Dead");
+            }
         }
+        else
+        {
+            if (health >= 0 && health <= 2)
+            {
+                Lives[health - 1]->animationManager.SetCurrentAnimation("Default");
+            }
+        }
+
     }
+    lives = health;
 }
 
 void XenonLevel::StartUI()

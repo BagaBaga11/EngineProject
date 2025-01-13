@@ -1,5 +1,9 @@
 ﻿  GameProject.cpp
 C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\GameProject\GameProject.cpp(154,62): warning C4305: 'argument': truncation from 'int' to 'float'
-  XenonLevel.cpp
-  Generating Code...
+GameEngineProject.lib(world.obj) : warning LNK4099: PDB '' was not found with 'GameEngineProject.lib(world.obj)' or at ''; linking object as if no debug info
+GameEngineProject.lib(wheel_joint.obj) : warning LNK4099: PDB '' was not found with 'GameEngineProject.lib(wheel_joint.obj)' or at ''; linking object as if no debug info
+GameEngineProject.lib(types.obj) : warning LNK4099: PDB '' was not found with 'GameEngineProject.lib(types.obj)' or at ''; linking object as if no debug info
+GameEngineProject.lib(prismatic_joint.obj) : warning LNK4099: PDB '' was not found with 'GameEngineProject.lib(prismatic_joint.obj)' or at ''; linking object as if no debug info
+GameEngineProject.lib(math_functions.obj) : warning LNK4099: PDB '' was not found with 'GameEngineProject.lib(math_functions.obj)' or at ''; linking object as if no debug info
+GameEngineProject.lib(joint.obj) : warning LNK4099: PDB '' was not found with 'GameEngineProject.lib(joint.obj)' or at ''; linking object as if no debug info
   GameProject.vcxproj -> C:\Users\Utilizador\Downloads\Cloned\EngineProject\GameEngineProject\x64\Debug\GameProject.exe
